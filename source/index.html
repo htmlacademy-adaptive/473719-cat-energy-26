@@ -11,25 +11,25 @@
     <div class="header-wrapper">
       <a class="header__logo">
         <img src="./img/logo-desktop.svg" alt="Лотигип Cat Energy." class="header__logo-img" width="202" height="59">
-        <nav class="nav">
-          <button class="nav__toggle nav__toggle--phone" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <div class="nav__wrapper">
-            <ul class="nav__list">
-              <li class="nav__list-item nav__list-item--current">
-                <a href="">Главная</a>
-              </li>
-              <li class="nav__list-item">
-                <a href="./catalog.html">Каталог продукции</a>
-              </li>
-              <li class="nav__list-item">
-                <a href="./form.html">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
       </a>
+      <nav class="nav">
+        <button class="nav__toggle nav__toggle--phone" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="nav__wrapper">
+          <ul class="nav__list">
+            <li class="nav__list-item nav__list-item--current">
+              <a href="">Главная</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./catalog.html">Каталог продукции</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>1
     </div>
   </header>
   <main class="main-container">
@@ -38,9 +38,11 @@
       <div class="main-intro__wrapper">
         <h2 class="main-intro__header">Функциональное питание для котов</h2>
         <p class="main-intro__description">Занялся собой? Займись котом!</p>
-        <img src="./img/main-intro-image.png" alt="Изображение упаковки корма Cat Energy." class="main-intro__img main-intro__image--tablet main-intro__image--phone"
-          width="552" height="499">
-        <button class="main-intro__button button main-intro__button--tablet main-intro__button--phone">Подобрать программу</button>
+        <img src="./img/main-intro-image.png" alt="Изображение упаковки корма Cat Energy."
+          class="main-intro__img main-intro__image--tablet main-intro__image--phone" width="552" height="499">
+        <a href="./form.html"
+          class="main-intro__button button main-intro__button--tablet main-intro__button--phone">Подобрать программу</a>
+        <span class="visually-hidden">Перейти на страницу выбора програмы питания.</span>
       </div>
     </section>
     <section class="main-programms">
@@ -100,8 +102,12 @@
           спит по 16 часов в день. </p>
         <span class="explanation-text__result">5 КГ</span>
         <span class="explanation-text__result">60 ДНЕЙ</span>
-        <span class="explanation-text__example-price explanation-text__example-price--tablet explanation-text__example-price--phone">Затраты на питание:</span>
-        <span class="explanation-text__example-price explanation-text__example-price--tablet explanation-text__example-price--phone">15 000 РУБ.</span>
+        <span
+          class="explanation-text__example-price explanation-text__example-price--tablet explanation-text__example-price--phone">Затраты
+          на питание:</span>
+        <span
+          class="explanation-text__example-price explanation-text__example-price--tablet explanation-text__example-price--phone">15
+          000 РУБ.</span>
       </div>
       <div class="main-experience__wrapper explanation-feature">
         <div class="explanation-feature__photo-wrapper">
@@ -112,10 +118,14 @@
         </div>
         <div class="explanation-feature__range-wrapper">
           <span class="visually-hidden">Было</span>
-          <input type="range" id="range" min="1" max="100" value="50" class="explanation-feature__scale explanation-feature__scale--phone explanation-feature__scale--tablet">
+          <input type="range" id="range" min="1" max="100" value="50"
+            class="explanation-feature__scale explanation-feature__scale--phone explanation-feature__scale--tablet">
           <span class="visually-hidden">Стало</span>
-          <button class="explanation-feature__slider explanation-feature__slider--tablet explanation-feature__slider--phone" type="button"></button>
-        </div> 
+          <button
+            class="explanation-feature__slider explanation-feauture__slider--current explanation-feature__slider--tablet explanation-feature__slider--phone"
+            type="button">-</button>
+          <span class="visually-hidden">Посмотрите как изменится вес вашего кота.</span>
+        </div>
       </div>
     </section>
   </main>
@@ -125,9 +135,11 @@
         <div class="footer-address__wrapper">
           <h2 class="visually-hidden">Наше местонахождение.</h2>
           <img src="./img/adress-map-image.jpg" alt="Адрес на карте."
-            class="footer-address__embeded-map footer-address__embed-map--tablet footer-address__embed-map--phone" width="1440" height="440">
+            class="footer-address__embeded-map footer-address__embed-map--tablet footer-address__embed-map--phone"
+            width="1440" height="440">
           <img src="./img/map-pin-icon.png" alt="Мы находимся тут."
-            class="footer-address__embeded-pin footer-address_embed-pin--tablet footer-address__embed-pin--phone" width="113" height="106">
+            class="footer-address__embeded-pin footer-address_embed-pin--tablet footer-address__embed-pin--phone"
+            width="113" height="106">
           <div
             class="footer-address__headquarter-wrapper footer-address__headquarter-wrapper--tablet footer-address__headquarter-wrapper--phone">
             <h4 class="footer-address__headquarter-header">Приглашаем к сотрудничеству дилеров!</h4>
@@ -152,12 +164,12 @@
           </li>
           <li class="footer__social-item">
             <a href="" class="footer__social-link"><img src="./img/footer-youtube-logo.svg" alt="Наш канал на Ютуб."
-                class="footer__social-item-icon" width="28" heigt="22">
+                class="footer__social-item-icon" width="28" height="22">
             </a>
           </li>
           <li class="footer__social-item">
-            <a href="" class="footer__social-link"><img src="./img/footer-telegram-logo.svg" alt="Наш канал в Телеграме."
-                class="footer__social-item-icon" width="28" height="22">
+            <a href="" class="footer__social-link"><img src="./img/footer-telegram-logo.svg"
+                alt="Наш канал в Телеграме." class="footer__social-item-icon" width="28" height="22">
             </a>
           </li>
         </ul>

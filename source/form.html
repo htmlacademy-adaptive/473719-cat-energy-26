@@ -30,7 +30,27 @@
       </nav>
     </a>
   </header>
+  <main class="form-container">
+    <h1 class="form__header">Подбор программы</h1>
+    <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <form action="https://echo.htmlacademy.ru/" method="get" class="form_items">
+      <fieldset class="form__cat-data cat-data">
+        <label class="cat-data__name">
+          <input type="text" class="cat-data__name-input" name="cat-name" placeholder="БАРСИК">
+        </label>
+        <label class="cat-data__weight">
+          <input type="number" class="cat-data__weight-input" name="cat-weight" placeholder="7">
+        </label>
+        <label class="cat-data__age">
+          <input type="number" class="cat-data__age-input" name="cat-age" placeholder="9">
+        </label>
+      </fieldset>
+      <fieldset class="form__program-checkbox">
+        
+      </fieldset>
+    </form>
 
+  </main>
 
   <footer class="footer">
     <div class="footer-wrapper">
@@ -41,7 +61,8 @@
             class="footer-address__embeded-map footer-address__embed-map--tablet footer-address__embed-map--phone">
           <img src="./img/map-pin-icon.png" alt="Мы находимся тут."
             class="footer-address__embeded-pin footer-address_embed-pin--tablet footer-address__embed-pin--phone">
-          <div class="footer-address__headquarter-wrapper footer-address__headquarter-wrapper--tablet footer-address__headquarter-wrapper--phone">
+          <div
+            class="footer-address__headquarter-wrapper footer-address__headquarter-wrapper--tablet footer-address__headquarter-wrapper--phone">
             <h4 class="footer-address__headquarter-header">Приглашаем к сотрудничеству дилеров!</h4>
             <div class="footer-adress__headquarter-address-wrapper">
               <p class="footer_address__headquarter-address-text">ул. Большая Конюшенная, д. 19/8</p>

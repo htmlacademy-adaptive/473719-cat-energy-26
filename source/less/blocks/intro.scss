@@ -1,14 +1,24 @@
 .intro {
-  background-image: url("/source/img/main-intro-image.png");
-  background-color: #FFFFFF;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("../../img/main-intro-image.png") no-repeat center;
 }
-.intro__wrapper {
-}
+
+.intro__wrapper {}
+
 .intro__header {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
 }
+
 .intro__description {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
 }
-.intro__button {
-}
+
+.intro__button {}

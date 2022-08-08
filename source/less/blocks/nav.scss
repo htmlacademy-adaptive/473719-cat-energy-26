@@ -1,14 +1,21 @@
 .nav {
   background-color: #FFFFFF;
 }
-.nav__toggle {
+
+.nav__toggle {}
+
+.nav__wrapper {}
+
+.nav__list {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
-.nav__wrapper {
-}
-.nav__list {
-}
-.nav__list-item {
-}
-.nav__list-item--current {
-}
+.nav__list-item {}
+
+.nav__list-item--current {}

@@ -1,16 +1,32 @@
-.advantages {
-}
+.advantages {}
+
 .advantage__header {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #000000;
 }
-.advantages__wrapper {
-}
-.advantages__list {
-}
+
+.advantages__wrapper {}
+
+.advantages__list {}
+
 .advantages__item-nutritional {
+  background: url("../../img/icon-nutrition.svg") no-repeat center;
 }
+
 .advantages__item-easy-to-use {
+  background: url("../../img/icon-easy-to-use.svg") no-repeat center;
 }
+
 .advantages__item-fast-tu-use {
+  background: url("../../img/icon-ready-to-use.svg") no-repeat center;
+
 }
+
 .advantages__item-results {
+  background: url("../../img/icon-fast-result.svg") no-repeat center;
+
 }

@@ -1,10 +1,27 @@
-.programs {
-}
+.programs {}
+
 .programs__wrapper {
+  background-color: #F2F2F2;;
 }
+
 .programs__subtitle {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
 }
-.programs__description {
-}
+
+.programs__description {}
+
 .programs__link {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
 }

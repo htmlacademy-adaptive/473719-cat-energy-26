@@ -11,24 +11,29 @@
 .nav__list {
   margin-left: 0;
   padding-left: 0;
-
-  font-family: @font;
-  font-style: @font-style;
-  font-weight: @font-weight;
-  font-size: 18px;
-  line-height: 24px;
-  color: @font-color;
-
-  text-transform: uppercase;
 }
 
 .nav__list-item {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  color: @font-color;
+
+  text-transform: uppercase;
   list-style-type: none;
-  &--current {
 
+  &--current {}
+
+  & a {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: @font;
+    font-style: @font-style;
+    font-weight: @font-weight;
+    color: @font-color;
+
+    text-decoration: none;
   }
-}
-
-.nav__list-item a {
-  text-decoration: none;
 }

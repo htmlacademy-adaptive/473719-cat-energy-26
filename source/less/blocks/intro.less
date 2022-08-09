@@ -1,3 +1,7 @@
+@font: "Oswald", sans-serif;
+@font-style: normal;
+@pfont-weight: 400;
+
 .intro {
   background: url("../img/main-intro-image.png") no-repeat center;
 }
@@ -5,17 +9,17 @@
 .intro__wrapper {}
 
 .intro__header {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
   font-size: 60px;
   line-height: 60px;
 }
 
 .intro__description {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
   font-size: 20px;
   line-height: 20px;
   color: #000000;

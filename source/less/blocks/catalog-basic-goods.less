@@ -1,9 +1,11 @@
 .catalog-basic-goods {}
 
 .catalog-basic-goods__header {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  margin: 0;
+
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
   font-size: 60px;
   line-height: 60px;
 }
@@ -11,22 +13,34 @@
 .catalog-basic-goods__list {}
 
 .catalog-basic-goods__card {
+  padding: 20px 0 14px;
+
   background-color: #F2F2F2;
+
+  list-style-type: none;
 }
 
-.catalog-basic-goods__card-link {}
+.catalog-basic-goods__card-link {
+  text-decoration: none;
+}
 
 .catalog-basic-goods__card-image {}
 
 .catalog-basic-goods__card-header {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  margin: 0;
+
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-transform: uppercase;
 }
 
 .catalog-basic-goods__card-info {
+  margin: 0;
+
   line-height: 16px;
 }
 
@@ -36,11 +50,28 @@
 
 .catalog-basic-goods__button {}
 
-.catalog-basic-goods__more {}
+.catalog-basic-goods__more {
+  padding: 78px 0 25px;
 
-.catalog-basic-goods__more-link {}
+  list-style-type: none;
+}
 
-.catalog-basic-goods__more-header {}
+.catalog-basic-goods__more-link {
+  text-decoration: none;
+
+}
+
+.catalog-basic-goods__more-header {
+  margin: 0;
+
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+}
 
 .catalog-basic-goods__more-text {}
 

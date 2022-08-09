@@ -286,6 +286,15 @@
 .form {
   padding: 27px 0 32px;
 }
+.form__header {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #000000;
+}
 .form__button {
   border: 0;
 }
@@ -317,18 +326,24 @@
 .nav__list {
   margin-left: 0;
   padding-left: 0;
+}
+.nav__list-item {
+  font-size: 18px;
+  line-height: 24px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
   color: #000000;
   text-transform: uppercase;
-}
-.nav__list-item {
   list-style-type: none;
 }
 .nav__list-item a {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
   text-decoration: none;
 }
 .owner-data__title {

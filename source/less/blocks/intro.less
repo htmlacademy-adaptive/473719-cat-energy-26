@@ -3,6 +3,16 @@
   background:
     url("../img/intro-image.png") no-repeat center,
     url("../img/intro-background.png") no-repeat center;
+
+  width: @mobile-width-only - @mobile-gap;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width - @tablet-gap;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width - @desktop-gap;
+  }
 }
 
 .intro__wrapper {}

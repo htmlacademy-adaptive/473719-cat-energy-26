@@ -1,5 +1,15 @@
 .advantages {
   margin-bottom: 47px;
+
+  width: @mobile-width-only - @mobile-gap;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width - @tablet-gap;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width - @desktop-gap;
+  }
 }
 
 .advantage__header {

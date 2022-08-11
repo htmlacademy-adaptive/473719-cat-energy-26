@@ -1,4 +1,14 @@
-.programs {}
+.programs {
+  width: @mobile-width-only - @mobile-gap;
+
+    @media (min-width: @tablet-width) {
+      width: @tablet-width - @tablet-gap;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: @desktop-width - @desktop-gap;
+    }
+}
 
 .programs__weight-image {
   background: url("../img/cat-fit-logo.svg") no-repeat center;

@@ -1,7 +1,18 @@
-.footer {}
+.footer {
+  background-color: @gray-color;
+}
 
 .footer__wrapper {
-  background-color: @gray-color;
+  width: @mobile-width-only - @mobile-gap;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width - @tablet-gap;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width - @desktop-gap;
+  }
+
 }
 
 .footer__address {}

@@ -1,8 +1,20 @@
 .intro {
-  padding: 27px 35px 20px;
+  padding: 27px 0 20px;
+  margin: 0 auto;
+
   background:
     url("../img/intro-image.png") no-repeat center,
     url("../img/intro-background.png") no-repeat center;
+
+  width: @mobile-width-only - @mobile-gap;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width - @tablet-gap;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width - @desktop-gap;
+  }
 }
 
 .intro__wrapper {}

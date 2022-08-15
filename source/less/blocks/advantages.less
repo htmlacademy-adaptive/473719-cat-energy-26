@@ -1,5 +1,14 @@
 .advantages {
-  margin-bottom: 47px;
+  margin: 0 auto;
+  width: @mobile-width-only - @mobile-gap;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width - @tablet-gap;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width - @desktop-gap;
+  }
 }
 
 .advantage__header {
@@ -13,22 +22,37 @@
   color: @font-color;
 }
 
-.advantages__wrapper {}
+.advantages__wrapper {
+}
 
-.advantages__list {}
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 70px;
+}
 
 .advantages__item-nutritional {
+  max-width: 230px;
   background: url("../img/icon-nutrition.svg") no-repeat center;
 }
 
 .advantages__item-easy-to-use {
+  max-width: 246px;
   background: url("../img/icon-easy-to-use.svg") no-repeat center;
 }
 
 .advantages__item-fast-tu-use {
+  max-width: 248px;
   background: url("../img/icon-ready-to-use.svg") no-repeat center;
 }
 
 .advantages__item-results {
+  max-width: 250px;
   background: url("../img/icon-fast-result.svg") no-repeat center;
 }

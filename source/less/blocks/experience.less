@@ -1,5 +1,16 @@
 .experience {
-  padding: 25px 0 40px;
+  margin-bottom: 40px;
+  margin: 0 auto;
+
+  width: @mobile-width-only - @mobile-gap;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width - @tablet-gap;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width - @desktop-gap;
+  }
 }
 
 .experience__wrapper {

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css" type="text/css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -13,7 +14,7 @@
       <img class="header__logo-img" src="./img/logo-desktop.svg" alt="Лотигип Cat Energy." width="202" height="59">
     </a>
     <nav class="nav">
-      <button class="nav__toggle" type="button">
+      <button class="nav__toggle nav__toggle--hidden" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="nav__wrapper">
@@ -159,58 +160,61 @@
     </section>
     <section class="catalog-other-goods">
       <h2 class="catalog-other-goods__header">Дополнительные товары</h2>
-      <ul class="catalog-other-goods__list">
-        <li class="catalog-other-goods__item">
-          <h3 class="catalog-other-goods__item-header">Сахарозаменитель</h3>
-          <dl class="catalog-other-goods__info">
-            <dt class="catalog-other-goods__info-item-weight">1 упаковка (100 г)</dt>
-            <dd class="catalog-other-goods__info-item-price">200 Р.</dt>
-          </dl>
-          <a class="catalog-other-goods__item-button button" type="button">Заказать</a>
-        </li>
-        <li class="catalog-other-goods__item">
-          <h3 class="catalog-other-goods__item-header">Питьевая вода</h3>
-          <dl class="catalog-other-goods__info">
-            <dt class="catalog-other-goods__info-item-weight">5 литров</dt>
-            <dd class="catalog-other-goods__info-item-price">50 Р.</dt>
-          </dl>
-          <a class="catalog-other-goods__item-button button" type="button">Заказать</a>
-        </li>
-        <li class="catalog-other-goods__item">
-          <h3 class="catalog-other-goods__item-header">Молоко</h3>
-          <dl class="catalog-other-goods__info">
-            <dt class="catalog-other-goods__info-item-weight">1 литр</dt>
-            <dd class="catalog-other-goods__info-item-price">100 Р.</dt>
-          </dl>
-          <a class="catalog-other-goods__item-button button" type="button">Заказать</a>
-        </li>
-        <li class="catalog-other-goods__item">
-          <h3 class="catalog-other-goods__item-header">Витамины</h3>
-          <dl class="catalog-other-goods__info">
-            <dt class="catalog-other-goods__info-item-weight">1 упаковка (30 г)</dt>
-            <dd class="catalog-other-goods__info-item-price">300 Р.</dt>
-          </dl>
-          <a class="catalog-other-goods__item-button button" type="button">Заказать</a>
-        </li>
-      </ul>
+      <div class="catalog-other-goods__wrapper">
+        <ul class="catalog-other-goods__list">
+          <li class="catalog-other-goods__item">
+            <h3 class="catalog-other-goods__item-header">Сахарозаменитель</h3>
+            <dl class="catalog-other-goods__info">
+              <dt class="catalog-other-goods__info-item-weight">1 упаковка (100 г)</dt>
+              <dd class="catalog-other-goods__info-item-price">200 Р.</dt>
+            </dl>
+            <a class="catalog-other-goods__item-button button" type="button">Заказать</a>
+          </li>
+          <li class="catalog-other-goods__item">
+            <h3 class="catalog-other-goods__item-header">Питьевая вода</h3>
+            <dl class="catalog-other-goods__info">
+              <dt class="catalog-other-goods__info-item-weight">5 литров</dt>
+              <dd class="catalog-other-goods__info-item-price">50 Р.</dt>
+            </dl>
+            <a class="catalog-other-goods__item-button button" type="button">Заказать</a>
+          </li>
+          <li class="catalog-other-goods__item">
+            <h3 class="catalog-other-goods__item-header">Молоко</h3>
+            <dl class="catalog-other-goods__info">
+              <dt class="catalog-other-goods__info-item-weight">1 литр</dt>
+              <dd class="catalog-other-goods__info-item-price">100 Р.</dt>
+            </dl>
+            <a class="catalog-other-goods__item-button button" type="button">Заказать</a>
+          </li>
+          <li class="catalog-other-goods__item">
+            <h3 class="catalog-other-goods__item-header">Витамины</h3>
+            <dl class="catalog-other-goods__info">
+              <dt class="catalog-other-goods__info-item-weight">1 упаковка (30 г)</dt>
+              <dd class="catalog-other-goods__info-item-price">300 Р.</dt>
+            </dl>
+            <a class="catalog-other-goods__item-button button" type="button">Заказать</a>
+          </li>
+        </ul>
+        <div class="catalog-other-goods__promotion">
+          <p class="catalog-other-goods__promotion-text">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
+      </div>
+
     </section>
-    <section class="promotion">
-      <h2 class="visually-hidden">Участие в акции.</h2>
-      <p class="promotion__text">Закажите все и получите чехол для кота в подарок!</p>
-    </section>
+
   </main>
   <footer class="footer">
+    <section class="footer__address">
+      <h2 class="visually-hidden">Наше местонахождение.</h2>
+      <img class="footer__address-embeded-map" src="./img/address-map-image.jpg" alt="Адрес на карте." width="1440"
+        height="440">
+      <div class="footer__address-headquarter-wrapper">
+        <h4 class="footer__address-headquarter-header">Приглашаем к сотрудничеству дилеров!</h4>
+        <p class="footer__address-headquarter-text">ул. Большая Конюшенная, д. 19/8</p>
+        <p class="footer__address-headquarter-text">Санкт-Петербург</p>
+      </div>
+    </section>
     <div class="footer__wrapper">
-      <section class="footer__address">
-        <h2 class="visually-hidden">Наше местонахождение.</h2>
-        <img class="footer__address-embeded-map" src="./img/address-map-image.jpg" alt="Адрес на карте." width="1440"
-          height="440">
-        <div class="footer__address-headquarter-wrapper">
-          <h4 class="footer__address-headquarter-header">Приглашаем к сотрудничеству дилеров!</h4>
-          <p class="footer__address-headquarter-text">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="footer__address-headquarter-text">Санкт-Петербург</p>
-        </div>
-      </section>
       <div class="footer__logo-wrapper">
         <a href="" class="footer__logo-link">
           <img class="footer__logo-image" src="./img/footer-mini-logo.svg" alt="Логотип Cat Energy." width="128"

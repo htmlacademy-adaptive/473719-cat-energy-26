@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css" type="text/css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -13,7 +14,7 @@
       <img class="header__logo-img" src="./img/logo-desktop.svg" alt="Лотигип Cat Energy." width="202" height="59">
     </a>
     <nav class="nav">
-      <button class="nav__toggle" type="button">
+      <button class="nav__toggle nav__toggle--hidden" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="nav__wrapper">
@@ -43,18 +44,20 @@
     </section>
     <section class="programs">
       <h2 class="visually-hidden">Доступные программы питания Cat Energy</h2>
-      <div class="programs__wrapper programs__fit-image">
-        <h3 class="programs__subtitle">похудение</h3>
-        <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность
-          лазить по деревьям? Пора на диету! Cat Energy Slim поможет
-          вашему питомцу сбросить лишний вес.</p>
-        <a class="programs__link" href="./catalog.html">каталог slim</a>
-      </div>
-      <div class="programs__wrapper programs__weight-image">
-        <h3 class="programs__subtitle">набор массы</h3>
-        <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
-          поможет вашему коту нарастить необходимые мышцы!</p>
-        <a class="programs__link" href="./catalog.html">каталог pro</a>
+      <div class="progams__list-section">
+        <div class="programs__wrapper programs__fit-image">
+          <h3 class="programs__subtitle">похудение</h3>
+          <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность
+            лазить по деревьям? Пора на диету! Cat Energy Slim поможет
+            вашему питомцу сбросить лишний вес.</p>
+          <a class="programs__link" href="./catalog.html">каталог slim</a>
+        </div>
+        <div class="programs__wrapper programs__weight-image">
+          <h3 class="programs__subtitle">набор массы</h3>
+          <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+            поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="programs__link" href="./catalog.html">каталог pro</a>
+        </div>
       </div>
     </section>
     <section class="advantages">
@@ -102,17 +105,17 @@
     </section>
   </main>
   <footer class="footer">
+    <section class="footer__address">
+      <h2 class="visually-hidden">Наше местонахождение.</h2>
+      <img class="footer__address-embeded-map" src="./img/address-map-image.jpg" alt="Адрес на карте." width="1440"
+        height="440">
+      <div class="footer__address-headquarter-wrapper">
+        <h4 class="footer__address-headquarter-header">Приглашаем к сотрудничеству дилеров!</h4>
+        <p class="footer__address-headquarter-text">ул. Большая Конюшенная, д. 19/8</p>
+        <p class="footer__address-headquarter-text">Санкт-Петербург</p>
+      </div>
+    </section>
     <div class="footer__wrapper">
-      <section class="footer__address">
-        <h2 class="visually-hidden">Наше местонахождение.</h2>
-          <img class="footer__address-embeded-map" src="./img/address-map-image.jpg" alt="Адрес на карте." width="1440"
-            height="440">
-        <div class="footer__address-headquarter-wrapper">
-          <h4 class="footer__address-headquarter-header">Приглашаем к сотрудничеству дилеров!</h4>
-          <p class="footer__address-headquarter-text">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="footer__address-headquarter-text">Санкт-Петербург</p>
-        </div>
-      </section>
       <div class="footer__logo-wrapper">
         <a href="" class="footer__logo-link">
           <img class="footer__logo-image" src="./img/footer-mini-logo.svg" alt="Логотип Cat Energy." width="128"

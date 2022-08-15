@@ -1,4 +1,23 @@
-.programs {}
+.programs {
+  width: @mobile-width-only - @mobile-gap;
+  margin: 0 auto;
+
+    @media (min-width: @tablet-width) {
+      width: @tablet-width - @tablet-gap;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: @desktop-width - @desktop-gap;
+    }
+}
+
+.progams__list-section {
+  display: flex;
+  flex-direction: row;
+  column-gap: 80px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .programs__weight-image {
   background: url("../img/cat-fit-logo.svg") no-repeat center;
@@ -9,10 +28,18 @@
 }
 
 .programs__wrapper {
-  background-color: #F2F2F2;
+  background-color: @gray-color;
   padding: 30px 20px 18px;
   margin-bottom: 20px;
 
+  @media (min-width: @tablet-width) {
+    max-width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 570px;
+    padding: 77px 52px 55px;
+  }
 }
 
 .programs__subtitle {
@@ -25,7 +52,7 @@
   line-height: 36px;
   text-transform: uppercase;
 
-  color: #000000;
+  color: @font-color;
 }
 
 .programs__description {}

@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -13,7 +14,7 @@
         <img class="header__logo-img" src="./img/logo-desktop.svg" alt="Лотигип Cat Energy." width="202" height="59">
       </a>
       <nav class="nav">
-        <button class="nav__toggle" type="button">
+        <button class="nav__toggle nav__toggle--hidden" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="nav__wrapper">
@@ -104,25 +105,25 @@
               <span class="additional-demands__control-label">Витамины</span>
             </label>
           </fieldset>
-            <button class="form__button button" type="submit">отправить заявку</button><br>
-            <span class="form__button-description">* — Обязательные поля</span>
+          <button class="form__button button" type="submit">отправить заявку</button><br>
+          <span class="form__button-description">* — Обязательные поля</span>
         </form>
       </section>
 
     </main>
 
     <footer class="footer">
+      <section class="footer__address">
+        <h2 class="visually-hidden">Наше местонахождение.</h2>
+        <img class="footer__address-embeded-map" src="./img/address-map-image.jpg" alt="Адрес на карте." width="1440"
+          height="440">
+        <div class="footer__address-headquarter-wrapper">
+          <h4 class="footer__address-headquarter-header">Приглашаем к сотрудничеству дилеров!</h4>
+          <p class="footer__address-headquarter-text">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="footer__address-headquarter-text">Санкт-Петербург</p>
+        </div>
+      </section>
       <div class="footer__wrapper">
-        <section class="footer__address">
-          <h2 class="visually-hidden">Наше местонахождение.</h2>
-          <img class="footer__address-embeded-map" src="./img/address-map-image.jpg" alt="Адрес на карте." width="1440"
-            height="440">
-          <div class="footer__address-headquarter-wrapper">
-            <h4 class="footer__address-headquarter-header">Приглашаем к сотрудничеству дилеров!</h4>
-            <p class="footer__address-headquarter-text">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="footer__address-headquarter-text">Санкт-Петербург</p>
-          </div>
-        </section>
         <div class="footer__logo-wrapper">
           <a href="" class="footer__logo-link">
             <img class="footer__logo-image" src="./img/footer-mini-logo.svg" alt="Логотип Cat Energy." width="128"

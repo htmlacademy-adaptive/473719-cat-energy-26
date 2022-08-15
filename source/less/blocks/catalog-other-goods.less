@@ -1,27 +1,112 @@
 .catalog-other-goods {
-  padding-top: 25px;
+  margin: 0 auto;
+
+  width: @mobile-width-only - @mobile-gap;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width - @tablet-gap;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width - @desktop-gap;
+  }
+}
+
+.catalog-other-goods__wrapper {
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    column-gap: 79px;
+  }
 }
 
 .catalog-other-goods__header {
   margin: 0 0 36px;
 }
 
-.catalog-other-goods__list {}
+.catalog-other-goods__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: max-content;
+}
 
 .catalog-other-goods__item {
-  padding: 13px 0 19px;
+  display: grid;
+  grid-template-rows: 30px 30px 40px;
+  grid-row-gap: 20px;
 
-  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 368px 331px;
+    grid-template-rows: auto auto;
+    grid-column-gap: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 274px 288px 260px;
+    grid-column-gap: 38px;
+  }
 }
 
 .catalog-other-goods__item-header {
   margin: 0;
 }
 
-.catalog-other-goods__info {}
+.catalog-other-goods__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-.catalog-other-goods__info-item-weight {}
+.catalog-other-goods__info-item-weight {
+  margin: 0;
+  padding: 0;
+}
 
-.catalog-other-goods__info-item-price {}
+.catalog-other-goods__info-item-price {
+  margin: 0;
+  padding: 0;
+}
 
-.catalog-other-goods__item-button {}
+.catalog-other-goods__item-button {
+  width: auto;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    grid-column: 1/ -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    grid-column: 3;
+  }
+}
+
+.catalog-other-goods__promotion {
+  width: @mobile-width-only - @mobile-gap;
+  background: url("../img/gift-background.png") no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width - @tablet-gap;
+    background-size: cover;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    margin: 0;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    z-index: 1;
+    width: 83px;
+    height: 83px;
+    background: url("../img/icon-gift.svg") no-repeat center;
+    fill: @white-color;
+  }
+}
+
+.catalog-other-goods__promotion-text {}

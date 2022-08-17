@@ -7,25 +7,18 @@
 
   margin: 0 auto;
   padding: 0;
-
-  @media (min-width: @tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-
-  @media (min-width: @desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   width: @mobile-width-only - @mobile-gap;
 
   @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
     width: @tablet-width - @tablet-gap;
   }
 
+
   @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
     width: @desktop-width - @desktop-gap;
   }
 }
@@ -41,7 +34,5 @@
     height: 59px;
   }
 }
-
-
 
 .header__logo-img {}

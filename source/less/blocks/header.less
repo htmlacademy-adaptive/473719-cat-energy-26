@@ -38,6 +38,7 @@
 .header__mobile-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo {
@@ -57,18 +58,44 @@
 }
 
 .header__toggle {
-  width: 25x;
-  height: 25px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+
+  margin: 0;
+  padding: 0;
+
+  width: 50px;
+  height: 50px;
   border: none;
   background-color: @white-color;
 
-  &--hidden {
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 
-    @media (min-width: @desktop-width) {
-      display: none;
-    }
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+
+  &:hover {}
+
+  &:active {}
+}
+
+.header__toggle--closed {
+  &::before {
+    position: absolute;
+    content: "";
+    left: 7px;
+    top: 15px;
+
+    width: 36px;
+    height: 2px;
+    background-color: @font-color;
+
+    box-shadow:
+      0 8px 0 0 (@font-color),
+      0 16px 0 0 (@font-color);
   }
 }

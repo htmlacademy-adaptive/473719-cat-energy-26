@@ -19,7 +19,7 @@
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    width: @desktop-width - @desktop-gap;
+    min-width: @desktop-width - @desktop-gap;
   }
 }
 
@@ -35,4 +35,6 @@
   }
 }
 
-.header__logo-img {}
+.header__logo-img {
+  display: block;
+}

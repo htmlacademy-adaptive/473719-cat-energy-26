@@ -23,8 +23,25 @@
   }
 }
 
+.header__logo-icon {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.header__mobile-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header__logo {
-  height: 38px;
+  height: auto;
 
   @media (min-width: @tablet-width) {
     height: 52px;
@@ -37,4 +54,21 @@
 
 .header__logo-img {
   display: block;
+}
+
+.header__toggle {
+  width: 25x;
+  height: 25px;
+  border: none;
+  background-color: @white-color;
+
+  &--hidden {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
 }

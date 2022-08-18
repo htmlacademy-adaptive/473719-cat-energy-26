@@ -10,13 +10,22 @@
 
 <body class="page__body">
   <header class="header">
-    <a class="header__logo">
-      <img class="header__logo-img" src="./img/logo-desktop.svg" alt="Лотигип Cat Energy." width="202" height="59">
-    </a>
-    <nav class="nav">
-      <button class="nav__toggle nav__toggle--hidden" type="button">
+    <div class="header__mobile-wrapper">
+      <a class="header__logo-mobile">
+        <img src="./img/logo-mobile-icon.svg" alt="Иконка." class="header__logo-icon">
+      </a>
+      <a class="header__logo">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+          <img class="header__logo-img" src="./img/logo-mobile.svg" alt="Лотигип Cat Energy.">
+        </picture>
+      </a>
+      <button class="header__toggle header__toggle--hidden" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+    </div>
+    <nav class="nav">
       <div class="nav__wrapper">
         <ul class="nav__list">
           <li class="nav__list-item nav__list-item--current">

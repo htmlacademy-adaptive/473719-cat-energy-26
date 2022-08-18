@@ -10,35 +10,29 @@
 
 <body class="page__body">
   <header class="header">
-    <div class="header__mobile-wrapper">
-      <a class="header__logo-mobile">
-        <img src="./img/logo-mobile-icon.svg" alt="Иконка." class="header__logo-icon">
-      </a>
-      <a class="header__logo">
+    <nav class="nav nav--opened nav--nojs">
+      <img src="./img/logo-mobile-icon.svg" alt="Иконка для мобильной версии." class="nav__logo-icon">
+      <a class="nav__logo">
         <picture>
           <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
-          <img class="header__logo-img" src="./img/logo-mobile.svg" alt="Лотигип Cat Energy.">
+          <img class="nav__logo-img" src="./img/logo-mobile.svg" alt="Лотигип Cat Energy.">
         </picture>
       </a>
-      <button class="header__toggle header__toggle--closed header__toggle--nojs" type="button">
+      <button class="nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-    </div>
-    <nav class="nav">
-      <div class="nav__wrapper">
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <a href="./index.html">Главная</a>
-          </li>
-          <li class="nav__list-item nav__list-item--current">
-            <a href="">Каталог продукции</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="./form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="./index.html">Главная</a>
+        </li>
+        <li class="nav__list-item nav__list-item--current">
+          <a href="">Каталог продукции</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="./form.html">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="main">
@@ -255,6 +249,7 @@
       </div>
     </div>
   </footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>

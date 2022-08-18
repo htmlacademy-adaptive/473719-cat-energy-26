@@ -25,9 +25,17 @@
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 36px;
   color: @font-color;
+
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
 }
 
 .intro__description {

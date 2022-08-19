@@ -1,19 +1,17 @@
 .intro {
   padding: 27px 0 20px;
-  margin: 0 auto;
 
   background:
     url("../img/intro-image.png") no-repeat center,
     url("../img/intro-background.png") no-repeat center;
 
-  width: @mobile-width-only - @mobile-gap;
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width - @tablet-gap;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: @desktop-width - @desktop-gap;
+    width: 92%;
+    max-width: 1220px;
   }
 }
 

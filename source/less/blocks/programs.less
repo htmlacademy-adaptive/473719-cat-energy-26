@@ -1,20 +1,17 @@
 .programs {
-  width: @mobile-width-only - @mobile-gap;
   margin: 0 auto;
+  padding: 0;
+  width: 320px;
 
-    @media (min-width: @tablet-width) {
-      width: @tablet-width - @tablet-gap;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: @desktop-width - @desktop-gap;
-    }
+  @media (min-width: @tablet-width) {
+    width: 92%;
+    max-width: 1220px;
+  }
 }
 
 .progams__list-section {
   display: flex;
   flex-direction: row;
-  column-gap: 80px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -33,11 +30,14 @@
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    max-width: 708px;
+    width: 100%;
+  }
+
+  @media (min-width: 840px) {
+    width: 46%;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 570px;
     padding: 77px 52px 55px;
   }
 }

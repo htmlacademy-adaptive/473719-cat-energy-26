@@ -6,12 +6,26 @@
     url("../img/intro-background.png") no-repeat center;
 
   margin: 0 auto;
-  padding: 0;
+  padding: 27px 0 20px;
   width: 320px;
 
   @media (min-width: @tablet-width) {
     width: 92%;
     max-width: 1220px;
+
+    padding: 34px 207px 526px 90px;
+
+    text-align: left;
+
+    background: url("../img/intro-image.png") no-repeat center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 93px 221px 199px 79px;
+
+    background:
+    url("../img/intro-image.png") no-repeat center,
+    url("../img/intro-background.png") no-repeat center;
   }
 }
 
@@ -25,14 +39,24 @@
   font-weight: @font-weight;
   font-size: 36px;
   line-height: 36px;
-  color: @font-color;
+  color: @white-color;
 
   text-align: center;
+
+  margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    color: @font-color;
+
     text-align: left;
+
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 40px;
   }
 }
 
@@ -42,7 +66,33 @@
   font-weight: @font-weight;
   font-size: 20px;
   line-height: 20px;
-  color: @font-color;
+  color: @white-color;
+
+  margin-bottom: 302px;
+
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 49px;
+    color: @font-color;
+
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
-.intro__button {}
+.intro__button {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 244px;
+
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}

@@ -15,13 +15,23 @@
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 36px;
   color: @font-color;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 71px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 72px;
+  }
 }
 
-.advantages__wrapper {
-}
+.advantages__wrapper {}
 
 .advantages__list {
   padding: 0;
@@ -33,24 +43,45 @@
   flex-wrap: wrap;
   justify-content: space-between;
   column-gap: 70px;
+  row-gap: 20px;
+}
+
+.advantages__item {
+  padding-left: 100px;
+
+  @media (min-width: @tablet-width) {}
+
+  @media (min-width: @desktop-width) {}
 }
 
 .advantages__item-nutritional {
-  max-width: 230px;
-  background: url("../img/icon-nutrition.svg") no-repeat center;
+  background: url("../img/icon-nutrition.svg") no-repeat left;
+
+  @media (min-width: @tablet-width) {
+    width: 230px;
+  }
 }
 
 .advantages__item-easy-to-use {
-  max-width: 246px;
-  background: url("../img/icon-easy-to-use.svg") no-repeat center;
+  background: url("../img/icon-easy-to-use.svg") no-repeat left;
+
+  @media (min-width: @tablet-width) {
+    width: 246px;
+  }
 }
 
 .advantages__item-fast-tu-use {
-  max-width: 248px;
-  background: url("../img/icon-ready-to-use.svg") no-repeat center;
+  background: url("../img/icon-ready-to-use.svg") no-repeat left;
+
+  @media (min-width: @tablet-width) {
+    width: 247px;
+  }
 }
 
 .advantages__item-results {
-  max-width: 250px;
-  background: url("../img/icon-fast-result.svg") no-repeat center;
+  background: url("../img/icon-fast-result.svg") no-repeat left;
+
+  @media (min-width: @tablet-width) {
+    width: 249px;
+  }
 }

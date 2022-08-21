@@ -20,6 +20,21 @@
   background: url("../img/cat-gym-logo.svg") no-repeat center;
   background-position: 22px 24px;
   background-size: 50px 50px;
+
+  @media (min-width: @tablet-width) {
+    background-position: 85% 50%;
+    background-size: 200px 211px;
+  }
+
+  @media (min-width: 1000px) {
+    background-position: 33px 47px;
+    background-size: 134px 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 33px 47px;
+    background-size: 134px 100px;
+  }
 }
 
 .programs__fit-image {
@@ -27,17 +42,22 @@
   background-position: 22px 24px;
   background-size: 50px 50px;
 
-  @media (min-height: @desktop-width) {
-    background: url("../img/cat-fit-logo.svg") no-repeat center;
+  @media (min-width: @tablet-width) {
+    background-position: 85% 50%;
+    background-size: 200px 211px;
+  }
+
+  @media (min-width: 1000px) {
     background-position: 52px 41px;
     background-size: 100px 106px;
   }
 
-  @media (min-height: @tablet-width) {
-    background: url("../img/cat-fit-logo.svg") no-repeat center;
-    background-position: 62% 12%;
-    background-size: 200px 211px;
+  @media (min-width: @desktop-width) {
+    background-position: 52px 41px;
+    background-size: 100px 106px;
   }
+
+
 }
 
 .programs__wrapper {
@@ -47,10 +67,12 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
+    padding: 77px 316px 139px 52px;
   }
 
-  @media (min-width: 900px) {
+  @media (min-width: 1000px) {
     width: 46%;
+    padding: 77px 52px 55px;
   }
 
   @media (min-width: @desktop-width) {
@@ -60,6 +82,7 @@
 
 .programs__subtitle {
   margin: 0 0 29px;
+  padding-left: 91px;
 
   font-family: @font;
   font-style: @font-style;
@@ -67,26 +90,52 @@
   font-size: 24px;
   line-height: 37x;
   text-transform: uppercase;
-  text-align: center;
+
 
   color: @font-color;
 
-  @media (min-height: @tablet-width) {
+  @media (min-width: @tablet-width) {
+    margin: 0 0 24px;
+    padding: 0;
+
     font-size: 36px;
     line-height: 36px;
     text-align: left;
-
-    margin: 0 0 24px;
   }
 
-  @media (min-height: @desktop-width) {
-    text-align: center;
-
+  @media (min-width: 1000px) {
+    padding-left: 40%;
     margin: 0 0 73px;
+
+    text-align: none;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 37%;
+    margin: 0 0 73px;
+
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
-.programs__description {}
+.programs__description {
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    min-width: 340px;
+  }
+
+  @media (min-width: 1000px) {
+
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: auto;
+  }
+}
 
 .programs__link {
   font-family: @font;

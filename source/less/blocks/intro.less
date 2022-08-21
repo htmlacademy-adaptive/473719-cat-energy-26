@@ -1,13 +1,14 @@
 .intro {
-  padding: 27px 0 20px;
-
-  background:
-    url("../img/intro-image.png") no-repeat center,
-    url("../img/intro-background.png") no-repeat center;
-
   margin: 0 auto;
   padding: 27px 0 20px;
   width: 320px;
+
+  background-image:
+    url("../img/intro-image-mobile.png"),
+    url("../img/intro-background-mobile.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: center, center;
+  background-position-y: 167px, 0;
 
   @media (min-width: @tablet-width) {
     width: 92%;
@@ -18,14 +19,20 @@
     text-align: left;
 
     background: url("../img/intro-image.png") no-repeat center;
+    background-size: 709px 609px;
+    background-position-y: 235px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 93px 221px 199px 79px;
 
-    background:
-    url("../img/intro-image.png") no-repeat center,
-    url("../img/intro-background.png") no-repeat center;
+    background-image:
+      url("../img/index-image-desktop.png"),
+      url("../img/index-background-filter-desktop.svg"),
+      url("../img/index-background-desktop.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position-y: 50%, 50%, -200px;
+    background-size: 552px 499px, 100% 100%, 1043px 696px;
   }
 }
 
@@ -92,7 +99,5 @@
 
   }
 
-  @media (min-width: @desktop-width) {
-
-  }
+  @media (min-width: @desktop-width) {}
 }

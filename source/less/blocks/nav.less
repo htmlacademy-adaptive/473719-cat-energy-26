@@ -77,7 +77,7 @@
 }
 
 .nav--opened {
-  padding-bottom: 0;
+  padding-bottom: 16px;
 }
 
 .nav--opened .nav__toggle {
@@ -137,16 +137,19 @@
 }
 
 .nav__list {
+  position: absolute;
+  top: 66px;
+
   margin: auto 0 0;
   padding: 0;
   list-style: none;
-  width: 100%;
 
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
+    position: initial;
     flex-wrap: nowrap;
     flex-grow: 1;
     max-width: 70%;
@@ -168,6 +171,7 @@
 
 .nav__list-item {
   display: block;
+  background-color: @white-color;
 
   font-size: 18px;
   line-height: 24px;
@@ -183,6 +187,10 @@
   text-align: center;
   border-top: 1px solid #E6E6E6;
   border-bottom: 1px solid #E6E6E6;
+
+  @media (min-width: 320px) {
+    width: 320px;
+  }
 
   @media (min-width: @desktop-width) {
     border: none;

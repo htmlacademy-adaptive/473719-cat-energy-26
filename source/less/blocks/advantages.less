@@ -1,16 +1,24 @@
 .advantages {
-  margin: 0 auto;
+  margin: 0 auto 53px;
   padding: 0;
   width: 320px;
 
   @media (min-width: @tablet-width) {
     width: 92%;
     max-width: 1220px;
+
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 26px;
   }
 }
 
 .advantage__header {
   margin: 0 0 40px;
+
+
 
   font-family: @font;
   font-style: @font-style;
@@ -41,21 +49,32 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  column-gap: 70px;
   row-gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    column-gap: 22%;
+  }
+
+  @media (min-width: 1000px) {
+    column-gap: 70px;
+  }
 }
 
 .advantages__item {
   padding-left: 100px;
 
-  @media (min-width: @tablet-width) {}
+  @media (min-width: @tablet-width) {
+    padding: 111px 0 57px;
+    text-align: left;
+  }
 
-  @media (min-width: @desktop-width) {}
+  @media (min-width: @desktop-width) {
+  }
 }
 
 .advantages__item-nutritional {
   background: url("../img/icon-nutrition.svg") no-repeat left;
+  background-position-y: 0px;
 
   @media (min-width: @tablet-width) {
     width: 230px;
@@ -64,6 +83,7 @@
 
 .advantages__item-easy-to-use {
   background: url("../img/icon-easy-to-use.svg") no-repeat left;
+  background-position-y: 0px;
 
   @media (min-width: @tablet-width) {
     width: 246px;
@@ -72,6 +92,7 @@
 
 .advantages__item-fast-tu-use {
   background: url("../img/icon-ready-to-use.svg") no-repeat left;
+  background-position-y: 0px;
 
   @media (min-width: @tablet-width) {
     width: 247px;
@@ -80,6 +101,7 @@
 
 .advantages__item-results {
   background: url("../img/icon-fast-result.svg") no-repeat left;
+  background-position-y: 0px;
 
   @media (min-width: @tablet-width) {
     width: 249px;

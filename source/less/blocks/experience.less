@@ -7,40 +7,137 @@
   @media (min-width: @tablet-width) {
     width: 92%;
     max-width: 1220px;
+
+    background-color: #F2F2F2;
   }
 }
 
 .experience__wrapper {
+  display: block;
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 50% 28%;
+    grid-column-gap: 22%;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .experience__header {
   margin: 0;
+  padding: 25px 0 40px;
+
+  grid-column: 1/-1;
 
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 40px;
   color: @font-color;
+  background-color: @white-color;
+
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    padding: 43px 0 63px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 43px 0 76px;
+  }
 }
 
-.experience__description {}
+.experience__description {
+  width: auto;
+  margin: 0;
+  padding: 0 0 20px;
+
+  grid-column: 1/-1;
+
+  @media (min-width: @tablet-width) {
+    width: 90%;
+    padding: 0 0 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 436px;
+    padding: 70px 0 69px;
+  }
+}
+
+.experience__result-wrapper {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-start;
+  }
+}
 
 .experience__result {
+  display: block;
+  margin: 0;
+  padding: 15px 0 18px;
+
+  width: 124px;
+
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
   font-size: 30px;
   line-height: 37px;
   color: @font-color;
+
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 15px 0 25px;
+    width: 162px;
+  }
+}
+
+.experience__example-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 5px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+    column-gap: 0;
+  }
+
+  @media (min-width: 1000px) {
+    justify-content: flex-start;
+  }
 }
 
 .experience__example-price {
+  display: block;
+  padding: 20px 0 12px;
+
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
   font-size: 20px;
   line-height: 20px;
   color: @font-color;
+
+  @media (min-width: @tablet-width) {
+    padding: 11px 0 4px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 55px 42px 0 0;
+  }
 }

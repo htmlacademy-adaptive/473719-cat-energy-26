@@ -209,13 +209,15 @@
   <footer class="footer">
     <section class="footer__address">
       <h2 class="visually-hidden">Наше местонахождение.</h2>
-      <img class="footer__address-embeded-map" src="./img/address-map-image.jpg" alt="Адрес на карте." width="1440"
-        height="440">
       <div class="footer__address-headquarter-wrapper">
         <h4 class="footer__address-headquarter-header">Приглашаем к сотрудничеству дилеров!</h4>
-        <p class="footer__address-headquarter-text">ул. Большая Конюшенная, д. 19/8</p>
-        <p class="footer__address-headquarter-text">Санкт-Петербург</p>
+        <p class="footer__address-headquarter-text">ул. Большая Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
       </div>
+      <picture class="footer__address-embeded-map">
+        <source media="(min-width: 1000px)" srcset="./img/adress-map-image-desktop.png">
+        <source media="(min-width: 768px)" srcset="./img/adress-map-image-tablet.png">
+        <img srcset="./img/adress-map-image-mobile.png" alt="Адрес на карте.">
+      </picture>
     </section>
     <div class="footer__wrapper">
       <div class="footer__logo-wrapper">

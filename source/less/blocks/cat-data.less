@@ -2,9 +2,23 @@
 @line-height: 30px;
 
 .cat-data {
+  display: flex;
+  flex-direction: column;
+
+  @media(min-width: @tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 570px;
+  }
+
 }
 
 .cat-data__name {
+  display: flex;
+  justify-content: space-between;
+
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
@@ -22,9 +36,14 @@
   font-size: @font-size;
   line-height: @line-height;
   color: @font-color;
+
+  width: 80%;
 }
 
 .cat-data__weight {
+  display: flex;
+  justify-content: space-between;
+
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
@@ -42,9 +61,14 @@
   font-size: @font-size;
   line-height: @line-height;
   color: @font-color;
+
+  width: 85%
 }
 
 .cat-data__age {
+  display: flex;
+  justify-content: space-between;
+
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
@@ -62,4 +86,6 @@
   font-size: @font-size;
   line-height: @line-height;
   color: @font-color;
+
+  width: 78%;
 }

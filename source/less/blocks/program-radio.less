@@ -1,39 +1,46 @@
-@font-size: 20px;
-@line-height: 30px;
+.program-radio {
+  display: flex;
+  flex-direction: column;
 
-.progam-radio {}
+  row-gap: 20px;
 
-.program-radio__weight-loss {
-  font-family: @font;
-  font-style: @font-style;
-  font-weight: @font-weight;
-  font-size: @font-size;
-  line-height: @line-height;
+  padding: 39px 0 24px;
   color: @font-color;
+  border: none;
+
+  @media(min-width: @tablet-width) {
+    border: 1px solid #E7E7E7;
+    margin: 0 37px 0 42px;
+    padding: 25px 0 30px 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 570px;
+    margin: 0;
+    padding: 30px 0 30px 28px;
+  }
 }
 
-.program-radio__weight-loss-input {}
-
-.program-radio__control-label {}
-
-.program-radio__weight-gain {
-  font-family: @font;
-  font-style: @font-style;
-  font-weight: @font-weight;
-  font-size: @font-size;
-  line-height: @line-height;
-  color: @font-color;
-}
-
-.program-radio__weight-gain-input {}
-
+.program-radio__weight-loss,
+.program-radio__weight-gain,
 .program-radio__need-advice {
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
-  font-size: @font-size;
-  line-height: @line-height;
+  font-size: 16px;
+  line-height: 18px;
   color: @font-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-.program-radio__need-advice-input {}
+.program-radio__weight-loss-input,
+.program-radio__weight-gain-input,
+.program-radio__need-advice-input {
+
+}
+
+.program-radio__control-label {}

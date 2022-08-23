@@ -11,13 +11,25 @@
 
 .form__header {
   margin: 0;
+  padding:27px 0 37px;
 
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 36px;
   color: @font-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+
+    padding:64px 0 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding:72px 0 56px;
+  }
 }
 
 .form__description {}

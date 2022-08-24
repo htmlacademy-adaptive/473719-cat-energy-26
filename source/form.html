@@ -92,26 +92,30 @@
           </fieldset>
           <fieldset class="form__additional-demands additional-demands">
             <legend class="additional-demands__title">Дополнительно</legend>
-            <label class="additional-demands__sweetener">
-              <input type="checkbox" class="additional-demands__sweetener-input" name="sweetener" checked
-                value="sweetener">
-              <span class="additional-demands__control-label">Сахарозаменитель</span>
-            </label>
-            <label class="additional-demands__water">
-              <input type="checkbox" class="additional-demands__water-input" name="water" value="water">
-              <span class="additional-demands__control-label">Питьевая вода</span>
-            </label>
-            <label class="additional-demands__milk">
-              <input type="checkbox" class="additional-demands__milk-input" name="milk" value="milk">
-              <span class="additional-demands__control-label">Молоко</span>
-            </label>
-            <label class="additional-demands__vitamins">
-              <input type="checkbox" class="additional-demands__vitamins-input" name="vitamins" value="vitamins">
-              <span class="additional-demands__control-label">Витамины</span>
-            </label>
+            <div class="form__additionals-wrapper">
+              <label class="additional-demands__sweetener">
+                <input type="checkbox" class="additional-demands__sweetener-input" name="sweetener" checked
+                  value="sweetener">
+                <span class="additional-demands__control-label">Сахарозаменитель</span>
+              </label>
+              <label class="additional-demands__water">
+                <input type="checkbox" class="additional-demands__water-input" name="water" value="water">
+                <span class="additional-demands__control-label">Питьевая вода</span>
+              </label>
+              <label class="additional-demands__milk">
+                <input type="checkbox" class="additional-demands__milk-input" name="milk" value="milk">
+                <span class="additional-demands__control-label">Молоко</span>
+              </label>
+              <label class="additional-demands__vitamins">
+                <input type="checkbox" class="additional-demands__vitamins-input" name="vitamins" value="vitamins">
+                <span class="additional-demands__control-label">Витамины</span>
+              </label>
+            </div>
           </fieldset>
-          <button class="form__button button" type="submit">отправить заявку</button><br>
-          <span class="form__button-description">* — Обязательные поля</span>
+          <div class="form__ending-wrapper">
+            <button class="form__button button" type="submit">отправить заявку</button>
+            <span class="form__button-description">* — Обязательные поля</span>
+          </div>
         </form>
       </section>
 

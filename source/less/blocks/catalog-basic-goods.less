@@ -1,14 +1,11 @@
 .catalog-basic-goods {
   margin: 0 auto;
 
-  width: @mobile-width-only - @mobile-gap;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width - @tablet-gap;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: @desktop-width - @desktop-gap;
+    width: 92%;
+    max-width: 1220px;
   }
 }
 
@@ -45,7 +42,7 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 324px 324px;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px;
     grid-row-gap: 142px;
 
@@ -54,7 +51,7 @@
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 245px 245px 245px 245px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 80px;
     grid-row-gap: 144px;
 

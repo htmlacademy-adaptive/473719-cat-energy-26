@@ -41,35 +41,37 @@
         <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <h2 class="visually-hidden">Форма подбора корма вашему питомцу</h2>
         <form action="https://echo.htmlacademy.ru/" method="get" class="form_items">
-          <fieldset class="form__cat-data cat-data">
-            <label class="cat-data__name">
-              <span class="cat-data__name-label">ИМЯ:*</span>
-              <input type="text" class="cat-data__name-input" name="cat-name" placeholder="БАРСИК">
-            </label>
-            <label class="cat-data__weight">
-              <span class="cat-data__weight-label">Вес (кг):*</span>
-              <input type="number" class="cat-data__weight-input" name="cat-weight" placeholder="7">
-            </label>
-            <label class="cat-data__age">
-              <span class="cat-data__age-label">Возраст (лет):</span>
-              <input type="number" class="cat-data__age-input" name="cat-age" placeholder="9">
-            </label>
-          </fieldset>
-          <fieldset class="form__program-radio program-radio">
-            <label class="program-radio__weight-loss">
-              <input type="radio" class="program-radio__weight-loss-input" name="programs" checked
-                value="weight-loss-on">
-              <span class="program-radio__control-label">Похудение</span>
-            </label>
-            <label class="program-radio__weight-gain">
-              <input type="radio" class="program-radio__weight-gain-input" name="programs" value="weight-gain-on">
-              <span class="program-radio__control-label">Набор массы</span>
-            </label>
-            <label class="program-radio__need-advice">
-              <input type="radio" class="program-radio__need-advice-input" name="programs" value="need-advice-on">
-              <span class="program-radio__control-label">Не знаю (Нужен ваш совет)</span>
-            </label>
-          </fieldset>
+          <div class="form__desktop-wrapper">
+            <fieldset class="form__cat-data cat-data">
+              <label class="cat-data__name">
+                <span class="cat-data__name-label">ИМЯ:*</span>
+                <input type="text" class="cat-data__name-input" name="cat-name" placeholder="БАРСИК">
+              </label>
+              <label class="cat-data__weight">
+                <span class="cat-data__weight-label">Вес (кг):*</span>
+                <input type="number" class="cat-data__weight-input" name="cat-weight" placeholder="7">
+              </label>
+              <label class="cat-data__age">
+                <span class="cat-data__age-label">Возраст (лет):</span>
+                <input type="number" class="cat-data__age-input" name="cat-age" placeholder="9">
+              </label>
+            </fieldset>
+            <fieldset class="form__program-radio program-radio">
+              <label class="program-radio__weight-loss">
+                <input type="radio" class="program-radio__weight-loss-input" name="programs" checked
+                  value="weight-loss-on">
+                <span class="program-radio__control-label">Похудение</span>
+              </label>
+              <label class="program-radio__weight-gain">
+                <input type="radio" class="program-radio__weight-gain-input" name="programs" value="weight-gain-on">
+                <span class="program-radio__control-label">Набор массы</span>
+              </label>
+              <label class="program-radio__need-advice">
+                <input type="radio" class="program-radio__need-advice-input" name="programs" value="need-advice-on">
+                <span class="program-radio__control-label">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </fieldset>
+          </div>
           <fieldset class="form__owner-data owner-data">
             <legend class="owner-data__title">Контактные данные (владельца кота)</legend>
             <label class="owner-data__email">

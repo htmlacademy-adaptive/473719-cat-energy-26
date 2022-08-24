@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
 
-  row-gap: 20px;
+  justify-content: space-between;
+  padding: 0;
 
-  padding: 39px 0 24px;
-  margin: 0;
+  margin: 39px 0 24px;
 
   color: @font-color;
 
@@ -14,13 +14,14 @@
   @media (min-width: @tablet-width) {
     width: 100%;
 
-    padding: 66px 37px 72px 41px;
+    margin: 66px 0 72px 0;
+    padding: 0 37px 0 41px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 570px;
 
-    padding: 66px 0 69px;
+    margin: 66px 0 69px;
   }
 }
 
@@ -51,7 +52,6 @@
   display: block;
 
   padding-right: 13px;
-  flex-basis: auto;
 }
 
 .cat-data__name-input,

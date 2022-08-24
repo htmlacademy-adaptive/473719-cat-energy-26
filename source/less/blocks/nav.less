@@ -1,3 +1,4 @@
+/* stylelint-disable block-no-empty */
 .nav {
   background-color: @white-color;
   color: @font-color;
@@ -165,7 +166,6 @@
     max-width: 40%;
     flex-direction: row;
     column-gap: 33px;
-
   }
 }
 
@@ -185,8 +185,8 @@
 
   padding: 22px 49px;
   text-align: center;
-  border-top: 1px solid #E6E6E6;
-  border-bottom: 1px solid #E6E6E6;
+  border-top: 1px solid rgb(230, 230, 230);
+  border-bottom: 1px solid rgb(230, 230, 230);
 
   @media (min-width: 320px) {
     width: 320px;
@@ -203,7 +203,9 @@
     padding: 0 0 10px;
   }
 
-  &--current {}
+  &--current {
+
+  }
 
   & a {
     font-size: 18px;

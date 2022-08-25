@@ -2,14 +2,11 @@
 .catalog-other-goods {
   margin: 0 auto;
 
-  width: @mobile-width-only - @mobile-gap;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width - @tablet-gap;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: @desktop-width - @desktop-gap;
+    width: 92%;
+    max-width: 1220px;
   }
 }
 
@@ -49,9 +46,9 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 28px;
 
-    grid-template-columns: 368px 331px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    grid-column-gap: 38px;
+    grid-column-gap: 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -85,9 +82,13 @@
 .catalog-other-goods__item-button {
   width: auto;
 
+  padding: 10px auto;
+
   @media (min-width: @tablet-width) {
     width: auto;
     grid-column: 1/ -1;
+
+    padding: 7px auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -101,7 +102,7 @@
   background: url("../img/gift-background.png") no-repeat;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width - @tablet-gap;
+    width: 100%;
     background-size: cover;
   }
 
@@ -119,7 +120,4 @@
     background: url("../img/icon-gift.svg") no-repeat center;
     fill: @white-color;
   }
-}
-
-.catalog-other-goods__promotion-text {
 }

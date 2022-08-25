@@ -172,7 +172,7 @@
 
 .nav__list-item {
   display: block;
-  background-color: @white-color;
+  background-color: transparent;
 
   font-size: 18px;
   line-height: 24px;
@@ -191,10 +191,11 @@
 
   @media (min-width: 320px) {
     width: 320px;
-    padding: 10px 0;
+    padding: 22px 0;
   }
 
   @media (min-width: @desktop-width) {
+    padding: 10px 0;
     border: none;
   }
 
@@ -222,5 +223,11 @@
     @media (min-width: @tablet-width) {
       padding: 10px;
     }
+  }
+}
+
+.nav__list-item-intro a {
+  @media (min-width: @desktop-width) {
+    color: @white-color;
   }
 }

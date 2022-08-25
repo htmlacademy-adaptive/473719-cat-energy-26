@@ -64,7 +64,7 @@
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr minmax(40px);
+  grid-template-rows: 1fr minmax(40px);
 
   list-style-type: none;
 
@@ -91,7 +91,8 @@
 .catalog-basic-goods__card-image {
   @media (min-width: @tablet-width) {
     position: absolute;
-
+    left: 50%;
+    transform: translateX(-50%);
     top: -66px;
   }
 }

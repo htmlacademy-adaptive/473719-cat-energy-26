@@ -147,6 +147,14 @@
   padding: 78px 0 25px;
 
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 161px 37px 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 160px 38px 41px;
+  }
 }
 
 .catalog-basic-goods__more-link {
@@ -164,10 +172,21 @@
   color: @font-color;
 
   text-transform: uppercase;
+
+  margin-bottom: 8px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 23 px;
+  }
 }
 
 .catalog-basic-goods__more-text {
   color: @font-color;
+  margin-bottom: 21 px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 87px;
+  }
 }
 
 .catalog-basic-goods__more-button {

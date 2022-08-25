@@ -172,7 +172,6 @@
 
 .nav__list-item {
   display: block;
-  background-color: transparent;
 
   font-size: 18px;
   line-height: 24px;
@@ -181,6 +180,7 @@
   font-style: @font-style;
   font-weight: @font-weight;
   color: @font-color;
+  background-color: @white-color;
 
   text-transform: uppercase;
 
@@ -202,6 +202,7 @@
   @media (min-width: @tablet-width) {
     width: auto;
     border: none;
+    background-color: transparent;
   }
 
   &--current {

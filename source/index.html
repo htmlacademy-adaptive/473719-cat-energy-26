@@ -98,13 +98,16 @@
       </div>
       <div class="explanation">
         <div class="explanation__photo-wrapper">
-
-
-
-          <img class="explanation__image-before" src="./img/fat-cat-image.png"
-            alt="Фотография тучного кота до приема корма Cat Energy." width="296" height="511">
-          <img class="explanation__image-after" src="./img/skinny-cat-image.png"
-            alt="Фотография похудевшего кота после приема корма Cat Energy." width="296" height="511">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/cat-tablet-before@1x.png">
+            <img class="explanation__image-before" srcset="./img/cat-mobile-before@1x.png"
+              alt="Фотография тучного кота до приема корма Cat Energy.">
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/cat-tablet-after@1x.png">
+            <img class="explanation__image-after" srcset="./img/cat-mobile-after@1x.png"
+              alt="Фотография похудевшего кота после приема корма Cat Energy.">
+          </picture>
         </div>
         <div class="explanation__range-wrapper">
           <span class="explanation__title">Было</span>

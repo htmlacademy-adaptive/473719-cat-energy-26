@@ -5,7 +5,7 @@
 
   @media (min-width: @tablet-width) {
     width: 92%;
-    max-width: 1220px;
+    max-width: @desktop-width - @desktop-gap - @desktop-gap;
   }
 }
 
@@ -99,6 +99,7 @@
 
 .catalog-basic-goods__card-header {
   margin: 0;
+  margin-bottom: 18px;
 
   font-family: @font;
   font-style: @font-style;
@@ -113,6 +114,8 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 24px;
+
+    margin-bottom: 21px;
   }
 
   @media (min-width: @desktop-width) {

@@ -16,7 +16,7 @@
 
   @media (min-width: @tablet-width) {
     width: 92%;
-    max-width: @desktop-width;
+    max-width: @desktop-width - @desktop-gap - @desktop-gap;
 
     padding: 34px 207px 526px 90px;
 
@@ -28,7 +28,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 100vw;
+    min-width: 100%;
 
     padding: 0;
     margin: -200px auto 82px;
@@ -49,7 +49,7 @@
 
 .intro__wrapper {
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
+    width: @desktop-width - @desktop-gap - @desktop-gap;
     margin: 0 auto;
 
     padding-top: 227px;

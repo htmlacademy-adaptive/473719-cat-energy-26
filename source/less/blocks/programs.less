@@ -6,7 +6,7 @@
 
   @media (min-width: @tablet-width) {
     width: 92%;
-    max-width: 1220px;
+    max-width: @desktop-width - @desktop-gap - @desktop-gap;
   }
 }
 
@@ -144,4 +144,17 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
+
+  &::after {
+    content: url("../img/icon-arrow.svg");
+    padding-left: 15px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 25px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 28px;
+    }
+  }
 }

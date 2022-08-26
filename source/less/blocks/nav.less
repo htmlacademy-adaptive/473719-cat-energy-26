@@ -15,12 +15,13 @@
 
   @media (min-width: @tablet-width) {
     width: 92%;
-    max-width: 1220px;
+    max-width: @desktop-width;
 
     padding: 26px 0 28px;
   }
 
   @media (min-width: @desktop-width) {
+    width: @desktop-width - @desktop-gap - @desktop-gap;
     padding: 53px 0 21px;
   }
 }

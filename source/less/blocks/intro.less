@@ -3,7 +3,7 @@
 .intro {
   margin: 0 auto;
   padding: 27px 0 20px;
-  width: 320px;
+  width: @mobile-width-only;
 
   background-image:
     url("../img/intro-image-mobile.png"),
@@ -111,11 +111,11 @@
 }
 
 .intro__button {
-  width: 100%;
+  margin: 0 auto;
+  width: @mobile-width-only - @mobile-gap - @mobile-gap;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     width: 244px;
   }
-
-  @media (min-width: @desktop-width) {}
 }

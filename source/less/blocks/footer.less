@@ -3,7 +3,7 @@
 .footer {
   margin: 0 auto;
   padding: 0;
-  width: 320px;
+  width: @mobile-width-only - @mobile-gap - @mobile-gap;
 
   @media (min-width: @tablet-width) {
     width: 92%;
@@ -34,8 +34,10 @@
 }
 
 .footer__address-embeded-map {
-  @media (min-width: @tablet-width) {
+  width: @mobile-width-only - @mobile-gap - @mobile-gap;
+  margin-left: @mobile-gap / -2;
 
+  @media (min-width: @tablet-width) {
     width: 100vw;
     margin-left: calc((100vw - 98%) / -2);
   }
@@ -46,7 +48,7 @@
   margin: 0;
   background-color: @white-color;
 
-  width: @mobile-width-only - @mobile-gap;
+  width: @mobile-width-only - @mobile-gap - @mobile-gap;
 
   display: flex;
   justify-content: space-between;
@@ -55,12 +57,10 @@
 
   @media (min-width: @tablet-width) {
     padding: 56px 0;
-
     width: 100%;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
     position: absolute;
     top: 95px;
     max-width: 565px;

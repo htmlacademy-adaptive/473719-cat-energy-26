@@ -1,30 +1,62 @@
+/* stylelint-disable block-no-empty */
 .programs {
-  width: @mobile-width-only - @mobile-gap;
   margin: 0 auto;
+  padding: 0;
+  width: 320px;
 
-    @media (min-width: @tablet-width) {
-      width: @tablet-width - @tablet-gap;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: @desktop-width - @desktop-gap;
-    }
+  @media (min-width: @tablet-width) {
+    width: 92%;
+    max-width: @desktop-width - @desktop-gap - @desktop-gap;
+  }
 }
 
 .progams__list-section {
   display: flex;
   flex-direction: row;
-  column-gap: 80px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .programs__weight-image {
-  background: url("../img/cat-fit-logo.svg") no-repeat center;
+  background: url("../img/cat-gym-logo.svg") no-repeat center;
+  background-position: 22px 24px;
+  background-size: 50px 50px;
+
+  @media (min-width: @tablet-width) {
+    background-position: 85% 50%;
+    background-size: 200px 211px;
+  }
+
+  @media (min-width: 1000px) {
+    background-position: 33px 47px;
+    background-size: 134px 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 33px 47px;
+    background-size: 134px 100px;
+  }
 }
 
 .programs__fit-image {
-  background: url("../img/cat-gym-logo.svg") no-repeat center;
+  background: url("../img/cat-fit-logo.svg") no-repeat center;
+  background-position: 22px 24px;
+  background-size: 50px 50px;
+
+  @media (min-width: @tablet-width) {
+    background-position: 85% 50%;
+    background-size: 200px 211px;
+  }
+
+  @media (min-width: 1000px) {
+    background-position: 52px 41px;
+    background-size: 100px 106px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 52px 41px;
+    background-size: 100px 106px;
+  }
 }
 
 .programs__wrapper {
@@ -33,29 +65,76 @@
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    max-width: 708px;
+    width: 100%;
+    padding: 77px 316px 139px 52px;
+  }
+
+  @media (min-width: 1000px) {
+    width: 46%;
+    padding: 77px 52px 55px;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 570px;
     padding: 77px 52px 55px;
   }
 }
 
 .programs__subtitle {
-  margin: 0;
+  margin: 0 0 29px;
+  padding-left: 91px;
 
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 37px;
   text-transform: uppercase;
 
+
   color: @font-color;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 24px;
+    padding: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+  }
+
+  @media (min-width: 1000px) {
+    padding-left: 40%;
+    margin: 0 0 73px;
+
+    text-align: none;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 37%;
+    margin: 0 0 73px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
-.programs__description {}
+.programs__description {
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    min-width: 340px;
+  }
+
+  @media (min-width: 1000px) {
+
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: auto;
+  }
+}
 
 .programs__link {
   font-family: @font;
@@ -65,4 +144,17 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
+
+  &::after {
+    content: url("../img/icon-arrow.svg");
+    padding-left: 15px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 25px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 28px;
+    }
+  }
 }

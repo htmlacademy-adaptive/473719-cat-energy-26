@@ -1,8 +1,32 @@
+/* stylelint-disable no-eol-whitespace */
+/* stylelint-disable block-no-empty */
 .additional-comment {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 0 24px;
+  margin: 0;
+
+  border: none;
+
+  color: @font-color;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    padding: 0 0 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 69px;
+  }
 }
 
 .additional-comment__title {
   margin: 0;
+  padding: 0 0 47px;
+  display: table;
+  float: left;
+  width: 100%;
 
   font-family: @font;
   font-style: @font-style;
@@ -10,15 +34,53 @@
   font-size: 24px;
   line-height: 26px;
   color: @font-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+
+    padding: 0 0 76px;
+  }
 }
 
-.additional-comment__text {}
+.additional-comment__text {
+  display: flex;
+  flex-direction: row;
 
-.additional-comment__text-input {
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
   font-size: 16px;
-  line-height: 18px;
-  color: @font-color;
+  line-height: 16px;
+  transform-style: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.additional-comment__text-input {
+  padding: 15px;
+
+  flex-grow: 1;
+  flex-basis: 70%;
+
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  font-size: 16px;
+  line-height: 16px;
+  transform-style: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    padding: 12px 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 8px 17px;
+  }
 }

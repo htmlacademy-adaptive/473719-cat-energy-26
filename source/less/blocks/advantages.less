@@ -1,13 +1,17 @@
 .advantages {
-  margin: 0 auto;
-  width: @mobile-width-only - @mobile-gap;
+  margin: 0 auto 53px;
+  padding: 0;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width - @tablet-gap;
+    width: 92%;
+    max-width: @desktop-width - @desktop-gap - @desktop-gap;
+
+    margin-bottom: 47px;
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width - @desktop-gap;
+    margin-bottom: 26px;
   }
 }
 
@@ -17,12 +21,20 @@
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 36px;
   color: @font-color;
-}
 
-.advantages__wrapper {
+  @media (min-width: @tablet-width) {
+    margin: 0 0 71px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 72px;
+  }
 }
 
 .advantages__list {
@@ -32,27 +44,60 @@
 
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
-  column-gap: 70px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    column-gap: 22%;
+  }
+
+  @media (min-width: 1000px) {
+    column-gap: 70px;
+  }
+}
+
+.advantages__item {
+  padding-left: 100px;
+
+  @media (min-width: @tablet-width) {
+    padding: 111px 0 57px;
+    text-align: left;
+  }
 }
 
 .advantages__item-nutritional {
-  max-width: 230px;
-  background: url("../img/icon-nutrition.svg") no-repeat center;
+  background: url("../img/icon-nutrition.svg") no-repeat left;
+  background-position-y: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 230px;
+  }
 }
 
 .advantages__item-easy-to-use {
-  max-width: 246px;
-  background: url("../img/icon-easy-to-use.svg") no-repeat center;
+  background: url("../img/icon-easy-to-use.svg") no-repeat left;
+  background-position-y: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 246px;
+  }
 }
 
 .advantages__item-fast-tu-use {
-  max-width: 248px;
-  background: url("../img/icon-ready-to-use.svg") no-repeat center;
+  background: url("../img/icon-ready-to-use.svg") no-repeat left;
+  background-position-y: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 247px;
+  }
 }
 
 .advantages__item-results {
-  max-width: 250px;
-  background: url("../img/icon-fast-result.svg") no-repeat center;
+  background: url("../img/icon-fast-result.svg") no-repeat left;
+  background-position-y: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 249px;
+  }
 }

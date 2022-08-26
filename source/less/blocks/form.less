@@ -1,44 +1,108 @@
+/* stylelint-disable block-no-empty */
 .form {
   margin: 0 auto;
-
-  width: @mobile-width-only - @mobile-gap;
+  padding: 0;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width - @tablet-gap;
+    width: 92%;
+    max-width: @desktop-width - @desktop-gap - @desktop-gap;
+    padding: 0 40px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width - @desktop-gap;
+    padding: 0;
+    margin: 0 auto;
   }
 }
 
 .form__header {
   margin: 0;
+  padding: 27px 0 37px;
 
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 36px;
   color: @font-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+
+    padding: 64px 0 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 72px 0 56px;
+  }
 }
 
-.form__description {}
+.form__desktop-wrapper {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-.form_items {}
+    grid-column-gap: 80px;
+  }
+}
 
-.form__cat-data {}
+.form__additionals-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 
-.form__program-radio {}
+  margin: 0;
 
-.form__owner-data {}
+  @media (min-width: @tablet-width) {
+    padding: 0;
 
-.form__additional-comment {}
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 44px;
+  }
 
-.form__additional-demands {}
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 60px;
+  }
+}
+
+.form__ending-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+  margin: 0 0 32px;
+
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+
+    margin: 0 0 72px;
+
+    align-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 82px;
+  }
+}
 
 .form__button {
   border: 0;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+
+  }
 }
 
-.form__button-description {}
+.form__button-description {
+
+}

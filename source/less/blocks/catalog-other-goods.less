@@ -1,19 +1,16 @@
+/* stylelint-disable block-no-empty */
 .catalog-other-goods {
   margin: 0 auto;
 
-  width: @mobile-width-only - @mobile-gap;
+  width: 320px;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width - @tablet-gap;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: @desktop-width - @desktop-gap;
+    width: 92%;
+    max-width: @desktop-width - @desktop-gap - @desktop-gap;
   }
 }
 
 .catalog-other-goods__wrapper {
-
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
@@ -22,39 +19,72 @@
 }
 
 .catalog-other-goods__header {
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  font-size: 24px;
+  line-height: 24px;
+  color: @font-color;
+
   margin: 0 0 36px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 80px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 81px;
+  }
 }
 
 .catalog-other-goods__list {
   padding: 0;
   margin: 0;
   list-style: none;
-  width: max-content;
 }
 
 .catalog-other-goods__item {
+  margin-bottom: 19px;
+
   display: grid;
   grid-template-rows: 30px 30px 40px;
   grid-row-gap: 20px;
 
-
   @media (min-width: @tablet-width) {
-    grid-template-columns: 368px 331px;
+    margin-bottom: 28px;
+
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    grid-column-gap: 38px;
+    grid-column-gap: 60px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 274px 288px 260px;
+    grid-template-columns: 274px 288px 257px;
     grid-column-gap: 38px;
   }
 }
 
 .catalog-other-goods__item-header {
   margin: 0;
+
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  font-size: 16px;
+  line-height: 16px;
+  color: @font-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .catalog-other-goods__info {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -73,9 +103,13 @@
 .catalog-other-goods__item-button {
   width: auto;
 
+  padding: 10px auto;
+
   @media (min-width: @tablet-width) {
     width: auto;
     grid-column: 1/ -1;
+
+    padding: 7px auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -89,7 +123,7 @@
   background: url("../img/gift-background.png") no-repeat;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width - @tablet-gap;
+    width: 100%;
     background-size: cover;
   }
 
@@ -108,5 +142,3 @@
     fill: @white-color;
   }
 }
-
-.catalog-other-goods__promotion-text {}

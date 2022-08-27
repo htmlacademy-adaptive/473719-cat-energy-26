@@ -17,8 +17,8 @@
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 36px;
   color: @font-color;
 
   @media (min-width: @tablet-width) {
@@ -195,4 +195,18 @@
 .catalog-basic-goods__more-button {
   background-color: @gray-color;
   color: @font-color;
+}
+
+.catalog-basic-goods__underline {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 150vw;
+  left: -50vw;
+  border: 0;
+  border-top: 1px solid hsl(0, 0%, 85%);
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

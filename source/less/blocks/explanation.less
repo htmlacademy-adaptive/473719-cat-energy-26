@@ -1,5 +1,6 @@
 /* stylelint-disable block-no-empty */
 .explanation {
+  position: relative;
   margin: 0 auto;
   padding: 0;
   width: @mobile-width-only - @mobile-gap - @mobile-gap;
@@ -10,13 +11,34 @@
   }
 }
 
-.explanation__photo-wrapper {
-}
-
 .explanation__image-before {
+  position: absolute;
+
+  top: 120px;
+
+  @media (min-width: @tablet-width) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -120px;
+  }
 }
 
 .explanation__image-after {
+  position: absolute;
+
+  top: 120px;
+
+  @media (min-width: @tablet-width) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -120px;
+  }
 }
 
 .explanation__range-wrapper {

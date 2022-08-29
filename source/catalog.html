@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <link rel="icon" href="./favicon.ico"> <!-- 32×32 -->
+  <link rel="manifest" href="./manifest.webmanifest">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -38,6 +40,7 @@
   <main class="main">
     <section class="catalog-basic-goods">
       <h1 class="catalog-basic-goods__header">Каталог продукции</h1>
+      <hr class="catalog-basic-goods__underline"/>
       <ul class="catalog-basic-goods__list">
         <li class="catalog-basic-goods__card">
           <img class="catalog-basic-goods__card-image" src="./img/catalog-card-chicken-500.png"
@@ -57,6 +60,7 @@
           </div>
           <a class="catalog-basic-goods__button button" href="">заказать</a>
         </li>
+        <hr class="catalog-basic-goods__underline"/>
         <li class="catalog-basic-goods__card">
           <img class="catalog-basic-goods__card-image" src="./img/catalog-card-chicken-1000.png"
             alt="Изображение кошачьего корма с курицей. Вес 1000 грамм." width="168" height="206">
@@ -75,14 +79,14 @@
           </div>
           <a class="catalog-basic-goods__button button" href="">заказать</a>
         </li>
+        <hr class="catalog-basic-goods__underline"/>
         <li class="catalog-basic-goods__card">
           <img class="catalog-basic-goods__card-image" src="./img/catalog-card-fish-500.png"
             alt="Изображение кошачьего корма с рыбой. Вес 500 грамм." width="163" height="174">
           <div class="catalog-basic-goods__card-wrapper">
             <a href="" class="catalog-basic-goods__card-link">
               <h2 class="catalog-basic-goods__card-header">Cat Energy PRO<br> 500 г</h2>
-            </a>
-            <dl class="catalog-basic-goods__card-info">
+            </a> <dl class="catalog-basic-goods__card-info">
               <dt class="catalog-basic-goods__card-info-category">Масса</dt>
               <dd class="catalog-basic-goods__card-info-value">500г.</dd>
               <dt class="catalog-basic-goods__card-info-category">Вкус</dt>
@@ -93,6 +97,7 @@
           </div>
           <a class="catalog-basic-goods__button button" href="">заказать</a>
         </li>
+        <hr class="catalog-basic-goods__underline"/>
         <li class="catalog-basic-goods__card">
           <img class="catalog-basic-goods__card-image" src="./img/catalog-card-fish-1000.png"
             alt="Изображение кошачьего корма с рыбой. Вес 1000 грамм." width="168" height="200">
@@ -111,6 +116,7 @@
           </div>
           <a class="catalog-basic-goods__button button" href="">заказать</a>
         </li>
+        <hr class="catalog-basic-goods__underline"/>
         <li class="catalog-basic-goods__card">
           <img class="catalog-basic-goods__card-image" src="./img/catalog-card-buckweat-500.png"
             alt="Изображение кошачьего корма с гречкой. Вес 500 грамм." width="161" height="171">
@@ -129,6 +135,7 @@
           </div>
           <a class="catalog-basic-goods__button button" href="">заказать</a>
         </li>
+        <hr class="catalog-basic-goods__underline"/>
         <li class="catalog-basic-goods__card">
           <img class="catalog-basic-goods__card-image" src="./img/catalog-card-backweat-1000.png"
             alt="Изображение кошачьего корма с гречкой. Вес 1000 грамм." width="168" height="200">
@@ -147,6 +154,7 @@
           </div>
           <a class="catalog-basic-goods__button button" href="">заказать</a>
         </li>
+        <hr class="catalog-basic-goods__underline"/>
         <li class="catalog-basic-goods__card">
           <img class="catalog-basic-goods__card-image" src="./img/catalog-card-rice-500.png"
             alt="Изображение кошачьего корма с рисом. Вес 500 грамм." width="163" height="174">
@@ -165,6 +173,7 @@
           </div>
           <a class="catalog-basic-goods__button button" href="">заказать</a>
         </li>
+        <hr class="catalog-basic-goods__underline"/>
         <li class="catalog-basic-goods__more">
           <a href="" class="catalog-basic-goods__more-link">
             <h2 class="catalog-basic-goods__more-header">Показать еще 100500 товаров</h2>
@@ -173,6 +182,7 @@
           <a class="catalog-basic-goods__more-button button" href="">показать
             все</a>
         </li>
+        <hr class="catalog-basic-goods__underline"/>
       </ul>
     </section>
     <section class="catalog-other-goods">
@@ -221,51 +231,58 @@
 
   </main>
   <footer class="footer">
-    <section class="footer__address">
-      <h2 class="visually-hidden">Наше местонахождение.</h2>
-      <div class="footer__address-headquarter-wrapper">
-        <h4 class="footer__address-headquarter-header">Приглашаем к сотрудничеству дилеров!</h4>
-        <p class="footer__address-headquarter-text">ул. Большая Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
-      </div>
+    <div class="footer__adress-color-wrapper">
+      <section class="footer__address">
+        <h2 class="visually-hidden">Наше местонахождение.</h2>
+        <div class="footer__address-headquarter-wrapper">
+          <h4 class="footer__address-headquarter-header">Приглашаем к сотрудничеству дилеров!</h4>
+          <p class="footer__address-headquarter-text">ул. Большая Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
+        </div>
+      </section>
+    </div>
+    <div class="footer__adress-map-wrapper">
       <picture>
         <source media="(min-width: 1000px)" srcset="./img/adress-map-image-desktop.jpg">
         <source media="(min-width: 768px)" srcset="./img/adress-map-image-tablet.jpg">
         <img class="footer__address-embeded-map" srcset="./img/adress-map-image-mobile.jpg" alt="Адрес на карте.">
       </picture>
-    </section>
-    <div class="footer__wrapper">
-      <div class="footer__logo-wrapper">
-        <a href="" class="footer__logo-link">
-          <img class="footer__logo-image" src="./img/footer-mini-logo.svg" alt="Логотип Cat Energy." width="128"
-            height="24">
-        </a>
-      </div>
-      <ul class="footer__social-list">
-        <li class="footer__social-item">
-          <a href="" class="footer__social-link"><img class="footer__social-item-icon"
-              src="./img/footer-vkontakte-logo.svg" alt="Наша страница во Втоктантке." width="30" height="17">
+    </div>
+    <div class="footer__background-wrapper">
+      <div class="footer__wrapper">
+        <div class="footer__logo-wrapper">
+          <a href="" class="footer__logo-link">
+            <img class="footer__logo-image" src="./img/footer-mini-logo.svg" alt="Логотип Cat Energy." width="128"
+              height="24">
           </a>
-        </li>
-        <li class="footer__social-item">
-          <a href="" class="footer__social-link"><img class="footer__social-item-icon"
-              src="./img/footer-youtube-logo.svg" alt="Наш канал на Ютуб." width="28" height="22">
+        </div>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="" class="footer__social-link"><img class="footer__social-item-icon"
+                src="./img/footer-vkontakte-logo.svg" alt="Наша страница во Втоктантке." width="30" height="17">
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="" class="footer__social-link"><img class="footer__social-item-icon"
+                src="./img/footer-youtube-logo.svg" alt="Наш канал на Ютуб." width="28" height="22">
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="" class="footer__social-link"><img class="footer__social-item-icon"
+                src="./img/footer-telegram-logo.svg" alt="Наш канал в Телеграме." width="28" height="22">
+            </a>
+          </li>
+        </ul>
+        <div class="footer__html-academy-wrapper">
+          <a href="" class="footer__html-academy-link">
+            <img class="footer__html-academy-logo" src="./img/html-academy-logo-footer.png"
+              alt="Сайт создан HTML-academy." width="163" height="34">
           </a>
-        </li>
-        <li class="footer__social-item">
-          <a href="" class="footer__social-link"><img class="footer__social-item-icon"
-              src="./img/footer-telegram-logo.svg" alt="Наш канал в Телеграме." width="28" height="22">
-          </a>
-        </li>
-      </ul>
-      <div class="footer__html-academy-wrapper">
-        <a href="" class="footer__html-academy-link">
-          <img class="footer__html-academy-logo" src="./img/html-academy-logo-footer.png"
-            alt="Сайт создан HTML-academy." width="163" height="34">
-        </a>
+        </div>
       </div>
     </div>
+
   </footer>
-  <script src="./script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

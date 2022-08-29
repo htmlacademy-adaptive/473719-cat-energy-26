@@ -1,9 +1,35 @@
 /* stylelint-disable block-closing-brace-space-after */
 /* stylelint-disable block-no-empty */
 .footer {
+  background-color: @gray-color;
+  width: 100vw;
+  max-width: 100%;
+}
+
+.footer__adress-color-wrapper {
+  background-color: @white-color;
+  width: 100vw;
+  max-width: 100%;
+}
+
+.footer__background-wrapper,
+.footer__adress-map-wrapper {
   margin: 0 auto;
   padding: 0;
-  width: 320px;
+  width: @mobile-width-only - @mobile-gap - @mobile-gap;
+
+  @media (min-width: @tablet-width) {
+    width: 92%;
+    max-width: 1220px;
+  }
+}
+
+.footer__address {
+  position: relative;
+
+  margin: 0 auto;
+  padding: 0;
+  width: @mobile-width-only - @mobile-gap - @mobile-gap;
 
   @media (min-width: @tablet-width) {
     width: 92%;
@@ -18,8 +44,6 @@
   align-items: center;
   justify-content: center;
 
-  background-color: @gray-color;
-
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
@@ -29,13 +53,13 @@
   }
 }
 
-.footer__address {
-  position: relative;
-}
-
 .footer__address-embeded-map {
-  @media (min-width: @tablet-width) {
+  margin: 0;
+  padding: 0;
+  width: @mobile-width-only;
+  margin-left: -@mobile-gap;
 
+  @media (min-width: @tablet-width) {
     width: 100vw;
     margin-left: calc((100vw - 98%) / -2);
   }
@@ -46,7 +70,7 @@
   margin: 0;
   background-color: @white-color;
 
-  width: @mobile-width-only - @mobile-gap;
+  width: @mobile-width-only - @mobile-gap - @mobile-gap;
 
   display: flex;
   justify-content: space-between;
@@ -54,13 +78,10 @@
   column-gap: 13px;
 
   @media (min-width: @tablet-width) {
-    padding: 56px 0;
-
     width: 100%;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
     position: absolute;
     top: 95px;
     max-width: 565px;
@@ -123,10 +144,12 @@
 
 .footer__logo-link {}
 
-.footer__logo-image {}
+.footer__logo-image {
+  object-fit: contain;
+}
 
 .footer__social-list {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 
   display: flex;
@@ -141,7 +164,9 @@
 
 .footer__social-link {}
 
-.footer__social-item-icon {}
+.footer__social-item-icon {
+  object-fit: contain;
+}
 
 .footer__html-academy-wrapper {
   display: flex;
@@ -154,4 +179,6 @@
 
 .footer__html-academy-link {}
 
-.footer__html-academy-logo {}
+.footer__html-academy-logo {
+  object-fit: contain;
+}

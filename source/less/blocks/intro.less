@@ -14,6 +14,10 @@
   background-position-y: 167px, 0, 0;
   background-size: 280px 270px, 100% 302px, 100%;
 
+  @media (min-resolution: 2dppx) {
+    background: url("../img/intro-image-mobile@2x.png") no-repeat center;
+  }
+
   @media (min-width: @tablet-width) {
     width: 92%;
     max-width: @desktop-width - @desktop-gap - @desktop-gap;
@@ -22,9 +26,13 @@
 
     text-align: left;
 
-    background: url("../img/intro-image.png") no-repeat center;
+    background: url("../img/intro-image-tablet.png") no-repeat center;
     background-size: 709px 609px;
     background-position-y: 235px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/intro-image-tablet@2x.png") no-repeat center;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -40,6 +48,10 @@
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 55% 214px, 0, 50vw center;
     background-size: 552px 499px, 100vw, contain;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/intro-image-desktop@2x.png") no-repeat center;
+    }
   }
 
   @media (min-width: 2000px) {

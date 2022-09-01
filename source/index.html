@@ -108,15 +108,25 @@
             <picture>
               <source media="(min-width: 768px)" type="image/webp" srcset="./img/cat-tablet-before@1x.webp 1x,
               ./img/cat-tablet-before@2x.webp 2x" widht="560" height="512">
-              <img class="explanation__image-before" src="./img/cat-mobile-before@1x.webp" srcset="./img/cat-mobile-before@1x.webp 1x,
-              ./img/cat-mobile-before@2x.webp 2x" alt="Фотография тучного кота до приема корма Cat Energy." width="280"
+              <source type="image/webp" srcset="./img/cat-mobile-before@1x.webp 1x,
+              ./img/cat-mobile-before@2x.webp 2x" width="280" height="256">
+
+              <source media="(min-width: 768px)" srcset="./img/cat-tablet-before@1x.png 1x,
+              ./img/cat-tablet-before@2x.png 2x" widht="560" height="512">
+              <img class="explanation__image-before" src="./img/cat-mobile-before@1x.png" srcset="./img/cat-mobile-before@1x.png 1x,
+              ./img/cat-mobile-before@2x.png 2x" alt="Фотография тучного кота до приема корма Cat Energy." width="280"
                 height="256">
             </picture>
             <picture>
               <source media="(min-width: 768px)" type="image/webp" srcset="./img/cat-tablet-after@1x.webp 1x,
               ./img/cat-tablet-after@2x.webp 2x" widht="560" height="512">
-              <img class="explanation__image-after" src="./img/cat-mobile-after@1x.webp" srcset="./img/cat-mobile-after@1x.webp 1x,
-              ./img/cat-mobile-after@2x.webp 2x" alt="Фотография похудевшего кота после приема корма Cat Energy."
+              <source type="image/webp" srcset="./img/cat-mobile-after@1x.webp 1x,
+              ./img/cat-mobile-after@2x.webp 2x" width="280" height="256">
+
+              <source media="(min-width: 768px)" srcset="./img/cat-tablet-after@1x.png 1x,
+                ./img/cat-tablet-after@2x.png 2x" widht="560" height="512">
+              <img class="explanation__image-after" src="./img/cat-mobile-after@1x.png" srcset="./img/cat-mobile-after@1x.png 1x,
+              ./img/cat-mobile-after@2x.png 2x" alt="Фотография похудевшего кота после приема корма Cat Energy."
                 width="280" height="256">
             </picture>
             <span class="explanation__title">Было</span>

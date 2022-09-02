@@ -13,12 +13,13 @@
 <body class="page__body">
   <header class="header">
     <nav class="nav nav--closed nav--nojs">
-      <img src="./img/logo-mobile-icon.svg" alt="Иконка для мобильной версии." class="nav__logo-icon">
+      <img src="./img/logo-mobile-icon.svg" alt="Иконка для мобильной версии." class="nav__logo-icon" width="33"
+        height="38">
       <a href="" class="nav__logo">
         <picture>
-          <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
-          <img class="nav__logo-img" src="./img/logo-mobile.svg" alt="Лотигип Cat Energy.">
+          <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg" width="174" heigh="52">
+          <img class="nav__logo-img" src="./img/logo-mobile.svg" alt="Лотигип Cat Energy." width="101" height="18">
         </picture>
       </a>
       <button class="nav__toggle" type="button">
@@ -105,14 +106,28 @@
           </div>
           <div class="explanation">
             <picture>
-              <source media="(min-width: 768px)" srcset="./img/cat-tablet-before@1x.png">
-              <img class="explanation__image-before" srcset="./img/cat-mobile-before@1x.png"
-                alt="Фотография тучного кота до приема корма Cat Energy.">
+              <source media="(min-width: 768px)" type="image/webp" srcset="./img/cat-tablet-before@1x.webp 1x,
+              ./img/cat-tablet-before@2x.webp 2x" widht="560" height="512">
+              <source type="image/webp" srcset="./img/cat-mobile-before@1x.webp 1x,
+              ./img/cat-mobile-before@2x.webp 2x" width="280" height="256">
+
+              <source media="(min-width: 768px)" srcset="./img/cat-tablet-before@1x.png 1x,
+              ./img/cat-tablet-before@2x.png 2x" widht="560" height="512">
+              <img class="explanation__image-before" src="./img/cat-mobile-before@1x.png" srcset="./img/cat-mobile-before@1x.png 1x,
+              ./img/cat-mobile-before@2x.png 2x" alt="Фотография тучного кота до приема корма Cat Energy." width="280"
+                height="256">
             </picture>
             <picture>
-              <source media="(min-width: 768px)" srcset="./img/cat-tablet-after@1x.png">
-              <img class="explanation__image-after" srcset="./img/cat-mobile-after@1x.png"
-                alt="Фотография похудевшего кота после приема корма Cat Energy.">
+              <source media="(min-width: 768px)" type="image/webp" srcset="./img/cat-tablet-after@1x.webp 1x,
+              ./img/cat-tablet-after@2x.webp 2x" widht="560" height="512">
+              <source type="image/webp" srcset="./img/cat-mobile-after@1x.webp 1x,
+              ./img/cat-mobile-after@2x.webp 2x" width="280" height="256">
+
+              <source media="(min-width: 768px)" srcset="./img/cat-tablet-after@1x.png 1x,
+                ./img/cat-tablet-after@2x.png 2x" widht="560" height="512">
+              <img class="explanation__image-after" src="./img/cat-mobile-after@1x.png" srcset="./img/cat-mobile-after@1x.png 1x,
+              ./img/cat-mobile-after@2x.png 2x" alt="Фотография похудевшего кота после приема корма Cat Energy."
+                width="280" height="256">
             </picture>
             <span class="explanation__title">Было</span>
             <input class="explanation__scale" type="range" id="range" min="1" max="100" value="50">
@@ -136,40 +151,61 @@
     </div>
     <div class="footer__adress-map-wrapper">
       <picture>
-        <source media="(min-width: 1000px)" srcset="./img/adress-map-image-desktop.jpg">
-        <source media="(min-width: 768px)" srcset="./img/adress-map-image-tablet.jpg">
-        <img class="footer__address-embeded-map" srcset="./img/adress-map-image-mobile.jpg" alt="Адрес на карте.">
+        <source media="(min-width: 1000px)" srcset="./img/adress-map-image-desktop.jpg 1x,
+          ./img/adress-map-image-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)"
+          srcset="./img/adress-map-image-tablet.jpg 1x, ./img/adress-map-image-tablet@2x.jpg 2x">
+        <img class="footer__address-embeded-map" src="./img/adress-map-image-mobile.jpg"
+          srcset="./img/adress-map-image-mobile@2x.jpg 2x" alt="Адрес на карте.">
       </picture>
     </div>
     <div class="footer__background-wrapper">
       <div class="footer__wrapper">
         <div class="footer__logo-wrapper">
           <a href="" class="footer__logo-link">
-            <img class="footer__logo-image" src="./img/footer-mini-logo.svg" alt="Логотип Cat Energy." width="128"
-              height="24">
+            <svg class="footer__logo-image" aria-label="Логотип Cat Energy." width="128" height="24" focuasble="false">
+              <use xlink:href="./img/sprite/sprite.svg#footer-mini-logo"></use>
+            </svg>
           </a>
         </div>
         <ul class="footer__social-list">
           <li class="footer__social-item">
-            <a href="" class="footer__social-link"><img class="footer__social-item-icon"
-                src="./img/footer-vkontakte-logo.svg" alt="Наша страница во Втоктантке." width="30" height="17">
+            <a href="" class="footer__social-link">
+              <svg class="footer__social-item-icon" aria-label="Наша страница во Втоктантке." width="30" height="17"
+                focuasble="false">
+                <use xlink:href="./img/sprite/sprite.svg#footer-vkontakte-logo"></use>
+              </svg>
             </a>
           </li>
           <li class="footer__social-item">
-            <a href="" class="footer__social-link"><img class="footer__social-item-icon"
-                src="./img/footer-youtube-logo.svg" alt="Наш канал на Ютуб." width="28" height="22">
+            <a href="" class="footer__social-link">
+              <svg class="footer__social-item-icon" aria-label="Наш канал на Ютуб." width="28" height="22"
+                focuasble="false">
+                <use xlink:href="./img/sprite/sprite.svg#footer-youtube-logo"></use>
+              </svg>
             </a>
           </li>
           <li class="footer__social-item">
-            <a href="" class="footer__social-link"><img class="footer__social-item-icon"
-                src="./img/footer-telegram-logo.svg" alt="Наш канал в Телеграме." width="28" height="22">
+            <a href="" class="footer__social-link">
+              <svg class="footer__social-item-icon" aria-label="Наш канал в Телеграме." width="28" height="22"
+                focuasble="false">
+                <use xlink:href="./img/sprite/sprite.svg#footer-telegram-logo"></use>
+              </svg>
             </a>
           </li>
         </ul>
         <div class="footer__html-academy-wrapper">
           <a href="" class="footer__html-academy-link">
-            <img class="footer__html-academy-logo" src="./img/html-academy-logo-footer.png"
-              alt="Сайт создан HTML-academy." width="163" height="34">
+            <svg class="footer__html-academy-logo" aria-label="Сайт создан HTML-academy." width="114" height="18"
+              focuasble="false">
+              <use xlink:href="./img/sprite/sprite.svg#html-academy-logo-footer"></use>
+            </svg>
+          </a>
+          <a href="" class="footer__html-academy-link">
+            <svg class="footer__html-academy-logo" aria-label="Сайт создан HTML-academy." width="27" height="34"
+              focuasble="false">
+              <use xlink:href="./img/sprite/sprite.svg#html-academy-logo-icon-footer"></use>
+            </svg>
           </a>
         </div>
       </div>

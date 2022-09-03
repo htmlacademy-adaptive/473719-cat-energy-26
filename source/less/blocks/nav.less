@@ -187,7 +187,7 @@
     max-width: 70%;
     justify-content: flex-end;
     flex-direction: row;
-    column-gap: 20px;
+    column-gap: 33px;
   }
 
   @media (min-width: @desktop-width) {
@@ -202,6 +202,7 @@
 
 .nav__list-item {
   display: block;
+  position: relative;
 
   font-size: 18px;
   line-height: 24px;
@@ -236,7 +237,7 @@
   }
 
   & a {
-    padding: 22px;
+    padding: 22px 0;
 
     font-size: 18px;
     line-height: 24px;
@@ -248,7 +249,7 @@
     text-decoration: none;
 
     @media (min-width: @tablet-width) {
-      padding: 10px;
+      padding: 10px 0;
     }
 
     &:hover {
@@ -270,6 +271,25 @@
 .nav__list-item:active,
 .nav__list-item--current {
   &::after {
-    //здесь отрисовать палочку
+    @media (min-width: @tablet-width) {
+
+
+      position: absolute;
+      top: calc(100% - 12px);
+      left: 0;
+
+      z-index: 2;
+
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: rgba(104, 183, 56, 1);
+    }
+
+    @media (min-width: @desktop-width) {
+      top: calc(100%);
+      background-color: hsl(0, 0%, 100%);
+    }
   }
 }

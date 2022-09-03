@@ -1,4 +1,6 @@
 .advantages {
+  counter-reset: advantages;
+
   margin: 0 auto 53px;
   padding: 0;
   width: @mobile-width-only - @mobile-gap - @mobile-gap;
@@ -50,6 +52,7 @@
 
   @media (min-width: @tablet-width) {
     column-gap: 22%;
+    row-gap: 77px;
   }
 
   @media (min-width: 1000px) {
@@ -58,12 +61,46 @@
 }
 
 .advantages__item {
+  position: relative;
   padding-left: 100px;
+
+  z-index: 2;
 
   @media (min-width: @tablet-width) {
     padding: 111px 0 57px;
     text-align: left;
   }
+
+  &::before {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+
+      position: absolute;
+      top: -40px;
+      left: 50%;
+
+      counter-increment: advantages;
+      content: counter(advantages);
+      z-index: 1;
+
+      font-family: @font;
+      font-style: @font-style;
+      font-weight: @font-weight;
+      font-size: 280px;
+      line-height: 280px;
+      color: hsl(0, 0%, 95%);
+    }
+  }
+}
+
+.advantages__description {
+  padding: 0;
+  margin: 0;
+
+  position: relative;
+  z-index: 2;
 }
 
 .advantages__item-nutritional {

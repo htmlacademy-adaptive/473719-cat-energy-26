@@ -63,10 +63,12 @@
 .advantages__item {
   position: relative;
   padding-left: 100px;
+  height: 80px;
 
   z-index: 2;
 
   @media (min-width: @tablet-width) {
+    height: auto;
     padding: 111px 0 57px;
     text-align: left;
   }
@@ -96,11 +98,15 @@
 }
 
 .advantages__description {
-  padding: 0;
+  padding: 5px 0 0;
   margin: 0;
 
   position: relative;
   z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .advantages__item-nutritional {

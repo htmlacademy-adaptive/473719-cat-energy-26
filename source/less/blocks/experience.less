@@ -154,6 +154,50 @@
   }
 }
 
+.experience__result-weight {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+    content: "снижение веса";
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 100%;
+
+    width: 77px;
+
+    padding: 0 12px;
+    background-color: hsl(0, 0%, 95%);
+  }
+}
+
+.experience__result-days {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+    content: "затрачено времени";
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 100%;
+
+    width: 90px;
+
+    padding: 0 14px;
+    background-color: hsl(0, 0%, 95%);
+  }
+}
+
 .experience__example-wrapper {
   display: flex;
   flex-wrap: wrap;

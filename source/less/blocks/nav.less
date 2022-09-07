@@ -28,6 +28,7 @@
 
 .nav__logo-icon {
   object-fit: contain;
+  cursor: pointer;
 
   @media (min-width: @desktop-width) {
     display: none;
@@ -35,6 +36,14 @@
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
   }
 }
 
@@ -52,6 +61,14 @@
   @media (min-width: @tablet-width) {
     width: 202px;
     height: 59px;
+  }
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
   }
 }
 
@@ -170,7 +187,7 @@
     max-width: 70%;
     justify-content: flex-end;
     flex-direction: row;
-    column-gap: 20px;
+    column-gap: 33px;
   }
 
   @media (min-width: @desktop-width) {
@@ -183,8 +200,10 @@
   }
 }
 
-.nav__list-item {
+.nav__list-item,
+.nav__list-item-intro {
   display: block;
+  position: relative;
 
   font-size: 18px;
   line-height: 24px;
@@ -218,12 +237,8 @@
     background-color: transparent;
   }
 
-  &--current {
-
-  }
-
   & a {
-    padding: 22px;
+    padding: 22px 0;
 
     font-size: 18px;
     line-height: 24px;
@@ -235,7 +250,15 @@
     text-decoration: none;
 
     @media (min-width: @tablet-width) {
-      padding: 10px;
+      padding: 10px 0;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:disabled {
+      opacity: 0.3;
     }
   }
 }
@@ -243,5 +266,57 @@
 .nav__list-item-intro a {
   @media (min-width: @desktop-width) {
     color: @white-color;
+  }
+}
+
+.nav__list-item:active,
+.nav__list-item--current {
+  &::after {
+    @media (min-width: @tablet-width) {
+
+
+      position: absolute;
+      top: calc(100% - 12px);
+      left: 0;
+
+      z-index: 2;
+
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: rgba(104, 183, 56, 1);
+    }
+
+    @media (min-width: @desktop-width) {
+      top: calc(100%);
+      // background-color: hsl(0, 0%, 100%);
+    }
+  }
+}
+
+.nav__list-item-intro:active,
+.nav__list-item-intro--current {
+  &::after {
+    @media (min-width: @tablet-width) {
+
+
+      position: absolute;
+      top: calc(100% - 12px);
+      left: 0;
+
+      z-index: 2;
+
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: rgba(104, 183, 56, 1);
+    }
+
+    @media (min-width: @desktop-width) {
+      top: calc(100%);
+      background-color: hsl(0, 0%, 100%);
+    }
   }
 }

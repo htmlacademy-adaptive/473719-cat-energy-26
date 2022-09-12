@@ -41,8 +41,10 @@
     </header>
     <main class="main">
       <section class="form">
-        <h1 class="form__header">Подбор программы</h1>
-        <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <div class="form__header-wrapper">
+          <h1 class="form__header">Подбор программы</h1>
+          <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        </div>
         <h2 class="visually-hidden">Форма подбора корма вашему питомцу</h2>
         <form action="https://echo.htmlacademy.ru/" method="get" class="form_items">
           <div class="form__desktop-wrapper">
@@ -79,43 +81,50 @@
             </fieldset>
           </div>
           <fieldset class="form__owner-data owner-data">
-            <legend class="owner-data__title">Контактные данные (владельца кота)</legend>
-            <label class="owner-data__email">
-              <span class="owner-data__email-label">E-mail:*</span>
-              <input type="email" class="owner-data__email-input" name="owner-email" placeholder="кuklachev@gmail.com">
-            </label>
-            <label class="owner-data__phone">
-              <span class="owner-data__phone-label">Телефон:*</span>
-              <input type="tel" class="owner-data__phone-input" name="owner-phone" placeholder="+7(___)___-__-__">
-            </label>
+            <div class="owner-data__wrapper">
+              <legend class="owner-data__title">Контактные данные (владельца кота)</legend>
+              <label class="owner-data__email">
+                <span class="owner-data__email-label">E-mail:*</span>
+                <input type="email" class="owner-data__email-input" name="owner-email"
+                  placeholder="кuklachev@gmail.com">
+              </label>
+              <label class="owner-data__phone">
+                <span class="owner-data__phone-label">Телефон:*</span>
+                <input type="tel" class="owner-data__phone-input" name="owner-phone" placeholder="+7(___)___-__-__">
+              </label>
+            </div>
           </fieldset>
           <fieldset class="form__additional-comment additional-comment">
-            <legend class="additional-comment__title">Комментарий</legend>
-            <label class="additional-comment__text">
-              <textarea class="additional-comment__text-input" name="additional-comment"
-                placeholder="Расскажите обо всех повадках кота" rows="3"></textarea>
-            </label>
+            <div class="additional-comment__wrapper">
+              <legend class="additional-comment__title">Комментарий</legend>
+              <label class="additional-comment__text">
+                <textarea class="additional-comment__text-input" name="additional-comment"
+                  placeholder="Расскажите обо всех повадках кота" rows="3"></textarea>
+              </label>
+            </div>
           </fieldset>
           <fieldset class="form__additional-demands additional-demands">
-            <legend class="additional-demands__title">Дополнительно</legend>
-            <div class="form__additionals-wrapper">
-              <label class="additional-demands__sweetener">
-                <input type="checkbox" class="additional-demands__sweetener-input" name="sweetener" checked
-                  value="sweetener">
-                <span class="additional-demands__control-label">Сахарозаменитель</span>
-              </label>
-              <label class="additional-demands__water">
-                <input type="checkbox" class="additional-demands__water-input" name="water" value="water">
-                <span class="additional-demands__control-label">Питьевая вода</span>
-              </label>
-              <label class="additional-demands__milk">
-                <input type="checkbox" class="additional-demands__milk-input" name="milk" value="milk">
-                <span class="additional-demands__control-label">Молоко</span>
-              </label>
-              <label class="additional-demands__vitamins">
-                <input type="checkbox" class="additional-demands__vitamins-input" name="vitamins" value="vitamins">
-                <span class="additional-demands__control-label">Витамины</span>
-              </label>
+            <div class="additional-demands__wrapper">
+              <legend class="additional-demands__title">Дополнительно</legend>
+              <div class="form__additionals-wrapper">
+                <label class="additional-demands__sweetener">
+                  <input type="checkbox" class="additional-demands__sweetener-input" name="sweetener" checked
+                    value="sweetener">
+                  <span class="additional-demands__control-label">Сахарозаменитель</span>
+                </label>
+                <label class="additional-demands__water">
+                  <input type="checkbox" class="additional-demands__water-input" name="water" value="water">
+                  <span class="additional-demands__control-label">Питьевая вода</span>
+                </label>
+                <label class="additional-demands__milk">
+                  <input type="checkbox" class="additional-demands__milk-input" name="milk" value="milk">
+                  <span class="additional-demands__control-label">Молоко</span>
+                </label>
+                <label class="additional-demands__vitamins">
+                  <input type="checkbox" class="additional-demands__vitamins-input" name="vitamins" value="vitamins">
+                  <span class="additional-demands__control-label">Витамины</span>
+                </label>
+              </div>
             </div>
           </fieldset>
           <div class="form__ending-wrapper">
@@ -151,8 +160,7 @@
         <div class="footer__wrapper">
           <div class="footer__logo-wrapper">
             <a href="" class="footer__logo-link">
-              <svg class="footer__logo-image" aria-label="Логотип Cat Energy." width="128" height="24"
-                focuasble="false">
+              <svg class="footer__logo-image" aria-label="Логотип Cat Energy." width="128" height="24" focuasble="false">
                 <use xlink:href="./img/sprite.svg#footer-mini-logo"></use>
               </svg>
             </a>
@@ -160,7 +168,7 @@
           <ul class="footer__social-list">
             <li class="footer__social-item">
               <a href="" class="footer__social-link">
-                <svg class="footer__social-item-icon" aria-label="Наша страница во Втоктантке." width="30" height="17"
+                <svg class="footer__social-item-icon" aria-label="Наша страница во Втоктантке." width="28" height="24"
                   focuasble="false">
                   <use xlink:href="./img/sprite.svg#footer-vkontakte-logo"></use>
                 </svg>

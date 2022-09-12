@@ -77,6 +77,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     background-color: @gray-color;
 
@@ -113,8 +114,7 @@
 }
 
 .catalog-basic-goods__card-header {
-  margin: 0;
-  margin-bottom: 18px;
+  margin: 19px 0 18px;
 
   font-family: @font;
   font-style: @font-style;
@@ -131,7 +131,7 @@
     font-size: 20px;
     line-height: 24px;
 
-    margin-bottom: 21px;
+    margin: 50px 0 21px;
   }
 
   @media (min-width: @desktop-width) {
@@ -141,7 +141,7 @@
 }
 
 .catalog-basic-goods__card-info {
-  margin: 0 0 42px;
+  margin: 0 0 22px;
 
   font-size: 12px;
   line-height: 16px;
@@ -151,6 +151,7 @@
   grid-row-gap: 2px;
 
   @media (min-width: @tablet-width) {
+    margin: 0 0 42px;
     font-size: 16px;
     grid-row-gap: 14px;
   }
@@ -177,10 +178,15 @@
 }
 
 .catalog-basic-goods__button {
-  grid-column: 1/-1;
+  grid-column-start: 1;
+  grid-column-end: -1;
 }
 
 .catalog-basic-goods__more {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   padding: 78px 0 25px;
 
   list-style-type: none;
@@ -192,14 +198,14 @@
   background-position: 125px 25px;
 
   @media (min-width: @tablet-width) {
-    padding: 161px 37px 38px;
+    padding: 161px 37px 39px;
 
     background-size: 60px 60px;
     background-position: 50% 52px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 160px 38px 41px;
+    padding: 160px 38px 39px;
 
     background-position: 50% 51px;
   }
@@ -224,17 +230,16 @@
   margin-bottom: 8px;
 
   @media (min-width: @desktop-width) {
+    margin-top: 14px;
     margin-bottom: 23px;
+
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 
 .catalog-basic-goods__more-text {
   color: @font-color;
-  margin-bottom: 21px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 87px;
-  }
 }
 
 .catalog-basic-goods__more-button {

@@ -135,19 +135,17 @@
   }
 }
 
-.owner-data__email:focus {
-  &::after {
-    position: absolute;
+.owner-data__email-input:focus + .owner-data__email::after {
+  position: absolute;
 
-    content: url("../img/icon-email-focus.svg");
-    display: block;
-    margin: 0;
-    padding: 0;
-    top: 45%;
-    transform: translateY(-50%);
+  content: url("../img/icon-email-focus.svg");
+  display: block;
+  margin: 0;
+  padding: 0;
+  top: 45%;
+  transform: translateY(-50%);
 
-    right: 20px;
-  }
+  right: 20px;
 }
 
 .owner-data__phone {
@@ -167,19 +165,17 @@
   }
 }
 
-.owner-data__phone:hover {
-  &::after {
-    position: absolute;
+.owner-data__phone-input:focus + .owner-data__phone::after {
+  position: absolute;
 
-    content: url("../img/icon-phone-focus.svg");
-    display: block;
-    margin: 0;
-    padding: 0;
-    top: 50%;
-    transform: translateY(-50%);
+  content: url("../img/icon-phone-focus.svg");
+  display: block;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  transform: translateY(-50%);
 
-    right: 20px;
-  }
+  right: 20px;
 }
 
 .owner-data__email-label,
@@ -192,7 +188,7 @@
 
 .owner-data__email-input,
 .owner-data__phone-input {
-  padding: 15px 40px 15px 15px;
+  padding: 15px 10px 15px 15px;
   flex-grow: 1;
   flex-basis: 70%;
 

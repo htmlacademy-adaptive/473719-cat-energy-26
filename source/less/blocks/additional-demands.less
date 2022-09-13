@@ -79,6 +79,8 @@
 .additional-demands__milk,
 .additional-demands__vitamins,
 .additional-demands__water {
+  position: relative;
+
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
@@ -96,9 +98,66 @@
 .additional-demands__water-input,
 .additional-demands__vitamins-input,
 .additional-demands__milk-input {
-  margin-right: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+
+
+.additional-demands__control-mark {
+  position: absolute;
+
+  width: 30px;
+  height: 30px;
+
+  left: -4px;
+  top: -5px;
 
   @media (min-width: @tablet-width) {
-    margin-right: 19px;
+    width: 40px;
+    height: 40px;
+
+    left: -6px;
+    top: -3px;
   }
+
+  outline: 0;
+
+  border: 1px solid rgba(205, 205, 205, 1);
+  background: hsl(0, 0%, 100%);
+}
+
+
+.additional-demands__control-label {
+  padding-left: 50px;
+}
+
+
+.additional-demands__sweetener-input:checked + .additional-demands__control-mark::after,
+.additional-demands__water-input:checked + .additional-demands__control-mark::after,
+.additional-demands__vitamins-input:checked + .additional-demands__control-mark::after,
+.additional-demands__milk-input:checked + .additional-demands__control-mark::after {
+  position: absolute;
+  display: block;
+
+  content: url("../img/additional-demands-tick.svg");
+
+  width: 14px;
+  height: 14px;
+
+  left: 3px;
+  top: 4px;
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+
+    top: 4px;
+    left: 7px;
+  }
+  z-index: 2;
 }

@@ -1,3 +1,11 @@
+.experience {
+  background-color: hsl(0, 0%, 95%);
+
+  @media (min-width: @tablet-width) {
+    background-color: @white-color;
+  }
+}
+
 .experience__background-wrapper {
   flex-direction: column;
 
@@ -39,6 +47,9 @@
 .experience .experience__header {
   margin: 0 auto;
   padding: 25px 0 40px;
+
+  background-color: hsl(0, 0%, 95%);
+
   width: @mobile-width-only - @mobile-gap - @mobile-gap;
 
   @media (min-width: @tablet-width) {
@@ -46,6 +57,8 @@
     max-width: @desktop-width - @desktop-gap - @desktop-gap;
     padding: 43px 0 63px;
     margin: 0 auto;
+
+    background-color: @white-color;
   }
 
   @media (min-width: @desktop-width) {
@@ -212,7 +225,7 @@
 
   @media (min-width: 1000px) {
     width: 366px;
-    justify-content: flex-start;
+    justify-content: space-around;
   }
 }
 

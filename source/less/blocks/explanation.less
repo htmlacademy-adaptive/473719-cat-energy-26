@@ -13,11 +13,17 @@
 .explanation__image-before {
   position: absolute;
 
-  top: 120px;
+  top: 10px;
+
+  clip: rect(0, 138px, 280px, 0);
 
   @media (min-width: @tablet-width) {
+    top: 80px;
+
     left: 50%;
     transform: translateX(-50%);
+
+    clip: rect(0, 278px, 560px, 0);
   }
 
   @media (min-width: @desktop-width) {
@@ -28,11 +34,17 @@
 .explanation__image-after {
   position: absolute;
 
-  top: 120px;
+  top: 10px;
+
+  clip: rect(0, 280px, 280px, 138px);
 
   @media (min-width: @tablet-width) {
+    top: 80px;
+
     left: 50%;
     transform: translateX(-50%);
+
+    clip: rect(0, 560px, 560px, 278px);
   }
 
   @media (min-width: @desktop-width) {
@@ -58,6 +70,43 @@
 
 
 .explanation__slider {
+  position: absolute;
+
+  top: 135px;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+
   border: none;
   border-color: transparent;
+
+  background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    top: 340px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 135px;
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+
+    z-index: -1;
+
+    border-radius: 2px;
+
+    content: "";
+    width: 4px;
+    height: 256px;
+    background-color: #666666;
+
+    @media (min-width: @tablet-width) {
+      height: 512px;
+    }
+  }
 }

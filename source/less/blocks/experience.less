@@ -1,25 +1,86 @@
 .experience {
+  position: relative;
   background-color: hsl(0, 0%, 95%);
 
   @media (min-width: @tablet-width) {
     background-color: @white-color;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+
+      z-index: 0;
+      top: 572px;
+
+      width: 100vw;
+      height: 462px;
+
+      background-color: hsl(0, 0%, 92%);
+    }
+  }
+
+  @media (min-width: 900px) {
+    background-color: @white-color;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+
+      z-index: 0;
+      top: 572px;
+
+      width: 100vw;
+      height: 462px;
+
+      background-color: hsl(0, 0%, 92%);
+    }
+  }
+
+  @media (min-width: 1000px) {
+    background-color: @white-color;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+
+      z-index: 0;
+      top: 520px;
+
+      width: 100vw;
+      height: 465px;
+
+      background-color: hsl(0, 0%, 92%);
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @white-color;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
 .experience__background-wrapper {
+  display: flex;
   flex-direction: column;
 
   margin: 0;
-  padding: 0 0 316px 0;
+  padding: 0 0 260px 0;
   width: 100vw;
   max-width: 100%;
 
   @media (min-width: @tablet-width) {
-    background-color: hsl(0, 0%, 95%);
-    padding-bottom: 711px;
+
+    padding-bottom: 600px;
   }
 
   @media (min-width: @desktop-width) {
+    background-color: hsl(0, 0%, 95%);
     padding-bottom: 75px;
   }
 }
@@ -30,7 +91,6 @@
   margin: 0 auto;
   margin-bottom: 40px;
   width: @mobile-width-only - @mobile-gap - @mobile-gap;
-
 
   @media (min-width: @tablet-width) {
     width: 92%;
@@ -186,6 +246,14 @@
 
     padding: 0 12px;
     background-color: hsl(0, 0%, 95%);
+
+    @media (min-width: @tablet-width) {
+      background-color: @white-color;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-color: hsl(0, 0%, 95%);
+    }
   }
 }
 
@@ -208,6 +276,14 @@
 
     padding: 0 14px;
     background-color: hsl(0, 0%, 95%);
+
+    @media (min-width: @tablet-width) {
+      background-color: @white-color;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-color: hsl(0, 0%, 95%);
+    }
   }
 }
 

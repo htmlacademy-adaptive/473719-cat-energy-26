@@ -113,35 +113,45 @@
             </div>
           </div>
           <div class="explanation">
-            <picture>
-              <source media="(min-width: 768px)" type="image/webp" srcset="./img/cat-tablet-before@1x.webp 1x,
-              ./img/cat-tablet-before@2x.webp 2x" widht="560" height="512">
-              <source type="image/webp" srcset="./img/cat-mobile-before@1x.webp 1x,
-              ./img/cat-mobile-before@2x.webp 2x" width="280" height="256">
+            <div class="explanation__before-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="./img/cat-tablet-before@1x.webp 1x,
+                ./img/cat-tablet-before@2x.webp 2x" widht="560" height="512">
+                <source type="image/webp" srcset="./img/cat-mobile-before@1x.webp 1x,
+                ./img/cat-mobile-before@2x.webp 2x" width="280" height="256">
 
-              <source media="(min-width: 768px)" srcset="./img/cat-tablet-before@1x.png 1x,
-              ./img/cat-tablet-before@2x.png 2x" widht="560" height="512">
-              <img class="explanation__image-before" src="./img/cat-mobile-before@1x.png" srcset="./img/cat-mobile-before@1x.png 1x,
-              ./img/cat-mobile-before@2x.png 2x" alt="Фотография тучного кота до приема корма Cat Energy." width="280"
-                height="256">
-            </picture>
-            <picture>
-              <source media="(min-width: 768px)" type="image/webp" srcset="./img/cat-tablet-after@1x.webp 1x,
-              ./img/cat-tablet-after@2x.webp 2x" widht="560" height="512">
-              <source type="image/webp" srcset="./img/cat-mobile-after@1x.webp 1x,
-              ./img/cat-mobile-after@2x.webp 2x" width="280" height="256">
+                <source media="(min-width: 768px)" srcset="./img/cat-tablet-before@1x.png 1x,
+                ./img/cat-tablet-before@2x.png 2x" widht="560" height="512">
+                <img class="explanation__image-before" src="./img/cat-mobile-before@1x.png" srcset="./img/cat-mobile-before@1x.png 1x,
+                ./img/cat-mobile-before@2x.png 2x" alt="Фотография тучного кота до приема корма Cat Energy." width="280"
+                  height="256">
+              </picture>
+            </div>
+            <div class="explanation__after-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="./img/cat-tablet-after@1x.webp 1x,
+                ./img/cat-tablet-after@2x.webp 2x" widht="560" height="512">
+                <source type="image/webp" srcset="./img/cat-mobile-after@1x.webp 1x,
+                ./img/cat-mobile-after@2x.webp 2x" width="280" height="256">
 
-              <source media="(min-width: 768px)" srcset="./img/cat-tablet-after@1x.png 1x,
-                ./img/cat-tablet-after@2x.png 2x" widht="560" height="512">
-              <img class="explanation__image-after" src="./img/cat-mobile-after@1x.png" srcset="./img/cat-mobile-after@1x.png 1x,
-              ./img/cat-mobile-after@2x.png 2x" alt="Фотография похудевшего кота после приема корма Cat Energy."
-                width="280" height="256">
-            </picture>
+                <source media="(min-width: 768px)" srcset="./img/cat-tablet-after@1x.png 1x,
+                  ./img/cat-tablet-after@2x.png 2x" widht="560" height="512">
+                <img class="explanation__image-after" src="./img/cat-mobile-after@1x.png" srcset="./img/cat-mobile-after@1x.png 1x,
+                ./img/cat-mobile-after@2x.png 2x" alt="Фотография похудевшего кота после приема корма Cat Energy."
+                  width="280" height="256">
+              </picture>
+            </div>
+
             <span class="explanation__title">Было</span>
             <input class="explanation__scale" type="range" id="range" min="1" max="100" value="50">
             <span class="explanation__title">Стало</span>
             <button class="explanation__slider explanation__slider--current" type="button">
-              <!-- здесь поставить свг с кнопкой -->
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="38" height="38" rx="19" fill="white" />
+                <path d="M16 11L8 20L16 29V11Z" fill="#666666" />
+                <path d="M32 20L24 11V29L32 20Z" fill="#666666" />
+                <rect x="1" y="1" width="38" height="38" rx="19" stroke="#666666" stroke-width="2" />
+              </svg>
             </button>
             <span class="visually-hidden">Посмотрите как изменится вес вашего кота.</span>
           </div>

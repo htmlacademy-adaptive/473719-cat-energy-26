@@ -1,12 +1,17 @@
 .button {
   display: block;
-  padding: 14px 26px;
+  padding: 11px 26px;
 
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 
   text-transform: uppercase;
   text-decoration: none;

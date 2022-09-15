@@ -65,7 +65,13 @@
 
 
 .explanation__scale {
-  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
 }
 
 
@@ -91,6 +97,7 @@
 
   &:hover {
     color: hsl(97, 53%, 47%);
+
     &::after {
       background-color: hsl(97, 53%, 47%);
     }
@@ -98,6 +105,7 @@
 
   &:active {
     color: rgb(94, 170, 47, 0.6);
+
     &::after {
       color: rgb(94, 170, 47, 0.6);
     }

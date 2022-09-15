@@ -25,18 +25,6 @@
 .program-radio__weight-gain,
 .program-radio__need-advice {
   position: relative;
-
-  font-family: @font;
-  font-style: @font-style;
-  font-weight: @font-weight;
-  font-size: 16px;
-  line-height: 18px;
-  color: @font-color;
-
-  @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
 }
 
 .program-radio__weight-gain-input,
@@ -53,6 +41,18 @@
 
 .program-radio__control-label {
   padding-left: 50px;
+
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  font-size: 16px;
+  line-height: 18px;
+  color: @font-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .program-radio__control-mark {
@@ -79,18 +79,18 @@
   background: hsl(0, 0%, 100%);
 }
 
-.program-radio__weight-loss:disabled .program-radio__control-mark,
-.program-radio__weight-gain:disabled .program-radio__control-mark,
-.program-radio__need-advice:disabled .program-radio__control-mark,
-.program-radio__weight-loss:disabled .program-radio__control-label,
-.program-radio__weight-gain:disabled .program-radio__control-label,
-.program-radio__need-advice:disabled .program-radio__control-label {
+.program-radio__weight-loss-input:disabled+.program-radio__control-mark,
+.program-radio__weight-gain-input:disabled+.program-radio__control-mark,
+.program-radio__need-advice-input:disabled+.program-radio__control-mark,
+.program-radio__weight-loss-input:disabled~.program-radio__control-label,
+.program-radio__weight-gain-input:disabled~.program-radio__control-label,
+.program-radio__need-advice-input:disabled~.program-radio__control-label {
   opacity: 0.3;
 }
 
-.program-radio__weight-loss-input:checked + .program-radio__control-mark::after,
-.program-radio__weight-gain-input:checked + .program-radio__control-mark::after,
-.program-radio__need-advice-input:checked + .program-radio__control-mark::after {
+.program-radio__weight-loss-input:checked+.program-radio__control-mark::after,
+.program-radio__weight-gain-input:checked+.program-radio__control-mark::after,
+.program-radio__need-advice-input:checked+.program-radio__control-mark::after {
   position: absolute;
   display: block;
 

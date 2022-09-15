@@ -100,6 +100,8 @@
 
 .owner-data__email,
 .owner-data__phone {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
 
@@ -118,64 +120,9 @@
   }
 }
 
-.owner-data__email {
-  position: relative;
-
-  &::after {
-    position: absolute;
-
-    content: url("../img/icon-email.svg");
-    display: block;
-    margin: 0;
-    padding: 0;
-    top: 45%;
-    transform: translateY(-50%);
-
-    right: 20px;
-  }
-}
-
-.owner-data__email-input:focus + .owner-data__email::after {
+.owner-data__icon {
   position: absolute;
-
-  content: url("../img/icon-email-focus.svg");
-  display: block;
-  margin: 0;
-  padding: 0;
-  top: 45%;
-  transform: translateY(-50%);
-
-  right: 20px;
-}
-
-.owner-data__phone {
-  position: relative;
-
-  &::after {
-    position: absolute;
-
-    content: url("../img/icon-phone.svg");
-    display: block;
-    margin: 0;
-    padding: 0;
-    top: 50%;
-    transform: translateY(-50%);
-
-    right: 20px;
-  }
-}
-
-.owner-data__phone-input:focus + .owner-data__phone::after {
-  position: absolute;
-
-  content: url("../img/icon-phone-focus.svg");
-  display: block;
-  margin: 0;
-  padding: 0;
-  top: 50%;
-  transform: translateY(-50%);
-
-  right: 20px;
+  left: calc(100% - 40px);
 }
 
 .owner-data__email-label,
@@ -191,6 +138,9 @@
   padding: 15px 10px 15px 15px;
   flex-grow: 1;
   flex-basis: 70%;
+
+  border: none;
+  outline: 1px solid hsl(0, 0%, 80%);
 
   font-family: @font;
   font-style: @font-style;
@@ -211,4 +161,25 @@
   @media (min-width: @desktop-width) {
     padding: 8px 60px 8px 17px;
   }
+}
+
+.owner-data__email-input:focus,
+.owner-data__phone-input:focus {
+  outline: 2px solid hsl(0, 0%, 27%);
+}
+
+.owner-data__email-input:invalid,
+.owner-data__phone-input:invalid {
+  outline: 2px solid hsl(0, 100%, 75%);
+}
+
+.owner-data__email-input:focus ~ .owner-data__icon,
+.owner-data__phone-input:focus ~ .owner-data__icon {
+  color: hsl(97, 53%, 47%);
+}
+
+
+.owner-data__email-input:invalid ~ .owner-data__icon,
+.owner-data__phone-input:invalid ~ .owner-data__icon {
+  color: hsl(0, 100%, 75%);
 }

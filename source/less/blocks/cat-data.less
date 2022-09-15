@@ -58,16 +58,31 @@
 .cat-data__name-input,
 .cat-data__weight-input,
 .cat-data__age-input {
-  padding: 13px 0 14px 14px;
+  padding: 13px 10px 14px 14px;
   flex-grow: 1;
   flex-basis: 70%;
 
+  border: none;
+  outline: 1px solid hsl(0, 0%, 91%);
+
   @media (min-width: @tablet-width) {
-    padding: 10px 0 11px 18px;
+    padding: 10px 10px 11px 18px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 10px 0 11px 20px;
+    padding: 10px 10px 11px 20px;
+  }
+
+  &:hover {
+    outline: 1px solid hsl(0, 0%, 80%);
+  }
+
+  &:focus {
+    outline: 2px solid hsl(0, 0%, 27%);
+  }
+
+  &:invalid {
+    outline: 2px solid hsl(0, 100%, 75%);
   }
 }
 

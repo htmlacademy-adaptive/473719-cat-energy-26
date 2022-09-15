@@ -105,6 +105,10 @@
   line-height: 16px;
   transform-style: uppercase;
 
+  border: none;
+
+  outline: 1px solid hsl(0, 0%, 91%);
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -114,5 +118,17 @@
 
   @media (min-width: @desktop-width) {
     padding: 8px 17px;
+  }
+
+  &:hover {
+    outline: 1px solid hsl(0, 0%, 80%);
+  }
+
+  &:focus {
+    outline: 2px solid hsl(0, 0%, 27%);
+  }
+
+  &:invalid {
+    outline: 2px solid hsl(0, 100%, 75%);
   }
 }

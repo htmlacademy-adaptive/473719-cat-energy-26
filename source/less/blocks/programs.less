@@ -132,6 +132,8 @@
 }
 
 .programs__link {
+  position: relative;
+
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
@@ -143,15 +145,18 @@
   color: #000000;
 
   &::after {
+    position: relative;
+
     content: url("../img/icon-arrow.svg");
-    padding-left: 15px;
+    left: 15px;
+    top: -3px;
 
     @media (min-width: @tablet-width) {
-      padding-left: 25px;
+      left: 25px;
     }
 
     @media (min-width: @desktop-width) {
-      padding-left: 28px;
+      left: 28px;
     }
   }
 

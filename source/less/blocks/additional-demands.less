@@ -137,10 +137,10 @@
 }
 
 
-.additional-demands__sweetener-input:checked + .additional-demands__control-mark::after,
-.additional-demands__water-input:checked + .additional-demands__control-mark::after,
-.additional-demands__vitamins-input:checked + .additional-demands__control-mark::after,
-.additional-demands__milk-input:checked + .additional-demands__control-mark::after {
+.additional-demands__sweetener-input:checked+.additional-demands__control-mark::after,
+.additional-demands__water-input:checked+.additional-demands__control-mark::after,
+.additional-demands__vitamins-input:checked+.additional-demands__control-mark::after,
+.additional-demands__milk-input:checked+.additional-demands__control-mark::after {
   position: absolute;
   display: block;
 
@@ -159,5 +159,17 @@
     top: 4px;
     left: 7px;
   }
+
   z-index: 2;
+}
+
+.additional-demands__sweetener-input:disabled+.additional-demands__control-mark,
+.additional-demands__water-input:disabled+.additional-demands__control-mark,
+.additional-demands__vitamins-input:disabled+.additional-demands__control-mark,
+.additional-demands__milk-input:disabled+.additional-demands__control-mark,
+.additional-demands__sweetener-input:disabled~.additional-demands__control-label,
+.additional-demands__water-input:disabled~.additional-demands__control-label,
+.additional-demands__vitamins-input:disabled~.additional-demands__control-label,
+.additional-demands__milk-input:disabled~.additional-demands__control-label {
+  opacity: 0.3;
 }

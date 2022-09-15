@@ -78,7 +78,7 @@
 
   border: none;
   border-color: transparent;
-
+  color: hsl(0, 0%, 40%);
   background-color: transparent;
 
   @media (min-width: @tablet-width) {
@@ -87,6 +87,20 @@
 
   @media (min-width: @desktop-width) {
     top: 135px;
+  }
+
+  &:hover {
+    color: hsl(97, 53%, 47%);
+    &::after {
+      background-color: hsl(97, 53%, 47%);
+    }
+  }
+
+  &:active {
+    color: rgb(94, 170, 47, 0.6);
+    &::after {
+      color: rgb(94, 170, 47, 0.6);
+    }
   }
 
   &::after {
@@ -103,7 +117,7 @@
     content: "";
     width: 4px;
     height: 256px;
-    background-color: #666666;
+    background-color: hsl(0, 0%, 40%);
 
     @media (min-width: @tablet-width) {
       height: 512px;

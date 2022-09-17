@@ -103,10 +103,10 @@
   &::after {
     position: absolute;
     content: "";
-    left: 7px;
-    top: 22px;
+    left: 27px;
+    top: 24px;
 
-    width: 36px;
+    width: 23px;
     height: 2px;
 
     transform: rotate(45deg);
@@ -117,10 +117,10 @@
   &::before {
     position: absolute;
     content: "";
-    left: 7px;
-    top: 22px;
+    left: 27px;
+    top: 24px;
 
-    width: 36px;
+    width: 23px;
     height: 2px;
 
     transform: rotate(-45deg);
@@ -201,17 +201,7 @@
 .nav__list-item-intro {
   display: block;
   position: relative;
-
-  font-size: 20px;
-  line-height: 24px;
-
-  font-family: @font;
-  font-style: @font-style;
-  font-weight: 500;
-  color: @font-color;
   background-color: @white-color;
-
-  text-transform: uppercase;
 
   padding: 20px 0;
   text-align: center;
@@ -242,20 +232,21 @@
   }
 
   & a {
-    padding: 22px 0;
+    margin: 0;
+    padding: 0;
 
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
+
     font-family: @font;
     font-style: @font-style;
-    font-weight: @font-weight;
+    font-weight: 500;
     color: @font-color;
 
-    text-decoration: none;
+    letter-spacing: 1.1px;
 
-    @media (min-width: @tablet-width) {
-      padding: 10px 0;
-    }
+    text-decoration: none;
+    text-transform: uppercase;
 
     &:hover {
       opacity: 0.6;

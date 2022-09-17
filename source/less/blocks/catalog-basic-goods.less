@@ -72,7 +72,7 @@
 
   list-style-type: none;
 
-  padding: 19px 0 25px;
+  padding: 0 0 25px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -95,12 +95,14 @@
 
 
 .catalog-basic-goods__image-wrapper {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-self: center;
-  align-self: center;
+  align-self: flex-end;
 
-  height: 101px;
+  top: -10px;
 
   @media (min-width: @tablet-width) {
     justify-content: flex-end;
@@ -114,7 +116,9 @@
 }
 
 .catalog-basic-goods__card-header {
-  margin: 19px 0 18px;
+  margin: 19px 0 15px;
+
+  width: 76px;
 
   font-family: @font;
   font-style: @font-style;
@@ -141,14 +145,14 @@
 }
 
 .catalog-basic-goods__card-info {
-  margin: 0 0 22px;
+  margin: 0 0 24px;
+  padding: 0;
 
   font-size: 12px;
   line-height: 16px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-row-gap: 2px;
 
   @media (min-width: @tablet-width) {
     margin: 0 0 42px;
@@ -159,7 +163,9 @@
 
 .catalog-basic-goods__card-info-category {
   margin: 0;
+  padding: 0;
 
+  height: 15px;
   text-align: left;
 
   @media (min-width: @tablet-width) {
@@ -169,6 +175,9 @@
 
 .catalog-basic-goods__card-info-value {
   margin: 0;
+  padding: 0;
+
+  height: 15px;
 
   text-align: right;
 
@@ -239,7 +248,13 @@
 }
 
 .catalog-basic-goods__more-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
+
   color: @font-color;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .catalog-basic-goods__more-button {

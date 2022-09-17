@@ -32,12 +32,6 @@
   display: flex;
   justify-content: space-between;
 
-  font-family: @font;
-  font-style: @font-style;
-  font-weight: @font-weight;
-  font-size: 16px;
-  line-height: 16px;
-  transform-style: uppercase;
 
   align-items: center;
 
@@ -52,15 +46,33 @@
 .cat-data__age-label {
   display: block;
 
-  padding-right: 13px;
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+
+  padding-right: 18px;
 }
 
 .cat-data__name-input,
 .cat-data__weight-input,
 .cat-data__age-input {
-  padding: 13px 10px 14px 14px;
+  padding: 10px 10px 11px 14px;
   flex-grow: 1;
   flex-basis: 70%;
+
+  margin: 0;
+
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
 
   border: none;
   outline: 1px solid hsl(0, 0%, 91%);

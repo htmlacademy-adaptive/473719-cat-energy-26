@@ -12,6 +12,7 @@
 
   @media (min-width: @desktop-width) {
     max-width: @desktop-width - @desktop-gap - @desktop-gap;
+    padding: 0;
   }
 }
 
@@ -30,11 +31,11 @@
     font-size: 60px;
     line-height: 60px;
 
-    padding: 64px 0 54px;
+    padding: 35px 0 54px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 72px 0 56px;
+    padding: 55px 0 56px;
   }
 }
 
@@ -72,6 +73,7 @@
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
+    padding: 0;
 
     max-width: @desktop-width - @desktop-gap - @desktop-gap;
 
@@ -85,7 +87,7 @@
 .form__additionals-wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 13px;
 
   margin: 0;
 
@@ -94,23 +96,26 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 44px;
+    grid-column-gap: 62px;
+    grid-row-gap: 45px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 262px 268px 263px 280px;
     grid-column-gap: 60px;
   }
 }
 
 .form__ending-wrapper {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 
   align-items: center;
 
   margin: 0 auto;
-  padding: 0 0 32px;
+  padding: 0 0 71px;
 
   width: @mobile-width-only - @mobile-gap - @mobile-gap;
 
@@ -129,7 +134,7 @@
 
   @media (min-width: @desktop-width) {
     max-width: @desktop-width - @desktop-gap - @desktop-gap;
-    padding: 0 40px 82px;
+    padding: 0 0 82px;
     margin: 0 auto;
   }
 }
@@ -137,6 +142,28 @@
 .form__button {
   border: 0;
   width: 100%;
+
+  font-size: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    padding: 16px;
+  }
+}
+
+.form__button-description {
+  position: absolute;
+
+  top: 61px;
+
+  @media (min-width: @tablet-width) {
+    top: 17px;
+    left: 650px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .form__underline {

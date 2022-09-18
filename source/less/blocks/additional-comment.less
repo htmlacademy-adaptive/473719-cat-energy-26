@@ -38,12 +38,12 @@
     width: 92%;
     max-width: @desktop-width;
     margin: 0 auto;
-    padding: 0 40px 72px;
+    padding: 0 40px 90px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: @desktop-width - @desktop-gap - @desktop-gap;
-    padding: 0 40px 69px;
+    padding: 0 0 93px;
     margin: 0 auto;
   }
 }
@@ -51,7 +51,7 @@
 .additional-comment__title {
   margin: 0;
   margin-left: -20px;
-  padding: 0 20px 47px;
+  padding: 0 20px 38px;
   display: table;
   float: left;
 
@@ -93,7 +93,9 @@
 }
 
 .additional-comment__text-input {
-  padding: 15px;
+  min-height: 150px;
+
+  padding: 10px 15px 15px;
 
   flex-grow: 1;
   flex-basis: 70%;
@@ -103,7 +105,7 @@
   font-weight: @font-weight;
   font-size: 16px;
   line-height: 16px;
-  transform-style: uppercase;
+  text-transform: uppercase;
 
   border: none;
 

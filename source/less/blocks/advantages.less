@@ -51,8 +51,7 @@
   row-gap: 20px;
 
   @media (min-width: @tablet-width) {
-    column-gap: 22%;
-    row-gap: 77px;
+    row-gap: 80px;
   }
 
   @media (min-width: 1000px) {
@@ -64,11 +63,19 @@
   position: relative;
 
   z-index: 2;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     height: auto;
-    padding: 111px 0 57px;
     text-align: left;
+
+    &:nth-child(1n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 75px;
+    }
   }
 
   &::before {
@@ -116,6 +123,8 @@
 
   @media (min-width: @tablet-width) {
     width: 230px;
+    background-size: 80px 80px;
+    padding: 111px 0 57px;
   }
 }
 
@@ -128,6 +137,8 @@
 
   @media (min-width: @tablet-width) {
     width: 246px;
+    background-size: 80px 80px;
+    padding: 111px 0 57px;
   }
 }
 
@@ -140,6 +151,8 @@
 
   @media (min-width: @tablet-width) {
     width: 247px;
+    background-size: 80px 80px;
+    padding: 111px 0 57px;
   }
 }
 
@@ -152,5 +165,7 @@
 
   @media (min-width: @tablet-width) {
     width: 249px;
+    background-size: 80px 80px;
+    padding: 111px 0 57px;
   }
 }

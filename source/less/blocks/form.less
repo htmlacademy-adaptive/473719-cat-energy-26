@@ -136,6 +136,7 @@
     max-width: @desktop-width - @desktop-gap - @desktop-gap;
     padding: 0 0 82px;
     margin: 0 auto;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -148,6 +149,10 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     padding: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 47%;
   }
 }
 

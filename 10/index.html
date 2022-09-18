@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./css/style.css" type="text/css">
   <link rel="stylesheet" href="./css/style.min.css" type="text/css">
   <link rel="icon" href="./favicon.ico"> <!-- 32×32 -->
   <link rel="manifest" href="./manifest.webmanifest">
@@ -124,8 +123,8 @@
                 <source media="(min-width: 768px)" srcset="./img/cat-tablet-before@1x.png 1x,
                 ./img/cat-tablet-before@2x.png 2x" widht="560" height="512">
                 <img class="explanation__image-before" src="./img/cat-mobile-before@1x.png" srcset="./img/cat-mobile-before@1x.png 1x,
-                ./img/cat-mobile-before@2x.png 2x" alt="Фотография тучного кота до приема корма Cat Energy." width="280"
-                  height="256">
+                ./img/cat-mobile-before@2x.png 2x" alt="Фотография тучного кота до приема корма Cat Energy."
+                  width="280" height="256">
               </picture>
             </div>
             <div class="explanation__after-wrapper">
@@ -142,16 +141,13 @@
                   width="280" height="256">
               </picture>
             </div>
-
-            <span class="explanation__title">Было</span>
             <input class="explanation__scale" type="range" id="range" min="1" max="100" value="50">
-            <span class="explanation__title">Стало</span>
             <button class="explanation__slider explanation__slider--current" type="button">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="1" y="1" width="38" height="38" rx="19" fill="white" />
-                <path d="M16 11L8 20L16 29V11Z" fill="#666666" />
-                <path d="M32 20L24 11V29L32 20Z" fill="#666666" />
-                <rect x="1" y="1" width="38" height="38" rx="19" stroke="#666666" stroke-width="2" />
+                <path d="M16 11L8 20L16 29V11Z" fill="currentColor" />
+                <path d="M32 20L24 11V29L32 20Z" fill="currentColor" />
+                <rect x="1" y="1" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2" />
               </svg>
             </button>
             <span class="visually-hidden">Посмотрите как изменится вес вашего кота.</span>
@@ -165,7 +161,7 @@
       <section class="footer__address">
         <h2 class="visually-hidden">Наше местонахождение.</h2>
         <div class="footer__address-headquarter-wrapper">
-          <h4 class="footer__address-headquarter-header">Приглашаем к сотрудничеству дилеров!</h4>
+          <h4 class="footer__address-headquarter-header">Приглашаем<br> к сотрудничеству дилеров!</h4>
           <p class="footer__address-headquarter-text">ул. Большая Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
         </div>
       </section>
@@ -234,6 +230,7 @@
 
   </footer>
   <script src="./js/script.js"></script>
+  <script src="./js/slider.js"></script>
 </body>
 
 </html>

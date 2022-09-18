@@ -80,18 +80,18 @@
   background: hsl(0, 0%, 100%);
 }
 
-.program-radio__weight-loss-input:disabled+.program-radio__control-mark,
-.program-radio__weight-gain-input:disabled+.program-radio__control-mark,
-.program-radio__need-advice-input:disabled+.program-radio__control-mark,
-.program-radio__weight-loss-input:disabled~.program-radio__control-label,
-.program-radio__weight-gain-input:disabled~.program-radio__control-label,
-.program-radio__need-advice-input:disabled~.program-radio__control-label {
+.program-radio__weight-loss-input:disabled + .program-radio__control-mark,
+.program-radio__weight-gain-input:disabled + .program-radio__control-mark,
+.program-radio__need-advice-input:disabled + .program-radio__control-mark,
+.program-radio__weight-loss-input:disabled ~ .program-radio__control-label,
+.program-radio__weight-gain-input:disabled ~ .program-radio__control-label,
+.program-radio__need-advice-input:disabled ~ .program-radio__control-label {
   opacity: 0.3;
 }
 
-.program-radio__weight-loss-input:checked+.program-radio__control-mark::after,
-.program-radio__weight-gain-input:checked+.program-radio__control-mark::after,
-.program-radio__need-advice-input:checked+.program-radio__control-mark::after {
+.program-radio__weight-loss-input:checked + .program-radio__control-mark::after,
+.program-radio__weight-gain-input:checked + .program-radio__control-mark::after,
+.program-radio__need-advice-input:checked + .program-radio__control-mark::after {
   position: absolute;
   display: block;
 

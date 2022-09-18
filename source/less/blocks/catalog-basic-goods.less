@@ -29,7 +29,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 74px 0 165px;
+    padding: 58px 0 165px;
   }
 }
 
@@ -112,6 +112,10 @@
     justify-content: flex-end;
     align-self: center;
   }
+
+  @media (min-width: @tablet-width) {
+    top: -12%;
+  }
 }
 
 .catalog-basic-goods__image-wrapper-big {
@@ -131,6 +135,10 @@
 
     justify-content: flex-end;
     align-self: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: -20%;
   }
 }
 
@@ -184,6 +192,11 @@
     font-size: 16px;
     grid-row-gap: 16px;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-row-gap: 0;
+    margin: 0 0 33px;
+  }
 }
 
 .catalog-basic-goods__card-info-category {
@@ -211,9 +224,24 @@
   }
 }
 
+.catalog-basic-goods__card-info-value,
+.catalog-basic-goods__card-info-category {
+  @media (min-width: @desktop-width) {
+    padding-top: 5px;
+    padding-bottom: 25px;
+  }
+}
+
+
+
 .catalog-basic-goods__button {
   grid-column-start: 1;
   grid-column-end: -1;
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+
+  }
 }
 
 .catalog-basic-goods__more {
@@ -271,6 +299,10 @@
     font-size: 20px;
     line-height: 22px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .catalog-basic-goods__more-text {
@@ -286,6 +318,10 @@
 .catalog-basic-goods__more-button {
   background-color: @gray-color;
   color: @font-color;
+
+  @media(min-width: @desktop-width) {
+    font-size: 16px;
+  }
 
   &:hover {
     background-color: hsl(0, 0%, 92%);

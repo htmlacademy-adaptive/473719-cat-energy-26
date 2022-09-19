@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./css/style.css" type="text/css">
   <link rel="stylesheet" href="./css/style.min.css" type="text/css">
   <link rel="icon" href="./favicon.ico"> <!-- 32×32 -->
   <link rel="manifest" href="./manifest.webmanifest">
@@ -70,17 +69,24 @@
     <section class="advantages">
       <h2 class="advantage__header">Как это работает</h2>
       <ol class="advantages__list">
-        <li class="advantages__item advantages__item-nutritional"> <p class="advantages__description">Функциональное питание содержит только полезные
-          питательные
-          вещества.</p> </li>
-        <li class="advantages__item advantages__item-easy-to-use"> <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить
-          кипятком и
-          готово.</p></li>
-        <li class="advantages__item advantages__item-fast-tu-use"> <p class="advantages__description">Замените один-два приема обычной еды на наше
-          функциональное питание.</p>
+        <li class="advantages__item advantages__item-nutritional">
+          <p class="advantages__description">Функциональное питание содержит только полезные
+            питательные
+            вещества.</p>
         </li>
-        <li class="advantages__item advantages__item-results"><p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего
-          питомца!</p></li>
+        <li class="advantages__item advantages__item-easy-to-use">
+          <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить
+            кипятком и
+            готово.</p>
+        </li>
+        <li class="advantages__item advantages__item-fast-tu-use">
+          <p class="advantages__description">Замените один-два приема обычной еды на наше
+            функциональное питание.</p>
+        </li>
+        <li class="advantages__item advantages__item-results">
+          <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего
+            питомца!</p>
+        </li>
       </ol>
     </section>
     <section class="experience">
@@ -106,34 +112,43 @@
             </div>
           </div>
           <div class="explanation">
-            <picture>
-              <source media="(min-width: 768px)" type="image/webp" srcset="./img/cat-tablet-before@1x.webp 1x,
-              ./img/cat-tablet-before@2x.webp 2x" widht="560" height="512">
-              <source type="image/webp" srcset="./img/cat-mobile-before@1x.webp 1x,
-              ./img/cat-mobile-before@2x.webp 2x" width="280" height="256">
+            <div class="explanation__before-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="./img/cat-tablet-before@1x.webp 1x,
+                ./img/cat-tablet-before@2x.webp 2x" widht="560" height="512">
+                <source type="image/webp" srcset="./img/cat-mobile-before@1x.webp 1x,
+                ./img/cat-mobile-before@2x.webp 2x" width="280" height="256">
 
-              <source media="(min-width: 768px)" srcset="./img/cat-tablet-before@1x.png 1x,
-              ./img/cat-tablet-before@2x.png 2x" widht="560" height="512">
-              <img class="explanation__image-before" src="./img/cat-mobile-before@1x.png" srcset="./img/cat-mobile-before@1x.png 1x,
-              ./img/cat-mobile-before@2x.png 2x" alt="Фотография тучного кота до приема корма Cat Energy." width="280"
-                height="256">
-            </picture>
-            <picture>
-              <source media="(min-width: 768px)" type="image/webp" srcset="./img/cat-tablet-after@1x.webp 1x,
-              ./img/cat-tablet-after@2x.webp 2x" widht="560" height="512">
-              <source type="image/webp" srcset="./img/cat-mobile-after@1x.webp 1x,
-              ./img/cat-mobile-after@2x.webp 2x" width="280" height="256">
+                <source media="(min-width: 768px)" srcset="./img/cat-tablet-before@1x.png 1x,
+                ./img/cat-tablet-before@2x.png 2x" widht="560" height="512">
+                <img class="explanation__image-before" src="./img/cat-mobile-before@1x.png" srcset="./img/cat-mobile-before@1x.png 1x,
+                ./img/cat-mobile-before@2x.png 2x" alt="Фотография тучного кота до приема корма Cat Energy."
+                  width="280" height="256">
+              </picture>
+            </div>
+            <div class="explanation__after-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="./img/cat-tablet-after@1x.webp 1x,
+                ./img/cat-tablet-after@2x.webp 2x" widht="560" height="512">
+                <source type="image/webp" srcset="./img/cat-mobile-after@1x.webp 1x,
+                ./img/cat-mobile-after@2x.webp 2x" width="280" height="256">
 
-              <source media="(min-width: 768px)" srcset="./img/cat-tablet-after@1x.png 1x,
-                ./img/cat-tablet-after@2x.png 2x" widht="560" height="512">
-              <img class="explanation__image-after" src="./img/cat-mobile-after@1x.png" srcset="./img/cat-mobile-after@1x.png 1x,
-              ./img/cat-mobile-after@2x.png 2x" alt="Фотография похудевшего кота после приема корма Cat Energy."
-                width="280" height="256">
-            </picture>
-            <span class="explanation__title">Было</span>
+                <source media="(min-width: 768px)" srcset="./img/cat-tablet-after@1x.png 1x,
+                  ./img/cat-tablet-after@2x.png 2x" widht="560" height="512">
+                <img class="explanation__image-after" src="./img/cat-mobile-after@1x.png" srcset="./img/cat-mobile-after@1x.png 1x,
+                ./img/cat-mobile-after@2x.png 2x" alt="Фотография похудевшего кота после приема корма Cat Energy."
+                  width="280" height="256">
+              </picture>
+            </div>
             <input class="explanation__scale" type="range" id="range" min="1" max="100" value="50">
-            <span class="explanation__title">Стало</span>
-            <button class="explanation__slider explanation__slider--current" type="button">-</button>
+            <button class="explanation__slider explanation__slider--current" type="button">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="38" height="38" rx="19" fill="white" />
+                <path d="M16 11L8 20L16 29V11Z" fill="currentColor" />
+                <path d="M32 20L24 11V29L32 20Z" fill="currentColor" />
+                <rect x="1" y="1" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </button>
             <span class="visually-hidden">Посмотрите как изменится вес вашего кота.</span>
           </div>
         </div>
@@ -145,7 +160,7 @@
       <section class="footer__address">
         <h2 class="visually-hidden">Наше местонахождение.</h2>
         <div class="footer__address-headquarter-wrapper">
-          <h4 class="footer__address-headquarter-header">Приглашаем к сотрудничеству дилеров!</h4>
+          <h4 class="footer__address-headquarter-header">Приглашаем<br> к сотрудничеству дилеров!</h4>
           <p class="footer__address-headquarter-text">ул. Большая Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
         </div>
       </section>
@@ -172,7 +187,7 @@
         <ul class="footer__social-list">
           <li class="footer__social-item">
             <a href="" class="footer__social-link">
-              <svg class="footer__social-item-icon" aria-label="Наша страница во Втоктантке." width="30" height="17"
+              <svg class="footer__social-item-icon" aria-label="Наша страница во Втоктантке." width="28" height="24"
                 focuasble="false">
                 <use xlink:href="./img/sprite.svg#footer-vkontakte-logo"></use>
               </svg>
@@ -214,6 +229,7 @@
 
   </footer>
   <script src="./js/script.js"></script>
+  <script src="./js/slider.js"></script>
 </body>
 
 </html>

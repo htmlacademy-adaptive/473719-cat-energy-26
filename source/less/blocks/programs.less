@@ -14,16 +14,18 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  margin-bottom: 54px;
 }
 
 .programs__weight-image {
   background: url("../img/cat-gym-logo.svg") no-repeat center;
-  background-position: 22px 24px;
-  background-size: 50px 50px;
+  background-position: 14px 24px;
+  background-size: 67px 50px;
 
   @media (min-width: @tablet-width) {
-    background-position: 85% 50%;
-    background-size: 200px 211px;
+    background-position: 95% 55%;
+    background-size: 270px 200px;
   }
 
   @media (min-width: 1000px) {
@@ -43,7 +45,7 @@
   background-size: 50px 50px;
 
   @media (min-width: @tablet-width) {
-    background-position: 85% 50%;
+    background-position: 88% 50%;
     background-size: 200px 211px;
   }
 
@@ -65,22 +67,22 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
-    padding: 77px 316px 139px 52px;
+    padding: 82px 313px 58px 52px;
   }
 
   @media (min-width: 1000px) {
-    width: 46%;
+    width: 47%;
     padding: 77px 52px 55px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 77px 52px 55px;
+    padding: 81px 52px 55px;
   }
 }
 
 .programs__subtitle {
   margin: 0 0 29px;
-  padding-left: 91px;
+  padding-left: 71px;
 
   font-family: @font;
   font-style: @font-style;
@@ -111,7 +113,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 37%;
+    padding-left: 35%;
     margin: 0 0 73px;
 
     font-size: 36px;
@@ -120,38 +122,71 @@
 }
 
 .programs__description {
+  position: relative;
+
   text-align: left;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 23px;
 
   @media (min-width: @tablet-width) {
     min-width: 340px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @tablet-width) {
     min-width: auto;
   }
+
+  &::after {
+    position: absolute;
+    display: block;
+
+    top: 100%;
+
+    content: "";
+    width: @mobile-width-only - @mobile-gap - @mobile-gap - @mobile-gap - @mobile-gap;
+    height: 1px;
+    background-color: hsl(0, 0%, 85%);
+  }
 }
 
 .programs__link {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
   font-family: @font;
   font-style: @font-style;
   font-weight: @font-weight;
-  font-size: 20px;
-  line-height: 30px;
+
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   text-decoration: none;
 
   text-transform: uppercase;
   color: #000000;
 
   &::after {
+    position: relative;
+
     content: url("../img/icon-arrow.svg");
-    padding-left: 15px;
+    left: 15px;
+    top: -3px;
 
     @media (min-width: @tablet-width) {
-      padding-left: 25px;
+      left: 25px;
     }
 
     @media (min-width: @desktop-width) {
-      padding-left: 28px;
+      left: 28px;
     }
   }
 

@@ -40,7 +40,7 @@
 .footer__wrapper {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 95px 63px 75px;
   align-items: center;
   justify-content: center;
 
@@ -58,16 +58,20 @@
   padding: 0;
   width: @mobile-width-only;
   margin-left: -@mobile-gap;
-  object-fit: contain;
+  object-fit: cover;
+
+  height: 362px;
 
   @media (min-width: @tablet-width) {
     width: 100vw;
     margin-left: calc((100vw - 98%) / -2);
+
+    height: 400px;
   }
 }
 
 .footer__address-headquarter-wrapper {
-  padding: 26px 0;
+  padding: 25px 0;
   margin: 0;
   background-color: @white-color;
 
@@ -81,7 +85,7 @@
   @media (min-width: @tablet-width) {
     width: 100%;
 
-    padding: 60px 0 56px;
+    padding: 60px 40px 56px;
   }
 
   @media (min-width: @desktop-width) {
@@ -108,7 +112,7 @@
 
   text-transform: uppercase;
 
-  width: 130px;
+  width: 125px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -127,29 +131,39 @@
 
 .footer__address-headquarter-text {
   margin: 0;
-  width: 130px;
+  width: 140px;
 
   @media (min-width: @tablet-width) {
     width: 160px;
+    text-align: right;
   }
 
   @media (min-width: @desktop-width) {
     width: 155px;
+    text-align: left;
   }
 }
 
 .footer__logo-wrapper {
   margin: 0 auto;
-  padding: 32px 0;
+  padding: 28px 0;
+  text-align: center;
+
+  width: 100%;
+
+  border-bottom: 1px solid hsl(0, 0%, 85%);
 
   @media (min-width: @tablet-width) {
     margin: 0;
     padding: 63px 0;
+
+    width: auto;
   }
 }
 
 .footer__logo-image {
   object-fit: contain;
+  color: hsl(0, 0%, 27%);
 
   &:hover {
     opacity: 0.8;
@@ -166,13 +180,17 @@
   display: flex;
   flex-direction: row;
   column-gap: 26px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
-  padding: 32px 0;
+  padding: 15px 0;
+
+  border-bottom: 1px solid hsl(0, 0%, 85%);
 
   @media (min-width: @tablet-width) {
-    padding: 63px 0;
+    padding: 50px 0;
+    padding-left: 30px;
+    border: none;
   }
 }
 
@@ -199,12 +217,13 @@
   margin: 0;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 0;
+  padding: 0;
+  letter-spacing: 1.5px;
 
   @media (min-width: @tablet-width) {
     justify-content: flex-end;
     column-gap: 22px;
-    padding: 63px 0;
+    padding: 50px 0;
   }
 }
 

@@ -13,12 +13,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 26px;
+    margin-bottom: 45px;
   }
 }
 
 .advantage__header {
-  margin: 0 0 40px;
+  margin: 0 0 42px;
 
   font-family: @font;
   font-style: @font-style;
@@ -51,26 +51,37 @@
   row-gap: 20px;
 
   @media (min-width: @tablet-width) {
-    column-gap: 22%;
-    row-gap: 77px;
+    row-gap: 80px;
   }
 
   @media (min-width: 1000px) {
-    column-gap: 70px;
+    column-gap: 30px;
   }
 }
 
 .advantages__item {
   position: relative;
-  padding-left: 100px;
-  height: 80px;
 
   z-index: 2;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     height: auto;
-    padding: 111px 0 57px;
     text-align: left;
+
+    &:nth-child(1n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 75px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 
   &::before {
@@ -98,7 +109,7 @@
 }
 
 .advantages__description {
-  padding: 5px 0 0;
+  padding: 3px 0;
   margin: 0;
 
   position: relative;
@@ -111,36 +122,60 @@
 
 .advantages__item-nutritional {
   background: url("../img/icon-nutrition.svg") no-repeat left;
+  background-size: 60px 60px;
   background-position-y: 0;
+  padding: 0;
+  padding-left: 82px;
 
   @media (min-width: @tablet-width) {
     width: 230px;
+    background-size: 80px 80px;
+    padding: 111px 0 57px;
   }
 }
 
 .advantages__item-easy-to-use {
   background: url("../img/icon-easy-to-use.svg") no-repeat left;
   background-position-y: 0;
+  background-size: 60px 60px;
+  padding: 0;
+  padding-left: 82px;
 
   @media (min-width: @tablet-width) {
     width: 246px;
+    background-size: 80px 80px;
+    padding: 111px 0 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 220px;
   }
 }
 
 .advantages__item-fast-tu-use {
   background: url("../img/icon-ready-to-use.svg") no-repeat left;
   background-position-y: 0;
+  background-size: 60px 60px;
+  padding: 0;
+  padding-left: 82px;
 
   @media (min-width: @tablet-width) {
-    width: 247px;
+    width: 226px;
+    background-size: 80px 80px;
+    padding: 111px 0 57px;
   }
 }
 
 .advantages__item-results {
   background: url("../img/icon-fast-result.svg") no-repeat left;
   background-position-y: 0;
+  background-size: 60px 60px;
+  padding: 0;
+  padding-left: 82px;
 
   @media (min-width: @tablet-width) {
     width: 249px;
+    background-size: 80px 80px;
+    padding: 111px 0 57px;
   }
 }

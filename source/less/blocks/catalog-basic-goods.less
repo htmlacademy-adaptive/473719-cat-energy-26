@@ -22,14 +22,14 @@
   color: @font-color;
 
   @media (min-width: @tablet-width) {
-    padding: 65px 0 163px;
+    padding: 36px 0 163px;
 
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 74px 0 165px;
+    padding: 58px 0 165px;
   }
 }
 
@@ -72,11 +72,12 @@
 
   list-style-type: none;
 
-  padding: 19px 0 25px;
+  padding: 0 0 25px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     background-color: @gray-color;
 
@@ -93,17 +94,51 @@
 }
 
 
-.catalog-basic-goods__image-wrapper {
+.catalog-basic-goods__image-wrapper-small {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-self: center;
-  align-self: center;
+  align-self: flex-end;
 
-  height: 101px;
+  top: -10px;
 
   @media (min-width: @tablet-width) {
+    position: absolute;
+
+    top: -10%;
+
     justify-content: flex-end;
     align-self: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: -12%;
+  }
+}
+
+.catalog-basic-goods__image-wrapper-big {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: flex-end;
+
+  top: -10px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+
+    top: -18%;
+
+    justify-content: flex-end;
+    align-self: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: -20%;
   }
 }
 
@@ -113,8 +148,9 @@
 }
 
 .catalog-basic-goods__card-header {
-  margin: 0;
-  margin-bottom: 18px;
+  margin: 19px 0 15px;
+
+  width: 76px;
 
   font-family: @font;
   font-style: @font-style;
@@ -130,8 +166,9 @@
     text-align: center;
     font-size: 20px;
     line-height: 24px;
+    width: 158px;
 
-    margin-bottom: 21px;
+    margin: 137px auto 21px auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -141,24 +178,32 @@
 }
 
 .catalog-basic-goods__card-info {
-  margin: 0 0 42px;
+  margin: 0 0 24px;
+  padding: 0;
 
   font-size: 12px;
   line-height: 16px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-row-gap: 2px;
 
   @media (min-width: @tablet-width) {
+    margin: 0 0 42px;
     font-size: 16px;
-    grid-row-gap: 14px;
+    grid-row-gap: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-gap: 0;
+    margin: 0 0 33px;
   }
 }
 
 .catalog-basic-goods__card-info-category {
   margin: 0;
+  padding: 0;
 
+  height: 15px;
   text-align: left;
 
   @media (min-width: @tablet-width) {
@@ -168,6 +213,9 @@
 
 .catalog-basic-goods__card-info-value {
   margin: 0;
+  padding: 0;
+
+  height: 15px;
 
   text-align: right;
 
@@ -176,11 +224,28 @@
   }
 }
 
+.catalog-basic-goods__card-info-value,
+.catalog-basic-goods__card-info-category {
+  @media (min-width: @desktop-width) {
+    padding-top: 5px;
+    padding-bottom: 25px;
+  }
+}
+
 .catalog-basic-goods__button {
-  grid-column: 1/-1;
+  grid-column-start: 1;
+  grid-column-end: -1;
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+  }
 }
 
 .catalog-basic-goods__more {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   padding: 78px 0 25px;
 
   list-style-type: none;
@@ -192,14 +257,14 @@
   background-position: 125px 25px;
 
   @media (min-width: @tablet-width) {
-    padding: 161px 37px 38px;
+    padding: 161px 37px 39px;
 
     background-size: 60px 60px;
     background-position: 50% 52px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 160px 38px 41px;
+    padding: 160px 38px 39px;
 
     background-position: 50% 51px;
   }
@@ -223,23 +288,46 @@
 
   margin-bottom: 8px;
 
+  @media (min-width: @tablet-width) {
+    width: 135px;
+
+    margin: 0 auto 23px auto;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
   @media (min-width: @desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
   }
 }
 
 .catalog-basic-goods__more-text {
-  color: @font-color;
+  margin: 0;
+  padding: 0;
   margin-bottom: 21px;
 
-  @media (min-width: @tablet-width) {
-    margin-bottom: 87px;
-  }
+  color: @font-color;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .catalog-basic-goods__more-button {
   background-color: @gray-color;
   color: @font-color;
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+  }
+
+  &:hover {
+    background-color: hsl(0, 0%, 92%);
+    color: @font-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog-basic-goods__underline {

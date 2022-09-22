@@ -229,67 +229,70 @@
 
 .experience__result-weight {
   position: relative;
+}
 
-  &::after {
-    position: absolute;
-    top: 100%;
-    left: 50%;
+.experience__result-weight-description {
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 100%;
+
+  width: 77px;
+
+  padding: 0 12px;
+  background-color: hsl(0, 0%, 95%);
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    background-color: @white-color;
+    white-space: nowrap;
     transform: translateY(-50%) translateX(-50%);
+    font-size: 14px;
+  }
 
-    content: "снижение веса";
-    font-family: "Arial", sans-serif;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 100%;
-
-    width: 77px;
-
-    padding: 0 12px;
+  @media (min-width: @desktop-width) {
     background-color: hsl(0, 0%, 95%);
-
-    @media (min-width: @tablet-width) {
-      background-color: @white-color;
-      white-space: nowrap;
-      transform: translateY(-50%) translateX(-80%);
-      font-size: 14px;
-    }
-
-    @media (min-width: @desktop-width) {
-      background-color: hsl(0, 0%, 95%);
-    }
   }
 }
 
+
 .experience__result-days {
   position: relative;
+}
 
-  &::after {
-    position: absolute;
-    top: 100%;
-    left: 50%;
+.experience__result-days-description {
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 100%;
+
+  width: 90px;
+
+  padding: 0 14px;
+  background-color: hsl(0, 0%, 95%);
+
+  @media (min-width: @tablet-width) {
+    background-color: @white-color;
+    width: auto;
+    white-space: nowrap;
     transform: translateY(-50%) translateX(-50%);
+    font-size: 14px;
+  }
 
-    content: "затрачено времени";
-    font-family: "Arial", sans-serif;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 100%;
-
-    width: 90px;
-
-    padding: 0 14px;
+  @media (min-width: @desktop-width) {
     background-color: hsl(0, 0%, 95%);
-
-    @media (min-width: @tablet-width) {
-      background-color: @white-color;
-      white-space: nowrap;
-      transform: translateY(-50%) translateX(-80%);
-      font-size: 14px;
-    }
-
-    @media (min-width: @desktop-width) {
-      background-color: hsl(0, 0%, 95%);
-    }
   }
 }
 

@@ -1,16 +1,5 @@
-.catalog-basic-goods {
-  margin: 0 auto;
-
-  width: @mobile-width-only - @mobile-gap - @mobile-gap;
-
-  @media (min-width: @tablet-width) {
-    width: 92%;
-    max-width: @desktop-width - @desktop-gap - @desktop-gap;
-  }
-}
-
 .catalog-basic-goods__header {
-  margin: 0;
+  margin: 0 auto;
   padding: 27px 0 41px;
   text-align: left;
 
@@ -21,11 +10,16 @@
   line-height: 36px;
   color: @font-color;
 
+  width: @mobile-width-only - @mobile-gap - @mobile-gap;
+
   @media (min-width: @tablet-width) {
     padding: 36px 0 163px;
 
     font-size: 60px;
     line-height: 60px;
+
+    width: 92%;
+    max-width: @desktop-width - @desktop-gap - @desktop-gap;
   }
 
   @media (min-width: @desktop-width) {
@@ -41,12 +35,15 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
+    width: 92%;
+    max-width: @desktop-width - @desktop-gap - @desktop-gap;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px;
     grid-row-gap: 142px;
 
-    margin: 0 0 68px;
+    margin: 0 auto 68px;
   }
 
   @media (min-width: 1000px) {
@@ -59,11 +56,24 @@
     grid-column-gap: 80px;
     grid-row-gap: 144px;
 
-    margin: 0 0 76px;
+    margin: 0 auto 76px;
   }
 }
 
 .catalog-basic-goods__card {
+  &:nth-child(1) {
+    border-top: 1px solid rgb(232, 232, 232);
+  }
+
+  border-bottom: 1px solid rgb(232, 232, 232);
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+
+.catalog-bsic-goods__card-grids {
   position: relative;
 
   display: grid;
@@ -86,6 +96,16 @@
 
   @media (min-width: @desktop-width) {
     padding: 23px 39px 39px;
+  }
+}
+
+.catalog-basic-goods__card-positioning-container {
+  margin: 0 auto;
+
+  width: @mobile-width-only - @mobile-gap - @mobile-gap;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
   }
 }
 
@@ -254,7 +274,13 @@
 
   background: url("../img/icon-plus.svg") no-repeat center;
   background-size: 30px 30px;
-  background-position: 125px 25px;
+  background-position: 50% 25px;
+
+  border-bottom: 1px solid rgb(232, 232, 232);
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 
   @media (min-width: @tablet-width) {
     padding: 161px 37px 39px;
@@ -310,6 +336,14 @@
   color: @font-color;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+
+    margin-bottom: 88px;
+  }
 }
 
 .catalog-basic-goods__more-button {

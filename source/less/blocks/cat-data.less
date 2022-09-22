@@ -6,16 +6,20 @@
   row-gap: 14px;
 
   padding: 0;
-  margin: 39px 0 24px;
+  margin: 39px auto 24px;
 
   color: @font-color;
 
   border: none;
 
-  @media (min-width: @tablet-width) {
-    width: 100%;
+  width: @mobile-width-only - @mobile-gap - @mobile-gap;
+  max-width: 280px;
 
-    margin: 66px 0 72px 0;
+  @media (min-width: @tablet-width) {
+    width: 92%;
+    max-width: @desktop-width;
+    padding: 0 40px;
+    margin: 66px auto 72px;
   }
 
   @media (min-width: @desktop-width) {

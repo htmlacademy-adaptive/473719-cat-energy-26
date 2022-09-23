@@ -113,6 +113,24 @@
   opacity: 0.3;
 }
 
+.program-radio__weight-loss-input:hover + .program-radio__control-mark,
+.program-radio__weight-gain-input:hover + .program-radio__control-mark,
+.program-radio__need-advice-input:hover + .program-radio__control-mark,
+.program-radio__weight-loss-input:hover ~ .program-radio__control-label,
+.program-radio__weight-gain-input:hover ~ .program-radio__control-label,
+.program-radio__need-advice-input:hover ~ .program-radio__control-label {
+  opacity: 0.7;
+}
+
+.program-radio__weight-loss-input:focus + .program-radio__control-mark,
+.program-radio__weight-gain-input:focus + .program-radio__control-mark,
+.program-radio__need-advice-input:focus + .program-radio__control-mark,
+.program-radio__weight-loss-input:focus ~ .program-radio__control-label,
+.program-radio__weight-gain-input:focus ~ .program-radio__control-label,
+.program-radio__need-advice-input:focus ~ .program-radio__control-label {
+  opacity: 0.5;
+}
+
 .program-radio__weight-loss-input:checked + .program-radio__control-mark::after,
 .program-radio__weight-gain-input:checked + .program-radio__control-mark::after,
 .program-radio__need-advice-input:checked + .program-radio__control-mark::after {

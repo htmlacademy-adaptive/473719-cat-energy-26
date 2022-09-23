@@ -194,7 +194,41 @@
     }
   }
 
+  &:hover {
+    &::after {
+      position: relative;
+
+      content: url("../img/icon-long-arrow.svg");
+      left: 15px;
+      top: -3px;
+
+      @media (min-width: @tablet-width) {
+        left: 25px;
+      }
+
+      @media (min-width: @desktop-width) {
+        left: 28px;
+      }
+    }
+  }
+
   &:active {
     opacity: 0.3;
+
+    &::after {
+      position: relative;
+
+      content: url("../img/icon-long-arrow.svg");
+      left: 15px;
+      top: -3px;
+
+      @media (min-width: @tablet-width) {
+        left: 25px;
+      }
+
+      @media (min-width: @desktop-width) {
+        left: 28px;
+      }
+    }
   }
 }

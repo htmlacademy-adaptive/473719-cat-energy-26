@@ -106,14 +106,6 @@
     }
   }
 
-  &:active {
-    color: rgb(94, 170, 47, 0.6);
-
-    &::after {
-      color: rgb(94, 170, 47, 0.6);
-    }
-  }
-
   &::after {
     display: block;
     position: absolute;
@@ -132,6 +124,14 @@
 
     @media (min-width: @tablet-width) {
       height: 512px;
+    }
+  }
+
+  &:active {
+    color: #9ccc84;
+
+    &::after {
+      background-color: #9ccc84;
     }
   }
 }

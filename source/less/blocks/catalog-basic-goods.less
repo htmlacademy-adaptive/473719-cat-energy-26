@@ -3,7 +3,7 @@
   padding: 27px 0 41px;
   text-align: left;
 
-  font-family: @font;
+  font-family: @font, "Arial", sans-serif;
   font-style: @font-style;
   font-weight: @font-weight;
   font-size: 36px;
@@ -30,6 +30,8 @@
 .catalog-basic-goods__list {
   display: flex;
   flex-direction: column;
+
+  list-style-type: none;
 
   margin: 0 0 25px;
   padding: 0;
@@ -79,8 +81,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr minmax(40px);
-
-  list-style-type: none;
 
   padding: 0 0 25px;
 
@@ -172,12 +172,12 @@
 
   width: 76px;
 
-  font-family: @font;
+  font-family: @font, "Arial", sans-serif;
   font-style: @font-style;
   font-weight: @font-weight;
   font-size: 16px;
   line-height: 20px;
-  color: @font-color;
+  color: #222222;
 
   text-transform: uppercase;
   text-align: left;
@@ -203,6 +203,8 @@
 
   font-size: 12px;
   line-height: 16px;
+
+  color: #444444;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -279,10 +281,8 @@
   border-bottom: 1px solid rgb(232, 232, 232);
 
   @media (min-width: @tablet-width) {
-    border: none;
-  }
+    border: 2px solid hsl(0, 0%, 95%);
 
-  @media (min-width: @tablet-width) {
     padding: 161px 37px 39px;
 
     background-size: 60px 60px;
@@ -303,12 +303,12 @@
 .catalog-basic-goods__more-header {
   margin: 0;
 
-  font-family: @font;
+  font-family: @font, "Arial", sans-serif;
   font-style: @font-style;
   font-weight: @font-weight;
   font-size: 16px;
   line-height: 20px;
-  color: @font-color;
+  color: #111111;
 
   text-transform: uppercase;
 
@@ -333,7 +333,7 @@
   padding: 0;
   margin-bottom: 21px;
 
-  color: @font-color;
+  color: #444444;
   font-size: 12px;
   line-height: 16px;
 

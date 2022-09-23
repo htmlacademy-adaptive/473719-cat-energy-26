@@ -15,6 +15,7 @@
   @media (min-width: @desktop-width) {
     max-width: 570px;
     margin: 65px 0 60px;
+    padding: 0;
   }
 }
 
@@ -39,7 +40,6 @@
 
   @media (min-width: @desktop-width) {
     max-width: @desktop-width - @desktop-gap - @desktop-gap;
-    padding: 0;
   }
 }
 
@@ -64,12 +64,14 @@
 .program-radio__control-label {
   padding-left: 46px;
 
-  font-family: @font;
+  font-family: @font, "Arial", sans-serif;
   font-style: @font-style;
   font-weight: @font-weight;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  color: #222222;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;

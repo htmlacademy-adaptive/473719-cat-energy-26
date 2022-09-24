@@ -1,0 +1,345 @@
+.catalog-basic-goods {
+  margin: 0 auto;
+
+  width: @mobile-width-only - @mobile-gap - @mobile-gap;
+
+  @media (min-width: @tablet-width) {
+    width: 92%;
+    max-width: @desktop-width - @desktop-gap - @desktop-gap;
+  }
+}
+
+.catalog-basic-goods__header {
+  margin: 0;
+  padding: 27px 0 41px;
+  text-align: left;
+
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  font-size: 36px;
+  line-height: 36px;
+  color: @font-color;
+
+  @media (min-width: @tablet-width) {
+    padding: 36px 0 163px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 58px 0 165px;
+  }
+}
+
+.catalog-basic-goods__list {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 0 25px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 142px;
+
+    margin: 0 0 68px;
+  }
+
+  @media (min-width: 1000px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 144px;
+
+    margin: 0 0 76px;
+  }
+}
+
+.catalog-basic-goods__card {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr minmax(40px);
+
+  list-style-type: none;
+
+  padding: 0 0 25px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: @gray-color;
+
+    padding: 23px 39px 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 23px 39px 39px;
+  }
+}
+
+.catalog-basic-goods__card-link {
+  text-decoration: none;
+}
+
+
+.catalog-basic-goods__image-wrapper-small {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: flex-end;
+
+  top: -10px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+
+    top: -10%;
+
+    justify-content: flex-end;
+    align-self: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: -12%;
+  }
+}
+
+.catalog-basic-goods__image-wrapper-big {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: flex-end;
+
+  top: -10px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+
+    top: -18%;
+
+    justify-content: flex-end;
+    align-self: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: -20%;
+  }
+}
+
+.catalog-basic-goods__card-image {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-basic-goods__card-header {
+  margin: 19px 0 15px;
+
+  width: 76px;
+
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  font-size: 16px;
+  line-height: 20px;
+  color: @font-color;
+
+  text-transform: uppercase;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    width: 158px;
+
+    margin: 137px auto 21px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
+
+.catalog-basic-goods__card-info {
+  margin: 0 0 24px;
+  padding: 0;
+
+  font-size: 12px;
+  line-height: 16px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 42px;
+    font-size: 16px;
+    grid-row-gap: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-gap: 0;
+    margin: 0 0 33px;
+  }
+}
+
+.catalog-basic-goods__card-info-category {
+  margin: 0;
+  padding: 0;
+
+  height: 15px;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+  }
+}
+
+.catalog-basic-goods__card-info-value {
+  margin: 0;
+  padding: 0;
+
+  height: 15px;
+
+  text-align: right;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+  }
+}
+
+.catalog-basic-goods__card-info-value,
+.catalog-basic-goods__card-info-category {
+  @media (min-width: @desktop-width) {
+    padding-top: 5px;
+    padding-bottom: 25px;
+  }
+}
+
+.catalog-basic-goods__button {
+  grid-column-start: 1;
+  grid-column-end: -1;
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+  }
+}
+
+.catalog-basic-goods__more {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 78px 0 25px;
+
+  list-style-type: none;
+
+  text-align: center;
+
+  background: url("../img/icon-plus.svg") no-repeat center;
+  background-size: 30px 30px;
+  background-position: 125px 25px;
+
+  @media (min-width: @tablet-width) {
+    padding: 161px 37px 39px;
+
+    background-size: 60px 60px;
+    background-position: 50% 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 160px 38px 39px;
+
+    background-position: 50% 51px;
+  }
+}
+
+.catalog-basic-goods__more-link {
+  text-decoration: none;
+}
+
+.catalog-basic-goods__more-header {
+  margin: 0;
+
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  font-size: 16px;
+  line-height: 20px;
+  color: @font-color;
+
+  text-transform: uppercase;
+
+  margin-bottom: 8px;
+
+  @media (min-width: @tablet-width) {
+    width: 135px;
+
+    margin: 0 auto 23px auto;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.catalog-basic-goods__more-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
+
+  color: @font-color;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog-basic-goods__more-button {
+  background-color: @gray-color;
+  color: @font-color;
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+  }
+
+  &:hover {
+    background-color: hsl(0, 0%, 92%);
+    color: @font-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.catalog-basic-goods__underline {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 150vw;
+  left: -50vw;
+  border: 0;
+  border-top: 1px solid hsl(0, 0%, 85%);
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}

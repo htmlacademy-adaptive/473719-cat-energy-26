@@ -1,0 +1,136 @@
+.additional-comment {
+  position: relative;
+  color: @font-color;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+
+    top: 15px;
+
+    @media (min-width: @tablet-width) {
+      top: 23px;
+    }
+
+    height: 2px;
+    width: 100vw;
+
+    z-index: -1;
+
+    background-color: hsl(97, 53%, 47%);
+  }
+}
+
+.additional-comment__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding: 0 0 24px;
+
+  width: @mobile-width-only - @mobile-gap - @mobile-gap;
+
+  @media (min-width: @tablet-width) {
+    width: 92%;
+    max-width: @desktop-width;
+    margin: 0 auto;
+    padding: 0 40px 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: @desktop-width - @desktop-gap - @desktop-gap;
+    padding: 0 0 93px;
+    margin: 0 auto;
+  }
+}
+
+.additional-comment__title {
+  margin: 0;
+  margin-left: -20px;
+  padding: 0 20px 38px;
+  display: table;
+  float: left;
+
+  width: fit-content;
+
+  background-color: @white-color;
+
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  font-size: 24px;
+  line-height: 26px;
+  color: @font-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+
+    padding: 0 40px 76px;
+    margin-left: -40px;
+  }
+}
+
+.additional-comment__text {
+  display: flex;
+  flex-direction: row;
+
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  font-size: 16px;
+  line-height: 16px;
+  transform-style: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.additional-comment__text-input {
+  min-height: 150px;
+
+  padding: 10px 15px 15px;
+
+  flex-grow: 1;
+  flex-basis: 70%;
+
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  border: none;
+
+  outline: 1px solid hsl(0, 0%, 91%);
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    padding: 12px 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 12px 20px;
+  }
+
+  &:hover {
+    outline: 1px solid hsl(0, 0%, 80%);
+  }
+
+  &:focus {
+    outline: 2px solid hsl(0, 0%, 27%);
+  }
+
+  &:invalid {
+    outline: 2px solid hsl(0, 100%, 75%);
+  }
+}

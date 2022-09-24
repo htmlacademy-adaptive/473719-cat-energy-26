@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Ivan Streltsov](https://up.htmlacademy.ru/adaptive/26/user/473719).
-* Наставник: `Неизвестно`.
+* Наставник: [Anton Popov](https://htmlacademy.ru/profile/joker).
 
 ---
 

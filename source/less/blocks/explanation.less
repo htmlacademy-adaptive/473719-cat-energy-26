@@ -1,0 +1,137 @@
+.explanation {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: @mobile-width-only - @mobile-gap - @mobile-gap;
+
+  @media (min-width: @tablet-width) {
+    width: 92%;
+    max-width: @desktop-width - @desktop-gap - @desktop-gap;
+  }
+}
+
+.explanation__image-before {
+  position: absolute;
+
+  top: 10px;
+
+  clip: rect(0, 138px, 280px, 0);
+
+  @media (min-width: @tablet-width) {
+    top: 95px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    clip: rect(0, 278px, 560px, 0);
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -136px;
+    left: 217px;
+  }
+}
+
+.explanation__image-after {
+  position: absolute;
+
+  top: 10px;
+
+  clip: rect(0, 280px, 280px, 138px);
+
+  @media (min-width: @tablet-width) {
+    top: 95px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    clip: rect(0, 560px, 560px, 278px);
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -136px;
+    left: 217px;
+  }
+}
+
+.explanation__title {
+  display: none;
+
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  font-size: 16px;
+  line-height: 20px;
+  color: @font-color;
+}
+
+
+.explanation__scale {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+
+
+.explanation__slider {
+  position: absolute;
+
+  top: 135px;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+
+  border: none;
+  border-color: transparent;
+  color: hsl(0, 0%, 40%);
+  background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    top: 350px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 125px;
+    left: 215px;
+  }
+
+  &:hover {
+    color: hsl(97, 53%, 47%);
+
+    &::after {
+      background-color: hsl(97, 53%, 47%);
+    }
+  }
+
+  &:active {
+    color: rgb(94, 170, 47, 0.6);
+
+    &::after {
+      color: rgb(94, 170, 47, 0.6);
+    }
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+
+    z-index: -1;
+
+    border-radius: 2px;
+
+    content: "";
+    width: 4px;
+    height: 256px;
+    background-color: hsl(0, 0%, 40%);
+
+    @media (min-width: @tablet-width) {
+      height: 512px;
+    }
+  }
+}

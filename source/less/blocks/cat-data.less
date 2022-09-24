@@ -1,0 +1,127 @@
+.cat-data {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  row-gap: 14px;
+
+  padding: 0;
+  margin: 39px 0 24px;
+
+  color: @font-color;
+
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+
+    margin: 66px 0 72px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 570px;
+    margin: 66px 0 60px;
+  }
+}
+
+
+.cat-data__age,
+.cat-data__weight,
+.cat-data__name {
+  display: flex;
+  justify-content: space-between;
+
+
+  align-items: center;
+}
+
+.cat-data__name-label,
+.cat-data__weight-label,
+.cat-data__age-label {
+  display: block;
+
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+
+  padding-right: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 10px;
+  }
+}
+
+.cat-data__name-input,
+.cat-data__weight-input,
+.cat-data__age-input {
+  padding: 10px 10px 11px 14px;
+  flex-grow: 1;
+  flex-basis: 70%;
+
+  margin: 0;
+
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  border: none;
+  outline: 1px solid hsl(0, 0%, 91%);
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 10px 15px 18px;
+    font-size: 20px;
+    line-height: 30px;
+
+    margin-left: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 10px 18px 15px;
+  }
+
+  &:hover {
+    outline: 1px solid hsl(0, 0%, 80%);
+  }
+
+  &:focus {
+    outline: 2px solid hsl(0, 0%, 27%);
+  }
+
+  &:invalid {
+    outline: 2px solid hsl(0, 100%, 75%);
+  }
+}
+
+.cat-data__weight-input,
+.cat-data__age-input {
+  @media (min-width: @tablet-width) {
+    margin-left: 10px;
+  }
+}
+
+.form__underline {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 150vw;
+  left: -50vw;
+  border: 0;
+  border-top: 1px solid hsl(0, 0%, 85%);
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}

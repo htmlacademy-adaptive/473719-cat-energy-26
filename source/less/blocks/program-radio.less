@@ -1,0 +1,117 @@
+.program-radio {
+
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 23px;
+
+  padding: 30px 0 27px;
+  color: @font-color;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid rgb(232, 232, 232);
+    margin: 0 0 69px;
+    padding: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 570px;
+    margin: 65px 0 60px;
+  }
+}
+
+.program-radio__weight-loss,
+.program-radio__weight-gain,
+.program-radio__need-advice {
+  position: relative;
+}
+
+.program-radio__weight-gain-input,
+.program-radio__weight-loss-input,
+.program-radio__need-advice-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.program-radio__control-label {
+  padding-left: 46px;
+
+  font-family: @font;
+  font-style: @font-style;
+  font-weight: @font-weight;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 55px;
+  }
+}
+
+.program-radio__control-mark {
+  position: absolute;
+
+  width: 30px;
+  height: 30px;
+
+  left: -4px;
+  top: -5px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+
+    left: -6px;
+    top: -3px;
+  }
+
+  outline: 0;
+
+  border: 1px solid rgba(205, 205, 205, 1);
+  border-radius: 20px;
+  background: hsl(0, 0%, 100%);
+}
+
+.program-radio__weight-loss-input:disabled + .program-radio__control-mark,
+.program-radio__weight-gain-input:disabled + .program-radio__control-mark,
+.program-radio__need-advice-input:disabled + .program-radio__control-mark,
+.program-radio__weight-loss-input:disabled ~ .program-radio__control-label,
+.program-radio__weight-gain-input:disabled ~ .program-radio__control-label,
+.program-radio__need-advice-input:disabled ~ .program-radio__control-label {
+  opacity: 0.3;
+}
+
+.program-radio__weight-loss-input:checked + .program-radio__control-mark::after,
+.program-radio__weight-gain-input:checked + .program-radio__control-mark::after,
+.program-radio__need-advice-input:checked + .program-radio__control-mark::after {
+  position: absolute;
+  display: block;
+
+  content: "";
+
+  width: 14px;
+  height: 14px;
+
+  left: 7px;
+  top: 7px;
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+
+    left: 10px;
+    top: 10px;
+  }
+
+  border-radius: 9px;
+  background-color: hsl(97, 53%, 47%);
+  z-index: 2;
+}

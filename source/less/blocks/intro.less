@@ -1,7 +1,6 @@
 .intro {
   margin: 0 auto;
   padding: 27px 0 20px;
-  width: 100vw;
 
   background-image:
     url("../img/intro-image-mobile.png"),
@@ -10,7 +9,7 @@
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position-x: center, center;
   background-position-y: 167px, 0, 0;
-  background-size: 280px 270px, 100vw 302px, 302px 302px;
+  background-size: 280px 270px, 100vw 302px, 320px 302px;
 
   @media (min-resolution: 2dppx) {
     background-image:
@@ -50,7 +49,7 @@
       linear-gradient(to right, transparent 0, transparent 50%, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 100%),
       url("../img/index-background-desktop.jpg");
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: calc(50% + 125px) 214px, 0, 50vw center;
+    background-position: calc(50% + 117px) 209px, 0, 50vw 50px;
     background-size: 552px 499px, 100vw, contain;
 
     @media (min-resolution: 2dppx) {
@@ -59,8 +58,8 @@
         linear-gradient(to right, transparent 0, transparent 50%, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 100%),
         url("../img/index-background-desktop.jpg");
       background-repeat: no-repeat, no-repeat, no-repeat;
-      background-position: calc(50% + 125px) 214px, 0, 50vw center;
-      background-size: 552px 499px, 100vw, contain;
+      background-position: calc(50% + 117px) 209px, 0, 50vw 50px;
+      background-size: 552px 499px, 100vw, 100%;
     }
   }
 }
@@ -120,7 +119,7 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 49px;
+    margin-bottom: 54px;
     font-size: 20px;
     line-height: 20px;
     color: @font-color;

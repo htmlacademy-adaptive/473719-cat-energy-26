@@ -135,15 +135,19 @@
 .owner-data__phone-label {
   display: block;
 
-  padding-right: 20px;
+  padding-right: 13px;
   flex-basis: auto;
 
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 16px;
+  }
 }
 
 .owner-data__email-input,
 .owner-data__phone-input {
-  padding: 8px 10px 12px 15px;
+  padding: 10px 10px 10px 15px;
   flex-grow: 1;
   flex-basis: 70%;
 
@@ -169,7 +173,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 8px 60px 8px 17px;
+    padding: 8px 60px 12px 17px;
   }
 }
 

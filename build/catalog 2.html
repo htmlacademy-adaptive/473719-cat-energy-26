@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style.min.css" type="text/css">
+  <link rel="icon" href="./favicon.ico"> <!-- 32×32 -->
+  <link rel="manifest" href="./manifest.webmanifest">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <nav class="nav nav--opened nav--nojs">
+      <img src="./img/logo-mobile-icon.svg" alt="Иконка для мобильной версии." class="nav__logo-icon" width="33"
+        height="38">
+      <a href="./index.html" class="nav__logo">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg" width="174" height="52">
+          <img class="nav__logo-img" src="./img/logo-mobile.svg" alt="Лотигип Cat Energy." width="101" height="18">
+        </picture>
+      </a>
+      <button class="nav__toggle">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="./index.html">Главная</a>
+        </li>
+        <li class="nav__list-item nav__list-item--current">
+          <a href="">Каталог продукции</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="./form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="catalog-basic-goods">
+      <h1 class="catalog-basic-goods__header">Каталог продукции</h1>
+      <ul class="catalog-basic-goods__list">
+        <li class="catalog-basic-goods__card">
+          <div class="catalog-basic-goods__card-positioning-container">
+            <div class="catalog-bsic-goods__card-grids">
+              <div class="catalog-basic-goods__image-wrapper-small">
+                <a href="./catalog/chicken-500.html">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/catalog/catalog-card-tablet-chicken-500@1x.png 1x,
+                  ./img/catalog/catalog-card-tablet-chicken-500@2x.png 2x" width="161" height="172">
+                    <source media="(min-width: 1000px)" srcset="./img/catalog/catalog-card-desktop-chicken-500@1x.png 1x,
+                  ./img/catalog-card-desktop-chicken-500@2x.png 2x" width="161" height="172">
+                    <img class="catalog-basic-goods__card-image"
+                      src="./img/catalog/catalog-card-mobile-chicken-500@1x.png"
+                      srcset="./img/catalog/catalog-card-mobile-chicken-500@2x.png 2x"
+                      alt="Изображение кошачьего корма с курицей. Вес 500 грамм." width="68" height="86">
+                  </picture>
+                </a>
+              </div>
+              <div class="catalog-basic-goods__card-wrapper">
+                <a href="./catalog/chicken-500.html" class="catalog-basic-goods__card-link">
+                  <h2 class="catalog-basic-goods__card-header">Cat Energy PRO 500 г</h2>
+                </a>
+                <dl class="catalog-basic-goods__card-info">
+                  <dt class="catalog-basic-goods__card-info-category">Масса</dt>
+                  <dd class="catalog-basic-goods__card-info-value">500г.</dd>
+                  <dt class="catalog-basic-goods__card-info-category">Вкус</dt>
+                  <dd class="catalog-basic-goods__card-info-value">Курица</dd>
+                  <dt class="catalog-basic-goods__card-info-category">Цена</dt>
+                  <dd class="catalog-basic-goods__card-info-value">700р.</dd>
+                </dl>
+              </div>
+              <a class="catalog-basic-goods__button button" href="">заказать</a>
+            </div>
+
+          </div>
+        </li>
+        <li class="catalog-basic-goods__card">
+          <div class="catalog-basic-goods__card-positioning-container">
+            <div class="catalog-bsic-goods__card-grids">
+              <div class="catalog-basic-goods__image-wrapper-big">
+                <a href="./catalog/chicken-1000.html">
+                  <picture>
+                    <source media="(min-width:768px)" srcset="./img/catalog/catalog-card-tablet-chicken-1000@1x.png 1x,
+              ./img/catalog/catalog-card-tablet-chicken-1000@2x.png 2x" width="168" height="206">
+                    <source media="(min-width:1000px)" srcset="./img/catalog/catalog-card-desktop-chicken-1000@1x.png 1x,
+              ./img/catalog/catalog-card-desktop-chicken-1000@2x.png 2x" width="172" height="202">
+                    <img class="catalog-basic-goods__card-image"
+                      src="./img/catalog/catalog-card-mobile-chicken-1000@1x.png"
+                      srcset="./img/catalog/catalog-card-mobile-chicken-1000@2x.png 2x"
+                      alt="Изображение кошачьего корма с курицей. Вес 1000 грамм." width="84" height="101">
+                  </picture>
+                </a>
+              </div>
+              <div class="catalog-basic-goods__card-wrapper">
+                <a href="./catalog/chicken-1000.html" class="catalog-basic-goods__card-link">
+                  <h2 class="catalog-basic-goods__card-header">Cat Energy PRO 1000 г</h2>
+                </a>
+                <dl class="catalog-basic-goods__card-info">
+                  <dt class="catalog-basic-goods__card-info-category">Масса</dt>
+                  <dd class="catalog-basic-goods__card-info-value">1000г.</dd>
+                  <dt class="catalog-basic-goods__card-info-category">Вкус</dt>
+                  <dd class="catalog-basic-goods__card-info-value">Курица</dd>
+                  <dt class="catalog-basic-goods__card-info-category">Цена</dt>
+                  <dd class="catalog-basic-goods__card-info-value">1000р.</dd>
+                </dl>
+              </div>
+              <a class="catalog-basic-goods__button button" href="">заказать</a>
+            </div>
+          </div>
+        </li>
+        <li class="catalog-basic-goods__card">
+          <div class="catalog-basic-goods__card-positioning-container">
+            <div class="catalog-bsic-goods__card-grids">
+              <div class="catalog-basic-goods__image-wrapper-small">
+                <a href="./catalog/fish-500.html">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/catalog/catalog-card-tablet-fish-500@1x.png 1x,
+              ./img/catalog/catalog-card-tablet-fish-500@2x.png 2x" width="163" height="174">
+                    <source media="(min-width: 1000px)" srcset="./img/catalog/catalog-card-desktop-fish-500@1x.png 1x,
+              ./img/catalog-card-desktop-fish-500@2x.png 2x" width="163" height="174">
+                    <img class="catalog-basic-goods__card-image" src="./img/catalog/catalog-card-mobile-fish-500@1x.png"
+                      srcset="./img/catalog/catalog-card-mobile-fish-500@2x.png 2x"
+                      alt="Изображение кошачьего корма с рыбой. Вес 500 грамм." width="68" height="78">
+                  </picture>
+                </a>
+              </div>
+              <div class="catalog-basic-goods__card-wrapper">
+                <a href="./catalog/fish-500.html" class="catalog-basic-goods__card-link">
+                  <h2 class="catalog-basic-goods__card-header">Cat Energy PRO 500 г</h2>
+                </a>
+                <dl class="catalog-basic-goods__card-info">
+                  <dt class="catalog-basic-goods__card-info-category">Масса</dt>
+                  <dd class="catalog-basic-goods__card-info-value">500г.</dd>
+                  <dt class="catalog-basic-goods__card-info-category">Вкус</dt>
+                  <dd class="catalog-basic-goods__card-info-value">Рыба</dd>
+                  <dt class="catalog-basic-goods__card-info-category">Цена</dt>
+                  <dd class="catalog-basic-goods__card-info-value">700р.</dd>
+                </dl>
+              </div>
+              <a class="catalog-basic-goods__button button" href="">заказать</a>
+            </div>
+          </div>
+        </li>
+        <li class="catalog-basic-goods__card">
+          <div class="catalog-basic-goods__card-positioning-container">
+            <div class="catalog-bsic-goods__card-grids">
+              <div class="catalog-basic-goods__image-wrapper-big">
+                <a href="./catalog/fish-1000.html">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/catalog/catalog-card-tablet-fish-1000@1x.png 1x,
+              ./img/catalog/catalog-card-tablet-fish-1000@2x.png 2x" width="168" height="200">
+                    <source media="(min-width: 1000px)" srcset="./img/catalog/catalog-card-desktop-fish-1000@1x.png 1x,
+              ./img/catalog-card-desktop-fish-1000@2x.png 2x" width="168" height="200">
+                    <img class="catalog-basic-goods__card-image"
+                      src="./img/catalog/catalog-card-mobile-fish-1000@1x.png"
+                      srcset="./img/catalog/catalog-card-mobile-fish-1000@2x.png 2x"
+                      alt="Изображение кошачьего корма с рыбой. Вес 1000 грамм." width="84" height="101">
+                  </picture>
+                </a>
+              </div>
+              <div class="catalog-basic-goods__card-wrapper">
+                <a href="./catalog/fish-1000.html" class="catalog-basic-goods__card-link">
+                  <h2 class="catalog-basic-goods__card-header">Cat Energy PRO 1000 г</h2>
+                </a>
+                <dl class="catalog-basic-goods__card-info">
+                  <dt class="catalog-basic-goods__card-info-category">Масса</dt>
+                  <dd class="catalog-basic-goods__card-info-value">1000г.</dd>
+                  <dt class="catalog-basic-goods__card-info-category">Вкус</dt>
+                  <dd class="catalog-basic-goods__card-info-value">Рыба</dd>
+                  <dt class="catalog-basic-goods__card-info-category">Цена</dt>
+                  <dd class="catalog-basic-goods__card-info-value">1000р.</dd>
+                </dl>
+              </div>
+              <a class="catalog-basic-goods__button button" href="">заказать</a>
+            </div>
+          </div>
+        </li>
+        <li class="catalog-basic-goods__card">
+          <div class="catalog-basic-goods__card-positioning-container">
+            <div class="catalog-bsic-goods__card-grids">
+              <div class="catalog-basic-goods__image-wrapper-small">
+                <a href="./catalog/buckweat-500.html">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/catalog/catalog-card-tablet-buckweat-500@1x.png 1x,
+            ./img/catalog/catalog-card-tablet-buckweat-500@2x.png 2x" width="161" height="171">
+                    <source media="(min-width: 1000px)" srcset="./img/catalog/catalog-card-desktop-buckweat-500@1x.png 1x,
+            ./img/catalog-card-desktop-buckweat-500@2x.png 2x" width="161" height="171">
+                    <img class="catalog-basic-goods__card-image"
+                      src="./img/catalog/catalog-card-mobile-buckweat-500@1x.png"
+                      srcset="./img/catalog/catalog-card-mobile-buckweat-500@2x.png 2x"
+                      alt="Изображение кошачьего корма с гречкой. Вес 500 грамм." width="68" height="78">
+                  </picture>
+                </a>
+              </div>
+              <div class="catalog-basic-goods__card-wrapper-small">
+                <a href="./catalog/buckweat-500.html" class="catalog-basic-goods__card-link">
+                  <h2 class="catalog-basic-goods__card-header">Cat Energy slim 500 г</h2>
+                </a>
+                <dl class="catalog-basic-goods__card-info">
+                  <dt class="catalog-basic-goods__card-info-category">Масса</dt>
+                  <dd class="catalog-basic-goods__card-info-value">500г.</dd>
+                  <dt class="catalog-basic-goods__card-info-category">Вкус</dt>
+                  <dd class="catalog-basic-goods__card-info-value">Гречка</dd>
+                  <dt class="catalog-basic-goods__card-info-category">Цена</dt>
+                  <dd class="catalog-basic-goods__card-info-value">400р.</dd>
+                </dl>
+              </div>
+              <a class="catalog-basic-goods__button button" href="">заказать</a>
+            </div>
+          </div>
+        </li>
+        <li class="catalog-basic-goods__card">
+          <div class="catalog-basic-goods__card-positioning-container">
+            <div class="catalog-bsic-goods__card-grids">
+              <div class="catalog-basic-goods__image-wrapper-big">
+                <a href="./catalog/buckweat-1000.html">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/catalog/catalog-card-tablet-buckweat-1000@1.png 1x,
+              ./img/catalog/catalog-card-tablet-buckweat-1000@2.png 2x" width="168" height="200">
+                    <source media="(min-width: 1000px)" srcset="./img/catalog/catalog-card-desktop-buckweat-1000@1x.png 1x,
+              ./img/catalog/catalog-card-desktop-buckweat-1000@2x.png 2x" width="168" height="200">
+                    <img class="catalog-basic-goods__card-image"
+                      src="./img/catalog/catalog-card-mobile-buckweat-1000@1x.png"
+                      srcset="./img/catalog/catalog-card-mobile-buckweat-1000@2x.png 2x"
+                      alt="Изображение кошачьего корма с гречкой. Вес 1000 грамм." width="84" height="100">
+                  </picture>
+                </a>
+              </div>
+              <div class="catalog-basic-goods__card-wrapper">
+                <a href="./catalog/buckweat-1000.html" class="catalog-basic-goods__card-link">
+                  <h2 class="catalog-basic-goods__card-header">Cat Energy SLIM 1000 г</h2>
+                </a>
+                <dl class="catalog-basic-goods__card-info">
+                  <dt class="catalog-basic-goods__card-info-category">Масса</dt>
+                  <dd class="catalog-basic-goods__card-info-value">1000г.</dd>
+                  <dt class="catalog-basic-goods__card-info-category">Вкус</dt>
+                  <dd class="catalog-basic-goods__card-info-value">Гречка</dd>
+                  <dt class="catalog-basic-goods__card-info-category">Цена</dt>
+                  <dd class="catalog-basic-goods__card-info-value">700р.</dd>
+                </dl>
+              </div>
+              <a class="catalog-basic-goods__button button" href="">заказать</a>
+            </div>
+          </div>
+        </li>
+        <li class="catalog-basic-goods__card">
+          <div class="catalog-basic-goods__card-positioning-container">
+            <div class="catalog-bsic-goods__card-grids">
+              <div class="catalog-basic-goods__image-wrapper-small">
+                <a href="./catalog/rice-500.html">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/catalog/catalog-card-tablet-rice-500@1x.png 1x,
+            ./img/catalog/catalog-card-tablet-rice-500@2x.png 2x" width="163" height="174">
+                    <source media="(min-width: 1000px)" srcset="./img/catalog/catalog-card-desktop-rice-500@1x.png 1x,
+            ./img/catalog-card-desktop-rice-500@2x.png 2x" width="163" height="174">
+                    <img class="catalog-basic-goods__card-image" src="./img/catalog/catalog-card-mobile-rice-500@1x.png"
+                      srcset="./img/catalog/catalog-card-mobile-rice-500@2x.png 2x"
+                      alt="Изображение кошачьего корма с рисом. Вес 500 грамм." width="72" height="84">
+                  </picture>
+                </a>
+              </div>
+              <div class="catalog-basic-goods__card-wrapper">
+                <a href="./catalog/rice-500.html" class="catalog-basic-goods__card-link">
+                  <h2 class="catalog-basic-goods__card-header">Cat Energy slim 500 г</h2>
+                </a>
+                <dl class="catalog-basic-goods__card-info">
+                  <dt class="catalog-basic-goods__card-info-category">Масса</dt>
+                  <dd class="catalog-basic-goods__card-info-value">500г.</dd>
+                  <dt class="catalog-basic-goods__card-info-category">Вкус</dt>
+                  <dd class="catalog-basic-goods__card-info-value">Рис</dd>
+                  <dt class="catalog-basic-goods__card-info-category">Цена</dt>
+                  <dd class="catalog-basic-goods__card-info-value">500р.</dd>
+                </dl>
+              </div>
+              <a class="catalog-basic-goods__button button" href="">заказать</a>
+            </div>
+          </div>
+        </li>
+        <li class="catalog-basic-goods__more">
+          <div class="catalog-basic-goods__card-positioning-container">
+            <a href="" class="catalog-basic-goods__more-link">
+              <h2 class="catalog-basic-goods__more-header">Показать еще 100500 товаров</h2>
+              <p class="catalog-basic-goods__more-text">На самом деле вкусов гораздо больше!</p>
+            </a>
+            <a class="catalog-basic-goods__more-button button" href="">показать
+              все</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="catalog-other-goods">
+      <div class="catalog-other-goods__section-wrapper">
+        <h2 class="catalog-other-goods__header">Дополнительные товары</h2>
+        <div class="catalog-other-goods__wrapper">
+          <ul class="catalog-other-goods__list">
+            <li class="catalog-other-goods__item">
+              <a class="catalog-other-goods__link" href="./catalog/swetener.html">
+                <h3 class="catalog-other-goods__item-header">Сахарозаменитель</h3>
+              </a>
+              <dl class="catalog-other-goods__info">
+                <dt class="catalog-other-goods__info-item-weight">1 упаковка (100 г)</dt>
+                <dd class="catalog-other-goods__info-item-price">200 Р.</dd>
+              </dl>
+              <a class="catalog-other-goods__item-button button">Заказать</a>
+            </li>
+            <li class="catalog-other-goods__item">
+              <a class="catalog-other-goods__link" href="./catalog/water.html">
+                <h3 class="catalog-other-goods__item-header">Питьевая вода</h3>
+              </a>
+              <dl class="catalog-other-goods__info">
+                <dt class="catalog-other-goods__info-item-weight">5 литров</dt>
+                <dd class="catalog-other-goods__info-item-price">50 Р.</dd>
+              </dl>
+              <a class="catalog-other-goods__item-button button">Заказать</a>
+            </li>
+            <li class="catalog-other-goods__item">
+              <a class="catalog-other-goods__link" href="./catalog/milk.html">
+                <h3 class="catalog-other-goods__item-header">Молоко</h3>
+              </a>
+              <dl class="catalog-other-goods__info">
+                <dt class="catalog-other-goods__info-item-weight">1 литр</dt>
+                <dd class="catalog-other-goods__info-item-price">100 Р.</dd>
+              </dl>
+              <a class="catalog-other-goods__item-button button">Заказать</a>
+            </li>
+            <li class="catalog-other-goods__item">
+              <a class="catalog-other-goods__link" href="./catalog/vitamins.html">
+                <h3 class="catalog-other-goods__item-header">Витамины</h3>
+              </a>
+              <dl class="catalog-other-goods__info">
+                <dt class="catalog-other-goods__info-item-weight">1 упаковка (30 г)</dt>
+                <dd class="catalog-other-goods__info-item-price">300 Р.</dd>
+              </dl>
+              <a class="catalog-other-goods__item-button button">Заказать</a>
+            </li>
+          </ul>
+          <div class="catalog-other-goods__promotion">
+            <p class="catalog-other-goods__promotion-text">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer__adress-color-wrapper footer__adress-color-gray-wrapper">
+      <section class="footer__address">
+        <h2 class="visually-hidden">Наше местонахождение.</h2>
+        <div class="footer__address-headquarter-wrapper">
+          <h4 class="footer__address-headquarter-header">Приглашаем<br> к сотрудничеству дилеров!</h4>
+          <p class="footer__address-headquarter-text">ул. Большая Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
+        </div>
+      </section>
+    </div>
+    <div class="footer__adress-map-wrapper">
+      <picture>
+        <source media="(min-width: 1000px)" srcset="./img/adress-map-image-desktop.jpg 1x,
+          ./img/adress-map-image-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)"
+          srcset="./img/adress-map-image-tablet.jpg 1x, ./img/adress-map-image-tablet@2x.jpg 2x">
+        <img class="footer__address-embeded-map" src="./img/adress-map-image-mobile.jpg"
+          srcset="./img/adress-map-image-mobile@2x.jpg 2x" alt="Адрес на карте.">
+      </picture>
+    </div>
+    <div class="footer__background-wrapper">
+      <div class="footer__wrapper">
+        <div class="footer__logo-wrapper">
+          <a href="" class="footer__logo-link">
+            <svg class="footer__logo-image" aria-label="Логотип Cat Energy." width="128" height="24" focusable="false">
+              <use xlink:href="./img/sprite.svg#footer-mini-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="" class="footer__social-link">
+              <svg class="footer__social-item-icon" aria-label="Наша страница во Втоктантке." width="28" height="24"
+                focusable="false">
+                <use xlink:href="./img/sprite.svg#footer-vkontakte-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="" class="footer__social-link">
+              <svg class="footer__social-item-icon" aria-label="Наш канал на Ютуб." width="28" height="22"
+                focusable="false">
+                <use xlink:href="./img/sprite.svg#footer-youtube-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="" class="footer__social-link">
+              <svg class="footer__social-item-icon" aria-label="Наш канал в Телеграме." width="28" height="22"
+                focusable="false">
+                <use xlink:href="./img/sprite.svg#footer-telegram-logo"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__html-academy-wrapper">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__html-academy-link">
+            <svg class="footer__html-academy-logo" aria-label="Сайт создан HTML-academy." width="114" height="18"
+              focusable="false">
+              <use xlink:href="./img/sprite.svg#html-academy-logo-footer"></use>
+            </svg>
+          </a>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__html-academy-link">
+            <svg class="footer__html-academy-logo" aria-label="Сайт создан HTML-academy." width="27" height="34"
+              focusable="false">
+              <use xlink:href="./img/sprite.svg#html-academy-logo-icon-footer"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

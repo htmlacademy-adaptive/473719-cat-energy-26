@@ -12,13 +12,13 @@
 
 <body class="page__body">
   <header class="header">
-    <nav class="nav nav--closed nav--nojs">
+    <nav class="nav nav--opened nav--nojs">
       <img src="./img/logo-mobile-icon.svg" alt="Иконка для мобильной версии." class="nav__logo-icon" width="33"
         height="38">
       <a href="./index.html" class="nav__logo">
         <picture>
           <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg" width="202" height="59">
-          <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg" width="174" heigh="52">
+          <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg" width="174" height="52">
           <img class="nav__logo-img" src="./img/logo-mobile.svg" alt="Лотигип Cat Energy." width="101" height="18">
         </picture>
       </a>
@@ -50,7 +50,7 @@
     </section>
     <section class="programs">
       <h2 class="visually-hidden">Доступные программы питания Cat Energy</h2>
-      <div class="progams__list-section">
+      <div class="programs__list-section">
         <div class="programs__wrapper programs__fit-image">
           <h3 class="programs__subtitle">похудение</h3>
           <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность
@@ -67,7 +67,7 @@
       </div>
     </section>
     <section class="advantages">
-      <h2 class="advantage__header">Как это работает</h2>
+      <h2 class="advantages__header">Как это работает</h2>
       <ol class="advantages__list">
         <li class="advantages__item advantages__item-nutritional">
           <p class="advantages__description">Функциональное питание содержит только полезные
@@ -100,14 +100,14 @@
               спит по 16 часов в день. </p>
             <div class="experience__quantity-wrapper">
               <dl class="experience__result-wrapper">
-                <dt class="experience__result experience__result-weight">5 КГ</dt>
-                <dt class="experience__result experience__result-days">60 ДНЕЙ</dt>
+                <dt class="experience__result experience__result-weight">5 КГ <span class="experience__result-weight-description">снижение веса</span></dt>
+                <dd class="experience__result experience__result-days">60 ДНЕЙ <span class="experience__result-days-description">затрачено времени</span></dd>
               </dl>
               <dl class="experience__example-wrapper">
                 <dt class="experience__example-price">Затраты
                   на питание:</dt>
-                <dt class="experience__example-price">15
-                  000 РУБ.</dt>
+                <dd class="experience__example-price">15
+                  000 РУБ.</dd>
               </dl>
             </div>
           </div>
@@ -115,12 +115,12 @@
             <div class="explanation__before-wrapper">
               <picture>
                 <source media="(min-width: 768px)" type="image/webp" srcset="./img/cat-tablet-before@1x.webp 1x,
-                ./img/cat-tablet-before@2x.webp 2x" widht="560" height="512">
+                ./img/cat-tablet-before@2x.webp 2x" width="560" height="512">
                 <source type="image/webp" srcset="./img/cat-mobile-before@1x.webp 1x,
                 ./img/cat-mobile-before@2x.webp 2x" width="280" height="256">
 
                 <source media="(min-width: 768px)" srcset="./img/cat-tablet-before@1x.png 1x,
-                ./img/cat-tablet-before@2x.png 2x" widht="560" height="512">
+                ./img/cat-tablet-before@2x.png 2x" width="560" height="512">
                 <img class="explanation__image-before" src="./img/cat-mobile-before@1x.png" srcset="./img/cat-mobile-before@1x.png 1x,
                 ./img/cat-mobile-before@2x.png 2x" alt="Фотография тучного кота до приема корма Cat Energy."
                   width="280" height="256">
@@ -129,12 +129,12 @@
             <div class="explanation__after-wrapper">
               <picture>
                 <source media="(min-width: 768px)" type="image/webp" srcset="./img/cat-tablet-after@1x.webp 1x,
-                ./img/cat-tablet-after@2x.webp 2x" widht="560" height="512">
+                ./img/cat-tablet-after@2x.webp 2x" width="560" height="512">
                 <source type="image/webp" srcset="./img/cat-mobile-after@1x.webp 1x,
                 ./img/cat-mobile-after@2x.webp 2x" width="280" height="256">
 
                 <source media="(min-width: 768px)" srcset="./img/cat-tablet-after@1x.png 1x,
-                  ./img/cat-tablet-after@2x.png 2x" widht="560" height="512">
+                  ./img/cat-tablet-after@2x.png 2x" width="560" height="512">
                 <img class="explanation__image-after" src="./img/cat-mobile-after@1x.png" srcset="./img/cat-mobile-after@1x.png 1x,
                 ./img/cat-mobile-after@2x.png 2x" alt="Фотография похудевшего кота после приема корма Cat Energy."
                   width="280" height="256">
@@ -179,7 +179,7 @@
       <div class="footer__wrapper">
         <div class="footer__logo-wrapper">
           <a href="" class="footer__logo-link">
-            <svg class="footer__logo-image" aria-label="Логотип Cat Energy." width="128" height="24" focuasble="false">
+            <svg class="footer__logo-image" aria-label="Логотип Cat Energy." width="128" height="24" focusable="false">
               <use xlink:href="./img/sprite.svg#footer-mini-logo"></use>
             </svg>
           </a>
@@ -188,7 +188,7 @@
           <li class="footer__social-item">
             <a href="" class="footer__social-link">
               <svg class="footer__social-item-icon" aria-label="Наша страница во Втоктантке." width="28" height="24"
-                focuasble="false">
+                focusable="false">
                 <use xlink:href="./img/sprite.svg#footer-vkontakte-logo"></use>
               </svg>
             </a>
@@ -196,7 +196,7 @@
           <li class="footer__social-item">
             <a href="" class="footer__social-link">
               <svg class="footer__social-item-icon" aria-label="Наш канал на Ютуб." width="28" height="22"
-                focuasble="false">
+                focusable="false">
                 <use xlink:href="./img/sprite.svg#footer-youtube-logo"></use>
               </svg>
             </a>
@@ -204,22 +204,22 @@
           <li class="footer__social-item">
             <a href="" class="footer__social-link">
               <svg class="footer__social-item-icon" aria-label="Наш канал в Телеграме." width="28" height="22"
-                focuasble="false">
+                focusable="false">
                 <use xlink:href="./img/sprite.svg#footer-telegram-logo"></use>
               </svg>
             </a>
           </li>
         </ul>
         <div class="footer__html-academy-wrapper">
-          <a href="" class="footer__html-academy-link">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__html-academy-link">
             <svg class="footer__html-academy-logo" aria-label="Сайт создан HTML-academy." width="114" height="18"
-              focuasble="false">
+              focusable="false">
               <use xlink:href="./img/sprite.svg#html-academy-logo-footer"></use>
             </svg>
           </a>
-          <a href="" class="footer__html-academy-link">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__html-academy-link">
             <svg class="footer__html-academy-logo" aria-label="Сайт создан HTML-academy." width="27" height="34"
-              focuasble="false">
+              focusable="false">
               <use xlink:href="./img/sprite.svg#html-academy-logo-icon-footer"></use>
             </svg>
           </a>

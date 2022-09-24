@@ -38,12 +38,12 @@
     width: 92%;
     max-width: @desktop-width;
     margin: 0 auto;
-    padding: 0 40px 60px;
+    padding: 0 40px 65px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: @desktop-width - @desktop-gap - @desktop-gap;
-    padding: 0 0 69px;
+    padding: 0 0 75px;
     margin: 0 auto;
   }
 }
@@ -51,15 +51,13 @@
 .additional-demands__title {
   margin: 0;
   margin-left: -20px;
-  padding: 0 20px 34px;
-  display: table;
-  float: left;
+  padding: 0 20px 36px;
 
   width: fit-content;
 
   background-color: @white-color;
 
-  font-family: @font;
+  font-family: @font, "Arial", sans-serif;
   font-style: @font-style;
   font-weight: @font-weight;
   font-size: 24px;
@@ -83,7 +81,7 @@
 
   min-height: 30px;
 
-  font-family: @font;
+  font-family: @font, "Arial", sans-serif;
   font-style: @font-style;
   font-weight: @font-weight;
   font-size: 16px;
@@ -116,14 +114,14 @@
   position: absolute;
 
   width: 30px;
-  height: 30px;
+  min-height: 30px;
 
   left: 0;
   top: -2px;
 
   @media (min-width: @tablet-width) {
     width: 40px;
-    height: 40px;
+    min-height: 40px;
 
     left: 0;
     top: -2px;
@@ -142,12 +140,12 @@
 
 
 .additional-demands__control-label {
-  position: absolute;
+  position: relative;
   top: 4px;
-  padding-left: 48px;
+  left: 47px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 62px;
+    left: 60px;
   }
 }
 
@@ -187,4 +185,15 @@
 .additional-demands__vitamins-input:disabled ~ .additional-demands__control-label,
 .additional-demands__milk-input:disabled ~ .additional-demands__control-label {
   opacity: 0.3;
+}
+
+.additional-demands__sweetener-input:focus + .additional-demands__control-mark,
+.additional-demands__water-input:focus + .additional-demands__control-mark,
+.additional-demands__vitamins-input:focus + .additional-demands__control-mark,
+.additional-demands__milk-input:focus + .additional-demands__control-mark,
+.additional-demands__sweetener-input:focus ~ .additional-demands__control-label,
+.additional-demands__water-input:focus ~ .additional-demands__control-label,
+.additional-demands__vitamins-input:focus ~ .additional-demands__control-label,
+.additional-demands__milk-input:focus ~ .additional-demands__control-label {
+  opacity: 0.7;
 }

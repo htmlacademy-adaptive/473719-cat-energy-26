@@ -20,7 +20,7 @@
   margin: 0;
   padding: 27px 0 37px;
 
-  font-family: @font;
+  font-family: @font, "Arial", sans-serif;
   font-style: @font-style;
   font-weight: @font-weight;
   font-size: 36px;
@@ -43,7 +43,7 @@
   margin: 0;
   padding: 0;
 
-  font-family: @font;
+  font-family: @font, "Arial", sans-serif;
   font-style: @font-style;
   font-weight: @font-weight;
   font-size: 14px;
@@ -60,17 +60,6 @@
 }
 
 .form__desktop-wrapper {
-  margin: 0 auto;
-  padding: 0;
-  width: @mobile-width-only - @mobile-gap - @mobile-gap;
-
-  @media (min-width: @tablet-width) {
-    width: 92%;
-    max-width: @desktop-width;
-    margin: 0 auto;
-    padding: 0 40px;
-  }
-
   @media (min-width: @desktop-width) {
     margin: 0 auto;
     padding: 0;
@@ -81,6 +70,10 @@
     grid-template-columns: 1fr 1fr;
 
     grid-column-gap: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 10px;
   }
 }
 
@@ -97,11 +90,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 62px;
-    grid-row-gap: 45px;
+    grid-row-gap: 40px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 262px 268px 263px 280px;
+    grid-template-columns: 262px 268px 263px auto;
     grid-column-gap: 60px;
   }
 }
@@ -123,7 +116,7 @@
     width: 92%;
     max-width: @desktop-width;
     margin: 0 auto;
-    padding: 0 40px 72px;
+    padding: 0 40px 66px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -162,6 +155,11 @@
   top: 61px;
 
   @media (min-width: @tablet-width) {
+    top: 13px;
+    left: 54%;
+  }
+
+  @media (min-width: @desktop-width) {
     top: 17px;
     left: 650px;
   }

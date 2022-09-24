@@ -9,13 +9,21 @@
   }
 }
 
-.progams__list-section {
+.programs__list-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 
-  margin-bottom: 54px;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 48px;
+  }
 }
 
 .programs__weight-image {
@@ -24,7 +32,7 @@
   background-size: 67px 50px;
 
   @media (min-width: @tablet-width) {
-    background-position: 95% 55%;
+    background-position: 94% 52%;
     background-size: 270px 200px;
   }
 
@@ -67,7 +75,9 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
-    padding: 82px 313px 58px 52px;
+    padding: 74px 313px 58px 52px;
+
+    margin-bottom: 31px;
   }
 
   @media (min-width: 1000px) {
@@ -76,7 +86,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 81px 52px 55px;
+    padding: 81px 55px 55px;
   }
 }
 
@@ -84,7 +94,7 @@
   margin: 0 0 29px;
   padding-left: 71px;
 
-  font-family: @font;
+  font-family: @font, "Arial", sans-serif;
   font-style: @font-style;
   font-weight: @font-weight;
   font-size: 24px;
@@ -133,10 +143,12 @@
   @media (min-width: @tablet-width) {
     min-width: 340px;
     margin-bottom: 0;
+    padding-bottom: 53px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     min-width: auto;
+    padding-bottom: 23px;
   }
 
   &::after {
@@ -149,6 +161,10 @@
     width: @mobile-width-only - @mobile-gap - @mobile-gap - @mobile-gap - @mobile-gap;
     height: 1px;
     background-color: hsl(0, 0%, 85%);
+
+    @media (min-width: @tablet-width) {
+      height: 0;
+    }
   }
 }
 
@@ -157,7 +173,7 @@
   margin: 0;
   padding: 0;
 
-  font-family: @font;
+  font-family: @font, "Arial", sans-serif;
   font-style: @font-style;
   font-weight: @font-weight;
 
@@ -190,7 +206,41 @@
     }
   }
 
+  &:hover {
+    &::after {
+      position: relative;
+
+      content: url("../img/icon-long-arrow.svg");
+      left: 15px;
+      top: -3px;
+
+      @media (min-width: @tablet-width) {
+        left: 25px;
+      }
+
+      @media (min-width: @desktop-width) {
+        left: 28px;
+      }
+    }
+  }
+
   &:active {
     opacity: 0.3;
+
+    &::after {
+      position: relative;
+
+      content: url("../img/icon-long-arrow.svg");
+      left: 15px;
+      top: -3px;
+
+      @media (min-width: @tablet-width) {
+        left: 25px;
+      }
+
+      @media (min-width: @desktop-width) {
+        left: 28px;
+      }
+    }
   }
 }

@@ -180,21 +180,22 @@
 
     flex-basis: 70%;
 
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-grow: 1;
     max-width: 70%;
     justify-content: flex-end;
     flex-direction: row;
-    column-gap: 12px;
+    column-gap: 34px;
   }
 
   @media (min-width: @desktop-width) {
-    flex-wrap: nowrap;
+    max-width: 800px;
+    flex-wrap: wrap;
     justify-content: flex-end;
     flex-grow: 1;
     flex-basis: 40%;
     flex-direction: row;
-    column-gap: 33px;
+    column-gap: 34px;
   }
 }
 
@@ -207,6 +208,23 @@
   text-align: center;
   border-bottom: 1px solid rgb(230, 230, 230);
 
+  @media (min-width: 320px) {
+    width: 320px;
+    padding: 22px 0 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    border: none;
+    background-color: transparent;
+    padding: 25px 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 14px 0 7px;
+    border: none;
+  }
+
   &:nth-child(1) {
     border-top: 1px solid rgb(230, 230, 230);
 
@@ -216,22 +234,6 @@
     }
   }
 
-  @media (min-width: 320px) {
-    width: 320px;
-    padding: 23px 0 20px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 10px 0;
-    border: none;
-  }
-
-  @media (min-width: @tablet-width) {
-    width: auto;
-    border: none;
-    background-color: transparent;
-  }
-
   & a {
     margin: 0;
     padding: 0;
@@ -239,7 +241,7 @@
     font-size: 20px;
     line-height: 20px;
 
-    font-family: @font;
+    font-family: @font, "Arial", sans-serif;
     font-style: @font-style;
     font-weight: 500;
     color: @font-color;
@@ -251,7 +253,12 @@
       font-size: 18px;
       line-height: 24px;
       font-weight: 400;
-      letter-spacing: 1px;
+    }
+
+    @media (min-width: @desktop-width) {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 400;
     }
 
     &:hover {
@@ -270,7 +277,6 @@
   }
 }
 
-.nav__list-item:active,
 .nav__list-item--current {
   &::after {
     @media (min-width: @tablet-width) {
@@ -295,7 +301,6 @@
   }
 }
 
-.nav__list-item-intro:active,
 .nav__list-item-intro--current {
   &::after {
     @media (min-width: @tablet-width) {
@@ -320,3 +325,9 @@
     }
   }
 }
+
+.nav__list-item:active,
+.nav__list-item-intro:active {
+  opacity: 0.3;
+}
+

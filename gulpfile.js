@@ -56,9 +56,15 @@ const optimizeImages = () => {
 
 const copyImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
-  .pipe(gulp.dest('build/img'))
-  }
+    .pipe(gulp.dest('build/img'))
+}
 
+//favicon
+
+const manifest = () => {
+  return gulp.src('source/manifest.webmanifest')
+    .pipe(gulp.dest('build'));
+}
 // WebP
 
 const createWebp = () => {

@@ -23,11 +23,15 @@
 }
 
 .footer__adress-map-wrapper {
+  position: relative;
+
   background-color: #f2f2f2;
 }
 
 .footer__address {
   position: relative;
+
+  z-index: 3;
 
   margin: 0 auto;
   padding: 0;
@@ -283,5 +287,31 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+
+.footer__adress-map-active {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+
+  margin: 0;
+  padding: 0;
+  width: @mobile-width-only;
+  margin-left: -@mobile-gap;
+  object-fit: cover;
+
+  height: 362px;
+
+  @media (min-width: @tablet-width) {
+    width: 100vw;
+    margin-left: calc((100vw - 97%) / -2);
+
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: calc((100vw - 98.5%) / -2);
   }
 }

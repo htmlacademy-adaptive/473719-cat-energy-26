@@ -10,10 +10,6 @@
   max-width: 100%;
 }
 
-.footer__adress-color-gray-wrapper {
-  background-color: hsl(0, 0%, 95%);
-}
-
 .footer__background-wrapper,
 .footer__adress-map-wrapper {
   margin: 0 auto;
@@ -24,6 +20,10 @@
     width: 92%;
     max-width: 1220px;
   }
+}
+
+.footer__adress-map-wrapper {
+  background-color: #f2f2f2;
 }
 
 .footer__address {
@@ -66,9 +66,13 @@
 
   @media (min-width: @tablet-width) {
     width: 100vw;
-    margin-left: calc((100vw - 98%) / -2);
+    margin-left: calc((100vw - 97%) / -2);
 
     height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: calc((100vw - 98.5%) / -2);
   }
 }
 
@@ -87,7 +91,7 @@
   @media (min-width: @tablet-width) {
     width: 100%;
 
-    padding: 69px 42px 59px;
+    padding: 60px 39px;
   }
 
   @media (min-width: @desktop-width) {
@@ -98,10 +102,20 @@
 
     z-index: 1;
 
-    padding: 60px 80px 56px;
+    padding: 58px 80px;
 
     background-color: @white-color;
   }
+}
+
+.footer__adress-color-gray-wrapper {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.footer__adress-headquarter-location-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer__address-headquarter-header {
@@ -133,9 +147,11 @@
   }
 }
 
-.footer__address-headquarter-text {
+.footer__address-headquarter-text-top,
+.footer__address-headquarter-text-end {
   margin: 0;
   width: 140px;
+  line-height: 20px;
 
   color: #444444;
 
@@ -150,6 +166,18 @@
   }
 }
 
+.footer__address-headquarter-text-top {
+  padding-bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 11px;
+  }
+}
+
 .footer__logo-wrapper {
   margin: 0 auto;
   padding: 34px 0 25px;
@@ -161,7 +189,14 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding: 55px 0 51px;
+    padding: 56px 0;
+
+    width: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 58px 0;
 
     width: auto;
   }
@@ -199,7 +234,7 @@
   @media (min-width: @tablet-width) {
     max-width: 80%;
 
-    padding: 51px 0 50px 30px;
+    padding: 47px 0 50px 30px;
     border: none;
   }
 }
@@ -233,7 +268,7 @@
   @media (min-width: @tablet-width) {
     justify-content: flex-end;
     column-gap: 22px;
-    padding: 51px 0 50px;
+    padding: 49px 0 50px;
   }
 }
 

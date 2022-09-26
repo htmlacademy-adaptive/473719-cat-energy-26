@@ -18,10 +18,18 @@
 
     height: 2px;
     width: 100vw;
+    margin-left: calc((100vw - 97.5%) / -2);
 
     z-index: -1;
-
     background-color: hsl(97, 53%, 47%);
+
+    @media (min-width: 1000px) {
+      margin-left: calc((100vw - 98.1%) / -2);
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: calc((100vw - 98.7%) / -2);
+    }
   }
 }
 
@@ -38,7 +46,7 @@
     width: 92%;
     max-width: @desktop-width;
     margin: 0 auto;
-    padding: 0 40px 70px;
+    padding: 0 40px 68px;
   }
 
   @media (min-width: @desktop-width) {
@@ -93,7 +101,7 @@
 }
 
 .additional-comment__text-input {
-  min-height: 170px;
+  min-height: 150px;
 
   padding: 10px 15px 15px;
 
@@ -116,6 +124,7 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    min-height: 170px;
 
     padding: 12px 21px;
   }

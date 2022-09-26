@@ -298,20 +298,24 @@
 
   margin: 0;
   padding: 0;
-  width: @mobile-width-only;
-  margin-left: -@mobile-gap;
+  width: 100vw;
   object-fit: cover;
+  margin-left: calc((100vw - 93.9%) / -2);
 
   height: 362px;
 
+  @media (min-width: 500px) {
+    margin-left: calc((100vw - 94.2%) / -2);
+  }
+
   @media (min-width: @tablet-width) {
     width: 100vw;
-    margin-left: calc((100vw - 97%) / -2);
+    margin-left: calc((100vw - 97.5%) / -2);
 
     height: 400px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: calc((100vw - 98.5%) / -2);
+    margin-left: calc((100vw - 98.3%) / -2);
   }
 }

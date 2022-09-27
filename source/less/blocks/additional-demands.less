@@ -13,23 +13,24 @@
 
     top: 15px;
 
-    @media (min-width: @tablet-width) {
-      top: 23px;
-    }
-
     height: 2px;
     width: 100vw;
-    margin-left: calc((100vw - 97.5%) / -2);
+    margin-left: calc((100vw - 96.9%) / -2);
 
     z-index: -1;
     background-color: hsl(97, 53%, 47%);
 
+    @media (min-width: @tablet-width) {
+      top: 23px;
+      margin-left: calc((100vw - 97.3%) / -2);
+    }
+
     @media (min-width: 1000px) {
-      margin-left: calc((100vw - 98.1%) / -2);
+      margin-left: calc((100vw - 98.2%) / -2);
     }
 
     @media (min-width: @desktop-width) {
-      margin-left: calc((100vw - 98.7%) / -2);
+      margin-left: calc((100vw - 98.8%) / -2);
     }
   }
 }

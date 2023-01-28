@@ -1,12 +1,12 @@
-Папка для файлов препроцессора Less.
+A folder for Less preprocessor files.
 
 http://lesscss.org
 
 --
 
-Структура файлов:
+File structure:
 
 less/
 | - style.less
-| - [другие *.less файлы]
-| - [или подпапки с другими *.less файлами]
+| - [other *.less files]
+| - [or subfolders with other *.less files]

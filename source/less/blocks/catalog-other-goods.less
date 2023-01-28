@@ -13,16 +13,18 @@
 
     top: 15px;
 
-    @media (min-width: @tablet-width) {
-      top: 23px;
-    }
-
     height: 2px;
     width: 100vw;
-    margin-left: calc((100vw - 97.5%) / -2);
+    margin-left: calc((100vw - 96.9%) / -2);
 
     z-index: -1;
     background-color: hsl(97, 53%, 47%);
+
+
+    @media (min-width: @tablet-width) {
+      top: 23px;
+      margin-left: calc((100vw - 97.3%) / -2);
+    }
 
     @media (min-width: 1000px) {
       margin-left: calc((100vw - 98.1%) / -2);
@@ -90,7 +92,7 @@
 
   @media (min-width: @desktop-width) {
     margin: 0 -40px 40px;
-    padding: 0 40px 36px;
+    padding: 0 40px 37px;
   }
 }
 
@@ -116,7 +118,7 @@
 
   &:last-child {
     @media (min-width: @mobile-width-only) {
-      margin-bottom: 37px;
+      margin-bottom: 40px;
     }
 
     @media (min-width: @tablet-width) {
@@ -134,9 +136,9 @@
     border-left: 1px solid hsl(0, 0%, 80%);
     border-right: 1px solid hsl(0, 0%, 80%);
 
-    padding: 19px 35px 27px 41px;
+    padding: 18px 35px 27px 41px;
     grid-template-columns: 60% 40%;
-    grid-template-rows: auto auto;
+    grid-template-rows: 1fr auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -167,6 +169,7 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    padding: 0 0 13px;
   }
 
   @media (min-width: @desktop-width) {
@@ -180,7 +183,7 @@
 
 .catalog-other-goods__info {
   margin: 0;
-  padding: 0 0 14px;
+  padding: 0 0 13px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -189,6 +192,7 @@
 
   @media (min-width: @tablet-width) {
     justify-content: flex-end;
+    padding: 0 0 14px;
   }
 
   @media (min-width: @desktop-width) {
